@@ -1,0 +1,808 @@
+uid,query_id,predicted_answer,concept,common_sense,caption,model,model_full_response,error
+0008,A,negative,perched mantis hanging plant,0,A perched mantis hanging on a plant.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a red flower with a dark center, while the negative examples show various other flower shapes and colors. The query image shows a white flower with a yellow center, therefore it does not share the same concept.",
+0008,B,negative,perched mantis hanging plant,0,A perched mantis hanging on a plant.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a green insect (likely a dragonfly or damselfly) with a dark, contrasting pattern, specifically a dark border around its wings. The query image does not have this dark border around its wings, so it is a negative example.",
+0520,A,negative,military helicopters carrying out rescues,0,Military helicopters are carrying out rescues.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with a clear, bright, and inviting street scene with people walking and engaging in activities (shopping, dining, etc.). The negative examples all depict blurry, dark, or otherwise unpleasant scenes, often with rain or fog obscuring the view. The query image, with its dark and indistinct scene, fits the negative category.",
+0520,B,negative,military helicopters carrying out rescues,0,Military helicopters are carrying out rescues.,gemma3:latest,"Category: negative
+Common concept: The negative examples all show images with significant blurriness, particularly in the foreground. The query image shares this characteristic of foreground blur.",
+0521,A,negative,group women black dresses show,3,A group of women wearing black dresses during a fashion show.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a dark, monochromatic background with a subject (a person) in sharp focus, appearing to look directly at the viewer. The lighting is bright and direct, highlighting the subject's face.  The query image, however, has a blurred background and a subject with their head tilted downward, creating a softer, less direct gaze. This difference in composition and focus differentiates it from the positive examples.",
+0521,B,negative,group women black dresses show,3,A group of women wearing black dresses during a fashion show.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict fashion models in formal wear (dresses, suits) in a studio setting, often with a focus on their faces and poses. The negative examples are images that lack these elements – they depict landscapes, abstract patterns, or objects without people or fashion. The query image is a landscape, therefore it does not share the common concept.",
+0013,A,negative,branches covered heavily snow,0,Branches covered with heavily falling snow.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict scenes with a clear, bright, and expansive sky, while the negative images feature dark, cloudy, or overcast skies. The query image also has a dark, cloudy sky.",
+0013,B,negative,branches covered heavily snow,0,Branches covered with heavily falling snow.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a distinct, clear, and well-defined shape – a recognizable silhouette or form against a plain background. The query image does not share this characteristic; it's a blurry, indistinct image with no discernible shape or form.",
+0014,A,positive,person playing guitar,1,A person playing a guitar.,gemma3:latest,"Category: positive
+Common concept: The common concept is a single, brightly colored guitar with a simple, geometric pattern (often stripes or polka dots) on its body, presented against a plain background. The positive examples all feature this distinct visual style, while the negative examples lack it.",
+0014,B,positive,person playing guitar,1,A person playing a guitar.,gemma3:latest,"Category: positive
+Common concept: The common concept is a blue or teal color palette with a focus on geometric shapes, specifically triangles and squares, combined with a muted or pastel tone. The examples all feature this combination.",
+0017,A,positive,instruments quantitative measurements,0,Instruments for quantitative measurements.,gemma3:latest,"Category: positive
+Common concept: The images all depict various tools, specifically measuring and construction tools (e.g., hammer, level, ruler, protractor). The positive examples show these tools in use or in a state of being used.
+",
+0017,B,positive,instruments quantitative measurements,0,Instruments for quantitative measurements.,gemma3:latest,"Category: positive
+Common concept: The images all depict a hammer striking a nail, representing a construction or building activity.",
+0531,A,negative,billiard balls pool table,0,Billiard balls on the pool table.,gemma3:latest,"Category: negative
+Common concept: The query image shows a soccer ball resting on a blue surface, resembling a soccer field. The positive examples all depict soccer balls in action (kicking, playing) while the negative examples show soccer balls in various static poses (lying down, on a table, etc.), deviating from the active gameplay context.",
+0531,B,negative,billiard balls pool table,0,Billiard balls on the pool table.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person wearing a helmet, while the images in the bottom row do not.",
+0534,A,negative,bride holding colored flowers,1,A bride holding colored flowers.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict scenes with a person standing directly in front of a camera, facing the lens with a neutral expression. The query image also shows a person standing directly in front of the camera, facing the lens.",
+0534,B,negative,bride holding colored flowers,1,A bride holding colored flowers.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a person standing alone in a bright, open outdoor space (park, field) with a clear blue sky. The negative examples either have a person with a group of people, or a darker, less open setting, or are blurry/low quality. The query image shows a blurred, low-quality image of a person, which aligns with the negative examples.",
+0023,A,negative,radio towers,0,Radio towers.,gemma3:latest,"Category: negative
+Common concept: The common concept is a decorative, brightly colored Christmas tree with ornaments. The negative examples lack this tree structure and bright colors, featuring various landscapes, objects, and textures. The query image also does not contain a Christmas tree, but instead depicts a snowy, dark scene with a single, bare tree.",
+0023,B,negative,radio towers,0,Radio towers.,gemma3:latest,"Category: negative
+Common concept: The common concept is a red and white striped pattern, specifically a candy cane. The positive examples all feature this pattern, while the negative examples do not. The query image does not have this pattern, so it's a negative example.",
+0025,A,negative,steel beams building,3,Steel beams of the building.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes of curved, flowing forms – specifically, water flowing down a curved surface (waterfall or riverbank). The negative examples feature straight lines, geometric shapes, and generally lack any sense of fluid movement or curvature. The query image shows a plain, flat surface with no curvature or flowing elements.",
+0025,B,negative,steel beams building,3,Steel beams of the building.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a smooth, curved, and reflective surface (likely glass or polished concrete) that appears to be a continuous, unbroken expanse. The negative examples break this continuity with distinct planes, shadows, or irregularities in the surface. The query image also exhibits a break in the continuous surface with a clearly defined shadow and a distinct plane of earth.",
+0026,A,negative,people walking city street,0,People walking on the city street.,gemma3:latest,"Category: negative
+Common concept: Rain. The image depicts a wet, reflective street scene with blurred lights and reflections, indicating rain. This aligns with the negative examples which also feature water and reflections.",
+0026,B,negative,people walking city street,0,People walking on the city street.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a dark, blurry, rainy street scene with a single, indistinct person walking towards the camera. The query image also exhibits this same characteristic – a dark, rainy street scene with a solitary figure walking towards the viewer, although it's slightly clearer than the negative examples.",
+0029,A,negative,lightning hitting through cloudy sky,0,Lightning hitting through cloudy sky.,gemma3:latest,"Category: negative
+Common concept: The images in the positive examples all depict a person standing in a natural landscape with a clear sky and bright lighting. The query image depicts a dark, stormy scene with rain and a low-lying cloud cover, lacking the elements of a clear sky, natural light, and human presence.",
+0029,B,negative,lightning hitting through cloudy sky,0,Lightning hitting through cloudy sky.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a person standing on a sandy beach with a clear blue sky and waves. The negative examples depict similar scenes, but with a significant difference – a person is **not** standing on the beach. They are either absent, or are underwater.",
+0542,A,negative,golden gate bridge,6,Golden Gate Bridge.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a single person standing on a street corner, likely waiting for a bus or taxi. The negative examples show various scenes - landscapes, interiors, and abstract patterns - that do not feature a person in this specific scenario. The query image shows a cityscape with a building, but no people, therefore it's a negative example.",
+0542,B,negative,golden gate bridge,6,Golden Gate Bridge.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a building with a distinct, prominent, and artistic roofline – often curved or featuring intricate details. The negative images show buildings with flat, plain, or otherwise unremarkable roofs. The query image also has a plain, flat roof, aligning with the negative examples.",
+0545,A,negative,pieces chess,0,Pieces of chess.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a closed door, while the negative examples show open doors or doors with people entering/exiting.",
+0545,B,negative,pieces chess,0,Pieces of chess.,gemma3:latest,"Category: negative
+Common concept: The common concept is apples. The negative examples all contain oranges, while the query image contains an apple.",
+0546,A,positive,huge cargo ship,0,A huge cargo ship.,gemma3:latest,"Category: positive
+Common concept: The positive examples all depict ships with a prominent, dark-colored hull and a relatively small, light-colored superstructure (deck/top). The ships appear to be moving or sailing.",
+0546,B,negative,huge cargo ship,0,A huge cargo ship.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict large, open-hulled cargo ships sailing in calm seas or harbors. The negative examples feature ships in various conditions – stormy seas, docks, or enclosed spaces – disrupting the overall visual impression of a large, open-hulled ship in a serene environment. The query image shows a ship in a stormy, enclosed harbor, thus not sharing the common concept.",
+0548,A,negative,military carriers,7,Military carriers.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a red car, while the negative examples show various other objects (e.g., a truck, a sailboat, a house, a bicycle, a bird, and a landscape). The query image shows a bicycle, which doesn’t fit the common concept of a red car.",
+0548,B,negative,military carriers,7,Military carriers.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a road with a single vehicle (typically a car) on it, while the negative examples either have no vehicles, multiple vehicles, or the vehicles are not on a road.  The query image also shows a car on a road, thus it's a negative example.",
+0037,A,negative,girl long and thin braids,5,The girl has long and thin braids on her head.,gemma3:latest,"Category: negative
+Common concept: The positive images all feature a model wearing a white shirt with a black, graphic neckline. The negative images do not share this feature.",
+0037,B,negative,girl long and thin braids,5,The girl has long and thin braids on her head.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a person holding a small, colorful plush toy (typically a flamingo) in their hand. The query image shows a person holding a book, which doesn't fit this pattern.",
+0551,A,negative,opened shutters inside room,4,Opened shutters inside the room.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict outdoor scenes with people sitting at tables, enjoying food and drinks. The negative examples do not contain this arrangement.",
+0551,B,negative,opened shutters inside room,4,Opened shutters inside the room.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a prominent, central white vase with a single, tall flower (likely a calla lily) prominently displayed. The negative examples lack this central vase and flower arrangement.",
+0043,A,negative,lettuce vegetable patch,0,Lettuce in the vegetable patch.,gemma3:latest,"Category: negative
+Common concept: The positive examples show a close-up of a person holding a plastic bag containing a single, ripe tomato. The negative examples all show various food items that are not tomatoes or are displayed in a different way (e.g., a bowl of fruit, a salad, a basket of produce). The query image shows a bowl of fruit, not a single ripe tomato.",
+0043,B,positive,lettuce vegetable patch,0,Lettuce in the vegetable patch.,gemma3:latest,"Category: positive
+Common concept: A single, white, plastic takeout container with a single piece of lettuce inside.",
+0044,A,positive,little kids steering cars,0,Little kids steering cars.,gemma3:latest,"Category: positive
+Common concept: The images in the top row all depict children actively engaged in play – specifically, running and jumping. The bottom image, a child sitting still, doesn’t exhibit this active play behavior.",
+0044,B,negative,little kids steering cars,0,Little kids steering cars.,gemma3:latest,"Category: negative
+Common concept: All images in the top row depict children actively engaged in building structures with blocks. The query image shows a child sitting still and looking at a toy truck, which does not represent the same action of building with blocks.",
+0046,A,negative,traces left sand dunes,0,Traces left on the sand dunes.,gemma3:latest,"Category: negative
+Common concept: The negative examples all have a prominent, bright, light-colored beach or sand area, while the positive examples have a darker, less defined beach area. The query image also has a light-colored beach, but the overall image is more complex and less focused on the sand itself, distinguishing it from the clear, positive examples.",
+0046,B,negative,traces left sand dunes,0,Traces left on the sand dunes.,gemma3:latest,"Category: negative
+Common concept: The negative examples all show images with a distinct, sharp, and linear edge, often creating a strong visual contrast and a feeling of abruptness or division. The query image lacks this sharp, linear edge, presenting a blurred and indistinct scene.",
+0560,A,negative,coins various countries human heads,0,Coins of various countries with human heads.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a **person standing with their back to the viewer**. The middle row contains images where people are facing forward or have their backs turned in different ways, indicating a lack of the shared back-facing concept. The query image also shows a person with their back to the viewer, confirming it shares the same concept.",
+0560,B,negative,coins various countries human heads,0,Coins of various countries with human heads.,gemma3:latest,"Category: negative
+Common concept: The images in the positive row all contain the outline of a human head, even if partially obscured or stylized. The query image does not have this feature.",
+0563,A,negative,foggy river,0,The foggy river.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a clear, bright, and sunny scene with a prominent, well-defined object (a building) in the foreground. The negative examples lack this clarity and brightness, often featuring blurry or dark scenes. The query image aligns with the negative examples, exhibiting a dark, blurry, and undefined scene.",
+0563,B,negative,foggy river,0,The foggy river.,gemma3:latest,"Category: negative
+Common concept: The common concept is a scene with a river flowing through a rocky landscape, featuring reflections on the water surface. The negative examples all depict scenes lacking this reflective quality, with either clear, still water or a lack of any discernible surface reflection. The query image also lacks reflection, showing a clear river with a rocky riverbed, consistent with the negative examples.",
+0054,A,negative,wrestling competition,0,Wrestling competition.,gemma3:latest,"Category: negative
+Common concept: The images predominantly show various types of **dogs** (different breeds, sizes, and colors) in a natural or posed setting. The negative examples show images lacking this dog concept – they feature things like cars, buildings, furniture, and abstract patterns. The query image shows a golden retriever, thus it shares the dog concept.",
+0054,B,negative,wrestling competition,0,Wrestling competition.,gemma3:latest,"Category: negative
+Common concept: The images share the concept of a running athlete. The positive examples show athletes in motion, focused on running, with typical running posture and clothing. The negative examples all depict static or blurred images of people, or animals, lacking the dynamic running aspect. The query image is a static image of a person sitting at a table, so it doesn't share the common concept of a running athlete.",
+0055,A,negative,close-up view sprouting stamen,0,Close-up view of sprouting stamen.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict images of **flowers with a prominent, centrally located, and relatively large blossom**. The negative examples deviate by having distorted shapes, missing petals, or a lack of a recognizable floral form. The query image also shows a simple flower but the petal arrangement is very different, so it is negative.",
+0055,B,negative,close-up view sprouting stamen,0,Close-up view of sprouting stamen.,gemma3:latest,"Category: negative
+Common concept: The positive images all show a single, well-defined flower with a visible center and petals radiating outwards. The query image shows a blurry, indistinct blob without a clear floral structure or defined petals, therefore it does not share the same concept.",
+0057,A,negative,aerial view city,0,An aerial view of the city.,gemma3:latest,"Category: negative
+Common concept: The image predominantly features a vast, empty, gray cityscape with a single, prominent skyscraper dominating the skyline. The negative examples share similar characteristics—a very bleak, desolate urban scene, almost entirely devoid of human activity and with a single, imposing building. The query image also embodies this desolate cityscape characteristic.",
+0057,B,negative,aerial view city,0,An aerial view of the city.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict urban landscapes with towering, modern skyscrapers, a characteristic of futuristic city skylines. The query image, showing a rural farm with a barn and fields, contrasts sharply with this futuristic urban theme.",
+0572,A,negative,passenger trains,0,Passenger trains.,gemma3:latest,"Category: negative
+Common concept: The images predominantly feature scenes with clear blue skies and white clouds, suggesting a sunny weather condition. The negative examples lack this clear sky and cloud coverage, depicting overcast or cloudy conditions.",
+0572,B,negative,passenger trains,0,Passenger trains.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with clear, bright blue skies and white clouds, while the negative examples show scenes with overcast or cloudy skies, or scenes lacking bright blue skies. The query image also shows a cloudy sky.",
+0062,A,negative,bunch vibrant flowers,0,A bunch of vibrant flowers.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict images of people smiling and happy, while the negative examples show images of sad or unhappy people. The query image depicts a sad person.",
+0062,B,positive,bunch vibrant flowers,0,A bunch of vibrant flowers.,gemma3:latest,"Category: positive
+Common concept: Images of flowers, specifically roses, in a studio setting with a plain background. The positive examples all feature a single rose, a simple backdrop, and a focus on the flower's detail.",
+0579,A,negative,foxes roaming prairie,0,Foxes roaming on the prairie.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a gray/white dog with a pink tongue, while the negative examples do not. The query image does not show a dog with a pink tongue.",
+0579,B,negative,foxes roaming prairie,0,Foxes roaming on the prairie.,gemma3:latest,"Category: negative
+Common concept: The positive examples all have a dark head and body, and a lighter belly. The query image has a light head and body, therefore it is a negative example.",
+0580,A,negative,wedding photos bride and groom,5,Wedding photos of the bride and groom.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict outdoor scenes with people in white clothing, specifically dresses or shirts, suggesting a summer or beach-related context. The negative examples feature various indoor settings with people in different colored clothing, indicating a lack of this specific summer/beach theme.",
+0580,B,negative,wedding photos bride and groom,5,Wedding photos of the bride and groom.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a group of people in a formal setting, often wearing suits and ties, suggesting a business or professional context. The negative examples deviate from this, showing various unrelated scenes – a single person, a chaotic room, and a landscape, lacking the formal group dynamic. The query image similarly depicts a single person in a casual setting, not a group.",
+0584,A,positive,christmas illustration,0,Christmas illustration.,gemma3:latest,"Category: positive
+Common concept: The images all depict a beach scene with a person in a swimsuit, suggesting a sunny beach vacation.",
+0584,B,negative,christmas illustration,0,Christmas illustration.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person wearing a red coat, suggesting a winter or cold-weather context. The bottom image does not show any person wearing a red coat, thus it is negative.",
+0588,A,positive,dirt path winding dense forest,0,A dirt path winding through the dense forest.,gemma3:latest,"Category: positive
+Common concept: The common concept is a pathway leading into a dense forest, emphasizing a sense of exploration and journey. The positive examples all feature clear, well-defined paths winding into a deep, verdant forest, while the negative examples lack these path elements or have them obscured, chaotic, or incomplete.",
+0588,B,negative,dirt path winding dense forest,0,A dirt path winding through the dense forest.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with a strong sense of depth and atmospheric perspective – specifically, a distant, hazy mountain range receding into the distance. The negative examples lack this depth, often appearing flat and lacking a convincing sense of distance. The query image also lacks this atmospheric depth and perspective.",
+0078,A,negative,backlit photo couple,0,Backlit photo couple.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person standing in a somewhat posed, deliberate manner – a feeling of intention and awareness.  The query image shows a person standing in a blurry, indistinct way, lacking this sense of intentionality and focus.",
+0078,B,negative,backlit photo couple,0,Backlit photo couple.,gemma3:latest,"Category: negative
+Common concept: The image contains a blurry, undefined background with a single, dark figure (likely a person) sitting on a bench. The lack of clarity and the solitary figure contribute to a feeling of isolation and uncertainty, distinguishing it from the clear, defined scenes of the positive examples.",
+0080,A,negative,closeup cat,0,A closeup view of cat.,gemma3:latest,"Category: negative
+Common concept: The negative images all feature a blurry, out-of-focus object, creating a sense of unease and uncertainty. The query image similarly shows a blurry, out-of-focus object, replicating the negative example's characteristic.",
+0080,B,negative,closeup cat,0,A closeup view of cat.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a brightly lit, modern living room scene with a person reading a book on a sofa. The query image also has a person sitting on a sofa in a brightly lit room, indicating the shared concept of a person reading in a modern living room setting.",
+0091,A,negative,red bows,0,Red bows.,gemma3:latest,"Category: negative
+Common concept: The images in the top row show a person wearing a suit jacket, specifically a blazer. The bottom image shows a person wearing a shirt, without a jacket.",
+0091,B,negative,red bows,0,Red bows.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all feature a person wearing a suit jacket. The bottom image shows a person wearing a shirt, but no jacket.",
+0094,A,positive,tennis racket or court,5,Tennis racket or court.,gemma3:latest,"Category: positive
+Common concept: The images all depict a person playing a sport, specifically tennis, with a ball and a racket. The positive examples show a clear action of hitting the ball, while the negative examples depict scenes that don’t involve this action or the equipment.",
+0094,B,negative,tennis racket or court,5,Tennis racket or court.,gemma3:latest,"Category: negative
+Common concept: All images except the bottom one depict a basketball player dribbling the ball. The bottom image shows a tennis court with a tennis ball, indicating a different sport.",
+0095,A,positive,man training gym,0,A man is training at the gym.,gemma3:latest,"Category: positive
+Common concept: The images predominantly feature a person standing with their arms bent at the elbows and hands supporting their body weight, resembling a push-up position. The positive examples show people actively performing this movement, while the negative examples depict various other postures or activities.",
+0095,B,positive,man training gym,0,A man is training at the gym.,gemma3:latest,"Category: positive
+Common concept: The positive examples all depict individuals actively lifting weights, specifically barbells, with a focused and determined expression. The negative examples show various scenes without this activity – people walking, sitting, or in other non-lifting scenarios. The query image is a positive example showing a person lifting a barbell.",
+0606,A,negative,rusted iron fence,9,A rusted iron fence.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict scenes of vibrant, colorful, and playful outdoor settings, primarily featuring children engaging in activities like playing on swings, slides, and in sandboxes. The negative images show scenes that are drab, monochromatic, or lack any signs of playfulness or vibrancy. The query image continues this trend, showing a gray, empty playground.",
+0606,B,negative,rusted iron fence,9,A rusted iron fence.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict outdoor scenes with vibrant colors and clear, crisp visibility, representing a joyful and optimistic feeling. The negative examples consist of blurry, dark, and indistinct images, conveying a sense of gloom and confusion. The query image also shows a blurry, dark and indistinct image, therefore is negative.",
+0098,A,negative,woman red dress dancing,0,A woman in a red dress is dancing.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a person standing with their arms outstretched, with a relaxed posture and open expression. The negative examples show a person standing with their arms crossed, tense posture, or a closed/serious expression. The query image also shows a person standing with their arms crossed, tense posture - thus, it is a negative example.",
+0098,B,negative,woman red dress dancing,0,A woman in a red dress is dancing.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a red dress worn by a woman, while the negative examples show various other clothing items and scenes, with no red dress or a woman wearing a dress.",
+0612,A,negative,red flamingo standing shallow water,0,A red flamingo standing in shallow water.,gemma3:latest,"Category: negative
+Common concept: The positive images depict animals with a prominent, elongated snout and a wet, dark nose. The negative images lack this characteristic snout and wet nose. The query image also lacks this feature, therefore it is a negative example.",
+0612,B,negative,red flamingo standing shallow water,0,A red flamingo standing in shallow water.,gemma3:latest,"Category: negative
+Common concept: The positive images all contain a single, brightly colored, stylized flamingo with a vibrant pink body and a long, curved neck. The negative images lack this specific flamingo depiction, showing various other objects and scenes, including a landscape, a building, and a cityscape, effectively excluding the core concept of the flamingo.",
+0104,A,negative,man playing drum kit,0,A man playing the drum kit.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a person playing a musical instrument (guitar) indoors, with good lighting and a focused expression. The negative examples lack these features – they show people in various settings (outdoors, crowded places), with unclear lighting, and without a clear musical focus. The query image depicts a person playing a guitar outdoors, which matches the negative examples in terms of setting and lack of focus.",
+0104,B,negative,man playing drum kit,0,A man playing the drum kit.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person playing a musical instrument (guitar, violin, piano) in a studio setting with a simple background, suggesting a focus on musical performance. The bottom image, however, is a landscape scene with a cloudy sky and mountains, lacking any musical instrument or performance element.",
+0617,A,positive,girl long curly hair,9,A girl with long curly hair.,gemma3:latest,"Category: positive
+Common concept: A young girl smiling and looking at the camera.",
+0617,B,positive,girl long curly hair,9,A girl with long curly hair.,gemma3:latest,"Category: positive
+Common concept: **Smiling faces** - All the positive images feature people with clear, genuine smiles. The negative images, conversely, depict faces that appear neutral, sad, or otherwise lacking a smile.",
+0620,A,positive,man jumping high dunk basketball,0,A man jumping high to dunk the basketball.,gemma3:latest,"Category: positive
+Common concept: The images all depict a basketball court with a person dribbling a basketball. The query image also shows a basketball court with a person dribbling a basketball.",
+0620,B,negative,man jumping high dunk basketball,0,A man jumping high to dunk the basketball.,gemma3:latest,"Category: negative
+Common concept: The images show a basketball court with a person dribbling a basketball. The query image does not show a person dribbling a basketball, it shows a basketball court with a hoop and backboard, but no one is playing.",
+0623,A,negative,lush green rice fields,0,The lush green rice fields.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a scene with a person (likely a child) holding a balloon. The negative examples all show different scenes with various subjects, but none with a person holding a balloon.",
+0623,B,negative,lush green rice fields,0,The lush green rice fields.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict images of blurry, indistinct, and low-resolution photographs, creating a sense of visual noise and confusion. The query image also exhibits this characteristic of a distorted and unclear image.",
+0112,A,positive,wooden floor living room,3,A wooden floor in the living room.,gemma3:latest,"Category: positive
+Common concept: The common concept is a minimalist, modern living room with a focus on neutral colors (gray, beige, white) and simple furniture shapes. The key features are a gray sofa, a light-colored rug, and a sleek, modern coffee table.",
+0112,B,negative,wooden floor living room,3,A wooden floor in the living room.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a bright, airy, minimalist interior design with a focus on natural light and neutral color palettes (white, beige, light gray). They all have large windows, open spaces, and a clean, uncluttered aesthetic. The query image lacks this bright, airy, minimalist style and instead has a darker, more cluttered interior with a traditional sofa and a patterned rug, contrasting with the positive examples.",
+0113,A,negative,part dolphin's body surfacing,0,Part of the dolphin's body surfacing.,gemma3:latest,"Category: negative
+Common concept: The images are all photos of people sitting on inflatable flamingos. The query image does not feature anyone sitting on a flamingo.",
+0113,B,negative,part dolphin's body surfacing,0,Part of the dolphin's body surfacing.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a person floating on their back in water, while the negative images show various other activities in water, such as swimming, playing with a ball, or sitting on a dock. The query image shows a child sitting on a dock, so it doesn't match the common concept of floating on one's back in water.",
+0116,A,negative,ladybug on green leaf,8,A ladybug on a green leaf.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a red apple with a bite taken out of it, while the negative examples show apples without bites or with different colors/shapes. The query image shows an apple with a bite, thus belonging to the positive category.",
+0116,B,negative,ladybug on green leaf,8,A ladybug on a green leaf.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a cat sitting on a mat, while the negative examples show various other objects and animals. The query image shows a dog on a mat, so it does not share this concept.",
+0117,A,positive,colorful ribbons,0,Colorful ribbons.,gemma3:latest,"Category: positive
+Common concept: Balloons",
+0117,B,positive,colorful ribbons,0,Colorful ribbons.,gemma3:latest,"Category: positive
+Common concept: Balloons in a party setting. The positive examples all feature balloons, while the negative examples depict various scenes without balloons.",
+0118,A,negative,group troops ride camels,0,A group of troops ride camels.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a bright, sunny day with clear blue skies and vibrant colors, suggesting a positive and cheerful scene. The negative examples, in contrast, show dark, stormy, and muted colors, indicating a negative and gloomy atmosphere. The query image also depicts a dark, rainy scene, confirming it shares the same negative concept.",
+0118,B,negative,group troops ride camels,0,A group of troops ride camels.,gemma3:latest,"Category: negative
+Common concept: The images are all depicting various styles of riding horses. The positive examples show people confidently riding, while the negative examples show scenes with uncertainty or lack of control, such as a horse rearing up or a rider falling. The query image shows a rider falling off a horse, thus fitting into the negative category.",
+0630,A,negative,ball bats,7,Ball bats.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person holding a basketball, while the images in the middle row show people doing other activities. The query image shows a person playing basketball, so it's a positive example.",
+0630,B,negative,ball bats,7,Ball bats.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person standing on one leg, while the images in the middle row depict people in various other poses or activities. The query image shows a person standing on two legs, so it's a negative example.",
+0120,A,negative,bridesmaid group,7,Bridesmaid group.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a sunny, clear outdoor scene with a focus on a person (likely a child) in a brightly colored outfit, typically a yellow or orange dress, enjoying a pleasant outdoor activity (e.g., playing, running, or being in a park). The negative images depict scenes lacking these characteristics – often dark, blurry, or featuring objects or scenes not related to the described concept. The query image, a blurry, dark, and nondescript scene, lacks the key elements of the positive examples.",
+0120,B,negative,bridesmaid group,7,Bridesmaid group.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict scenes with an abundance of bright, saturated colors and highly stylized, almost cartoonish, imagery. The positive examples, in contrast, feature muted tones and more realistic depictions of scenes. The query image also exhibits this characteristic—a vibrant, unrealistic style that sets it apart from the more subdued positive examples.",
+0635,A,negative,decorated with fake feathers,0,Decorated with fake feathers.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a single, vibrant red rose, while the images in the middle row do not. The query image also does not show a rose.",
+0635,B,negative,decorated with fake feathers,0,Decorated with fake feathers.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict images of cats. The negative examples depict various other animals and objects. The query image also depicts a cat.",
+0638,A,negative,snow mountain ridge,0,Snow mountain ridge.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a single, isolated, reddish-brown **bulldozer** in a gray, overcast environment. The negative examples all show a similar bulldozer but in a scene with multiple objects (e.g., other vehicles, people, buildings) and/or a different color scheme (e.g., green, blue, orange). The query image shows a bulldozer in a scene with a building and sky.
+",
+0638,B,negative,snow mountain ridge,0,Snow mountain ridge.,gemma3:latest,"Category: negative
+Common concept: The images predominantly feature a snow scene with a blurred background, suggesting a winter landscape. The negative examples have different backgrounds or distinct features (e.g., a person, a vehicle), while the query image also maintains the snowy scene with a blurred background, making it a negative example.",
+0127,A,negative,spoon full food,0,A spoon full of food.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict objects arranged in a visually symmetrical or repeating pattern, typically with rows or columns of identical items. The negative examples break these patterns, featuring objects that are not symmetrical, are arranged in a less organized manner, or have elements that disrupt the visual flow. The query image, a single strawberry, does not exhibit any of these symmetrical or patterned arrangements.",
+0127,B,negative,spoon full food,0,A spoon full of food.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict vibrant, fresh berries (strawberries, blueberries, raspberries) arranged in an aesthetically pleasing manner, often with a focus on color and texture. The negative examples contain images with ingredients that don't fit this aesthetic – primarily items like coffee, metal, and abstract shapes. The query image, featuring a coffee cup, does not contain the key visual element of fresh berries.",
+0128,A,negative,t-shirt colorful patterns,0,A t-shirt with colorful patterns.,gemma3:latest,"Category: negative
+Common concept: All images except the bottom one are images of cats.",
+0128,B,negative,t-shirt colorful patterns,0,A t-shirt with colorful patterns.,gemma3:latest,"Category: negative
+Common concept: The query image depicts a white shirt with a blue collar and sleeves. The positive examples all show shirts with a distinct, colored pattern (red, blue, green, yellow, orange, purple), while the negative examples show shirts with plain white backgrounds.",
+0640,A,negative,person holding fish river,0,These people are holding fish in the river.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a fish (specifically a goldfish) with a single bubble trailing behind it. The query image shows a fish without any bubbles.",
+0640,B,negative,person holding fish river,0,These people are holding fish in the river.,gemma3:latest,"Category: negative
+Common concept: The common concept is a single, isolated object (a goldfish) in a relatively empty space.  The negative examples all have multiple goldfish, or the goldfish are interacting with other objects (e.g., a plant, a bubble, a different fish). The query image also has multiple goldfish and they are in a complex scene.",
+0643,A,negative,japanese comic books,6,A set of Japanese comic books.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all feature a single, dominant color (red, blue, green, yellow, orange, purple) that fills most of the frame, creating a bold and impactful visual. The query image, on the other hand, has a complex and layered composition with multiple colors and subjects, lacking the simplicity and focus of the examples.",
+0643,B,positive,japanese comic books,6,A set of Japanese comic books.,gemma3:latest,"Category: positive
+Common concept: The images in the top row all depict scenes of children playing outdoors – specifically, children engaging in outdoor activities like playing in a sandbox, riding a bicycle, and splashing in a puddle. This establishes a theme of childhood joy and outdoor recreation.",
+0133,A,negative,white smoke black background,3,White smoke against black background.,gemma3:latest,"Category: Negative
+Common concept: The negative examples all depict images with strong, clear, and defined edges, often exhibiting geometric shapes or sharp lines. They lack the ambiguous, blurred, or fragmented visual qualities found in the positive examples. The query image shares this characteristic of a clear, well-defined shape, specifically a circular form.",
+0133,B,negative,white smoke black background,3,White smoke against black background.,gemma3:latest,"Category: Negative
+Common concept: The negative examples all depict a grayscale image with prominent, sharp, geometric shapes—specifically, squares and rectangles—that are heavily shadowed and have a strong sense of depth. They appear to represent architectural or structural elements, possibly buildings or parts of buildings. The query image lacks these characteristics; it’s a solid, uniform gray with no discernible shapes or shading.",
+0645,A,negative,apples hanging branches tree,0,Apples hanging on the branches of a tree.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a single apple floating on water, while the negative examples show apples in various other contexts (on a table, in a basket, etc.). The query image also shows an apple on a table, therefore it does not share the same concept.",
+0645,B,negative,apples hanging branches tree,0,Apples hanging on the branches of a tree.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a person holding a cup of coffee or tea, while the negative examples show people holding other beverages or doing unrelated activities.",
+0649,A,negative,chocolate chip cookies,2,Chocolate chip cookies.,gemma3:latest,"Category: negative
+Common concept: The negative examples all have blurry or distorted images, while the positive examples are sharp and clear. The query image also shares this blurry quality, suggesting it is a poorly processed or low-quality image.",
+0649,B,negative,chocolate chip cookies,2,Chocolate chip cookies.,gemma3:latest,"Category: negative
+Common concept: The positive images all showcase a clean, minimalist, and bright aesthetic – white backgrounds, simple shapes, and a focus on a single, clear element. The query image has a cluttered background with multiple overlapping shapes and a complex pattern, violating this aesthetic.",
+0143,A,negative,small animals can fly,4,Small animals that can fly.,gemma3:latest,"Category: negative
+Common concept: The common concept is “blue” – specifically, the presence of a blue object (the butterfly) in the image. Negative examples lack this blue element, while the positive examples have it.",
+0143,B,negative,small animals can fly,4,Small animals that can fly.,gemma3:latest,"Category: negative
+Common concept: The common concept is the presence of a clear, blue, circular shape (the eye) within a black background. The positive examples all have this, while the negative examples lack it. The query image also lacks this feature.",
+0144,A,negative,interlocking necklaces,9,Interlocking necklaces.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a person holding a bright light source (sun, lamp, etc.) pointing upwards, while the negative examples either lack this light source or have the light source directed downwards or in a different direction. The query image also lacks the light source directed upwards.",
+0144,B,negative,interlocking necklaces,9,Interlocking necklaces.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a single, solid color circle (typically blue or turquoise) with a distinct shape (often a dot or star) inside. The query image shows a translucent blue circle with a simple dot inside, lacking the solid color and distinct shape of the positive examples.",
+0655,A,negative,iron arch bridge,3,An iron arch bridge.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a bridge prominently spanning a river or waterway. The negative examples lack this key element. The query image also lacks a bridge over any water.",
+0655,B,negative,iron arch bridge,3,An iron arch bridge.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a single, tall, slender building with a prominent, vertical element extending upwards, often with a rectangular or square shape and a clear, defined edge. The negative examples deviate by having multiple buildings, different shapes, obscured views, or a lack of a strong vertical element. The query image similarly lacks a singular, dominant vertical element and features multiple buildings, making it a negative example.",
+0146,A,negative,girl holding doll,1,A girl is holding a doll.,gemma3:latest,"Category: negative
+Common concept: The positive images show a child looking directly at the camera with a neutral expression, while the negative images show children looking away or with a smile, indicating they are not engaging with the camera.",
+0146,B,negative,girl holding doll,1,A girl is holding a doll.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict children playing with a ball, while the images in the middle row depict children engaged in other activities like drawing, reading, or looking at a tablet. The query image shows a child reading a book, which is distinct from the ball-playing activity.",
+0152,A,negative,aerial view city night,0,An aerial view of the city at night.,gemma3:latest,"Category: negative
+Common concept: The images in the top row depict clear, bright, and detailed scenes, likely showcasing a well-lit cityscape or a vibrant natural landscape. The images in the middle row are blurry, dark, and feature indistinct shapes, suggesting a lack of clarity or detail – consistent with a negative example. The query image also exhibits a blurry and indistinct appearance, aligning with the negative examples.",
+0152,B,negative,aerial view city night,0,An aerial view of the city at night.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict images with a strong, clear, and realistic representation of a city skyline at night, with well-defined buildings and street lights. The query image, however, is a blurred, dark, and indistinct scene, lacking any recognizable city elements or clear lighting. Therefore, the common concept is a *realistic night city skyline*.",
+0665,A,negative,wooden wheels,3,Wooden wheels.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a simple, geometric representation of a fence or railing, often with straight lines and minimal detail. The negative examples deviate from this simple geometric style, exhibiting more complex shapes, textures, and shading, making them visually less clean and precise.",
+0665,B,positive,wooden wheels,3,Wooden wheels.,gemma3:latest,"Category: positive
+Common concept: Images of a single, isolated, floating object (boat) on a body of water (lake or river).",
+0667,A,negative,rat trap,0,A rat in a trap.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a clear, solid, light-colored background with a distinct dark, geometric shape (often a triangle or rectangle) prominently displayed. The query image has a complex, cluttered background with no identifiable geometric shape, thus it doesn't share the common concept.",
+0667,B,negative,rat trap,0,A rat in a trap.,gemma3:latest,"Category: negative
+Common concept: The query image contains a single, isolated apple. The positive examples show multiple apples, and the negative examples don't have any apples at all.",
+0157,A,negative,strawberry picking garden,0,Strawberry picking garden.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a dog sitting calmly and attentively, while the negative examples show dogs in various states of movement, excitement, or distraction (running, jumping, barking, etc.). The query image shows a dog running.",
+0157,B,negative,strawberry picking garden,0,Strawberry picking garden.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict a person holding a large, red apple, while the query image shows a person holding a small, green apple. The key difference is the color and size of the apple.",
+0158,A,negative,city bridge over river night,0,City bridge over the river at night.,gemma3:latest,"Category: negative
+Common concept: The images predominantly feature urban landscapes with prominent tall buildings, reflecting a cityscape. The query image also depicts a cityscape with tall buildings, aligning with this concept. However, the negative images showcase variations like beaches, mountains, and snowy landscapes, indicating a deviation from the core urban cityscape theme.",
+0158,B,negative,city bridge over river night,0,City bridge over the river at night.,gemma3:latest,"Category: negative
+Common concept: The image depicts a grayscale, blurred cityscape with a prominent, dark, and indistinct building silhouette. The overall tone is muted and lacks sharp details, differentiating it from the positive examples which showcase vibrant colors and defined structures.",
+0159,A,positive,old wooden house countryside,3,An old wooden house in the countryside.,gemma3:latest,"Category: positive
+Common concept: The images in the top row all feature a bright, spacious, and modern interior design with a focus on natural light and a minimal color palette (primarily white and blue). They have large windows and a sense of openness.",
+0159,B,negative,old wooden house countryside,3,An old wooden house in the countryside.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a bright, airy, and minimalist interior space with a focus on natural light and neutral color palettes. The negative examples feature cluttered, dark, and busy interior spaces with distracting elements and a lack of natural light. The query image also falls into the category of a cluttered, dark, and busy interior space, therefore it doesn't share the common concept.",
+0671,A,negative,men riding bicycle mountains,0,A man riding a bicycle in the mountains.,gemma3:latest,"Category: negative
+Common concept: The images in the positive row all feature a person wearing a helmet, suggesting a focus on safety and protection. The query image shows a person without a helmet, therefore doesn’t share this concept.",
+0671,B,negative,men riding bicycle mountains,0,A man riding a bicycle in the mountains.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict images of a person wearing a helmet while cycling, suggesting safety and protection. The negative examples show various scenarios – people without helmets, different modes of transportation, and unrelated activities – which lack this specific element. The query image shows a person wearing a helmet while riding a bicycle, so it aligns with the common concept.",
+0673,A,positive,red tiles on roof,0,Red tiles on house roof.,gemma3:latest,"Category: positive
+Common concept: A single-family house with a pitched roof, visible windows, and a porch.",
+0673,B,positive,red tiles on roof,0,Red tiles on house roof.,gemma3:latest,"Category: positive
+Common concept: A detached two-story detached house with a gable roof, a prominent front porch, and a symmetrical facade. Specifically, the positive examples all showcase this architectural style with a specific emphasis on the porch detail.",
+0165,A,positive,lighthouse by sea,0,A lighthouse by the sea.,gemma3:latest,"Category: positive
+Common concept: All images depict a serene coastal scene with a prominent lighthouse, suggesting a focus on maritime landscapes and nautical architecture.",
+0165,B,positive,lighthouse by sea,0,A lighthouse by the sea.,gemma3:latest,"Category: positive
+Common concept: The images predominantly feature a clear, blue sky with white clouds, creating a bright and airy aesthetic.",
+0681,A,negative,abandoned small wooden huts,0,Abandoned small wooden huts.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a single, large, dark gray building with a distinct, flat roof and large windows. The negative examples show buildings with varying roof shapes, colors, and window arrangements, effectively demonstrating a lack of this specific architectural style.",
+0681,B,negative,abandoned small wooden huts,0,Abandoned small wooden huts.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a predominantly dark, muted color palette with strong, defined shadows and a lack of bright, saturated colors. They evoke a sense of gloom or melancholy. The query image follows this pattern.",
+0684,A,negative,elderly person using cell phone,1,Elderly person using a cell phone.,gemma3:latest,"Category: negative
+Common concept: The image shows a person sitting on a bench with a smartphone in their hand. The positive examples all show people engaging in activities (e.g., walking, talking) while holding a smartphone, implying they are using it as part of an activity. The negative examples show people sitting on benches *without* smartphones, highlighting the absence of the core concept. The query image shows a person sitting on a bench, which lacks the smartphone element.",
+0684,B,negative,elderly person using cell phone,1,Elderly person using a cell phone.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict people smiling or appearing happy. The bottom image shows a person looking serious and contemplative, lacking the joyful expression of the other images.",
+0687,A,negative,various ditches,0,Various ditches.,gemma3:latest,"Category: negative
+Common concept: The positive images depict scenes of a boat on the water, while the negative images depict various landscapes without a boat. The query image shows a scenic view of a mountain range with clouds, lacking a boat.",
+0687,B,negative,various ditches,0,Various ditches.,gemma3:latest,"Category: negative
+Common concept: The positive images show a scene with a clear, distinct, and prominent road or path leading into the distance. The negative examples lack this clear path or road feature, appearing more blurred, chaotic, or lacking a defined direction.",
+0177,A,negative,sketch drawing,0,A sketch drawing.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict scenes with a strong, direct, and focused gaze of a subject, often looking directly at the viewer. The query image lacks this direct gaze, showing a blurred, indistinct background and a figure that doesn't maintain eye contact.",
+0177,B,negative,sketch drawing,0,A sketch drawing.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a stylized, simplified human face with a prominent, large, round eye. The negative examples have various distortions, missing features, or different shapes, effectively disrupting this core visual element. The query image also lacks a clear, defined eye and overall face structure, aligning with the negative examples.",
+0184,A,negative,fire burning forest,0,Fire burning in the forest.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a single, prominent, stylized figure (often a person) in a dynamic pose, with blurred motion suggesting movement or action, and a dramatic, painterly style with strong color contrast. The negative examples lack this specific dynamic pose and stylistic effect, presenting more static, realistic, or abstract imagery.
+",
+0184,B,positive,fire burning forest,0,Fire burning in the forest.,gemma3:latest,"Category: positive
+Common concept: The common concept is a red traffic light. All positive examples show a red traffic light, while the negative examples do not.",
+0189,A,negative,close-up view pink tulips,0,A close-up view of pink tulips.,gemma3:latest,"Category: negative
+Common concept: The positive images all contain a single, brightly colored flower (typically red or pink) in the center of the frame, with a relatively simple and uncluttered background. The negative images either lack a flower entirely, have multiple flowers, or have a complex, distracting background. The query image also contains multiple flowers and a complex background, indicating that it doesn't share the core concept of a single, prominent flower.",
+0189,B,negative,close-up view pink tulips,0,A close-up view of pink tulips.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a single, clear flower in focus against a plain background, with proper lighting. The negative examples have blurry backgrounds, multiple objects in the frame, and/or the flower is not the primary subject. The query image fits the negative category as it has a cluttered background and the flower is not in focus.",
+0703,A,negative,colorful plush rug floor,0,Colorful plush rug on the floor.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a geometric pattern consisting of overlapping circles of varying sizes, creating a visually complex and dynamic composition. The negative examples lack this specific pattern of overlapping circles. The query image does not share this pattern of overlapping circles, therefore it is a negative example.",
+0703,B,negative,colorful plush rug floor,0,Colorful plush rug on the floor.,gemma3:latest,"Category: negative
+Common concept: The positive examples all contain a strong, repeating geometric pattern, typically with interlocking shapes creating a complex, intricate design. The negative examples lack this strong, repeating geometric structure, often having simpler, less defined shapes or a more random arrangement. The query image is a simple, solid red square, lacking any repeating geometric pattern, thus it is a negative example.",
+0709,A,negative,rainbow grassland,0,A colorful rainbow over the grassland.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a brightly colored ice cream cone, specifically a strawberry ice cream cone. The middle row contains images that do not share this specific feature. The query image is a picture of a white building with a blue sky. It does not have the common feature of a brightly colored ice cream cone.",
+0709,B,positive,rainbow grassland,0,A colorful rainbow over the grassland.,gemma3:latest,"Category: positive
+Common concept: The common concept is ice cream, specifically a waffle cone with ice cream. The positive examples all depict ice cream in a waffle cone, while the negative examples do not.",
+0713,A,negative,firefighters saving forest fires,0,Firefighters saving forest fires.,gemma3:latest,"Category: negative
+Common concept: The common concept is a person standing in front of a building with a traffic cone. The positive examples all have this feature, while the negative examples do not.",
+0713,B,negative,firefighters saving forest fires,0,Firefighters saving forest fires.,gemma3:latest,"Category: negative
+Common concept: The images in the positive set all feature a large, well-defined, and symmetrical circular shape, often with a central point and radiating lines or components. The negative examples lack this key characteristic. The query image also lacks this defining circular symmetry and central point.",
+0717,A,positive,fruit illustrations,0,Fruit illustrations.,gemma3:latest,"Category: positive
+Common concept: Fruit arrangements in baskets.",
+0717,B,negative,fruit illustrations,0,Fruit illustrations.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict images of a dog wearing a Hawaiian shirt. The query image does not have this element.",
+0206,A,negative,paper umbrellas,3,Colorful paper umbrellas.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a single, vibrant, large-scale floral pattern covering a large area, typically a wall or ceiling. The negative examples lack this single, dominant floral pattern, featuring elements like faces, tables, and other scenes. The query image also shows a scene with multiple elements, lacking a unified floral pattern.",
+0206,B,negative,paper umbrellas,3,Colorful paper umbrellas.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with vibrant, saturated colors, primarily reds, oranges, and yellows, conveying a sense of energy and excitement. The negative examples are grayscale and lack this vivid color palette, creating a muted and subdued effect.",
+0718,A,negative,bouquet roses,0,A bouquet of roses.,gemma3:latest,"Category: negative
+Common concept: The positive examples show various still-life arrangements featuring fruits (apples, oranges, pears) and other objects (cups, vases) set on a table or surface. The negative examples are portraits of people, including a child and an adult. The query image is a portrait of a person.",
+0718,B,negative,bouquet roses,0,A bouquet of roses.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a single flower in a vase, while the negative examples show various arrangements of multiple flowers or other objects in vases, or without any vases at all. The query image also shows multiple flowers in a vase, therefore it is a negative example.",
+0208,A,negative,variety colorful lollipops,0,A variety of colorful lollipops.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict images of smiling faces, while the negative examples show various distorted or unhappy faces. The query image shows a neutral face, not smiling.",
+0208,B,negative,variety colorful lollipops,0,A variety of colorful lollipops.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict stylized, cartoon-like representations of animals (specifically, dogs), while the negative examples show various abstract shapes and patterns. The query image shows a cartoon style image of a dog.",
+0723,A,negative,flowers planted yard,0,Flowers planted in the yard.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a child sitting on a swing set. The negative examples lack this element. The query image does not contain a swing set, so it is a negative example.",
+0723,B,negative,flowers planted yard,0,Flowers planted in the yard.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a child engaging in outdoor activities – specifically, a child sitting at a table with art supplies. The negative examples lack this element, showing various indoor scenes without a child or art-related activity. The query image shows a child sitting at a table with art supplies, so it shares the same concept.",
+0218,A,negative,light-and-shadow diagram,0,A light-and-shadow diagram.,gemma3:latest,"Category: negative
+Common concept: The image shows a person sitting at a table in a restaurant. The positive examples all depict similar scenes of people dining at tables in restaurants, while the negative examples show scenes that deviate from this concept (e.g., people walking, a street scene, an empty table). The query image does not show a person dining at a table in a restaurant, thus it is a negative example.",
+0218,B,negative,light-and-shadow diagram,0,A light-and-shadow diagram.,gemma3:latest,"Category: negative
+Common concept: The common concept is a red triangle. All positive images contain a red triangle. The negative examples lack this feature.",
+0732,A,positive,man cuts meat cutting board,4,A man cuts meat on a cutting board.,gemma3:latest,"Category: positive
+Common concept: The images all depict a person holding a knife and chopping vegetables.",
+0732,B,negative,man cuts meat cutting board,4,A man cuts meat on a cutting board.,gemma3:latest,"Category: negative
+Common concept: The images in the positive row all depict close-up shots of fresh, vibrant green salads with various toppings and dressings. The negative examples show images of wilted, brown, or otherwise unappealing salads. The query image shows a salad that is significantly wilted and browning, lacking the fresh, vibrant appearance of the positive examples.",
+0223,A,negative,animal dolls,0,Animal dolls.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a cat sitting on a couch, while the negative examples show cats in various other poses and environments (e.g., standing, lying down, outdoors). The query image shows a cat sitting on a couch, thus it belongs to the positive category.",
+0223,B,negative,animal dolls,0,Animal dolls.,gemma3:latest,"Category: negative
+Common concept: The common concept is a picture of a dog wearing a hat. The negative examples do not have a dog or a hat.",
+0225,A,negative,tomato dishes,2,Tomato dishes.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a cat sitting in a comfortable, relaxed posture, often with a toy or blanket. The negative examples depict cats in various stressful or uncomfortable positions – stretched out awkwardly, in a box, or with a startled expression. The query image shows a cat in a tense, upright position with wide eyes, mirroring the negative examples.",
+0225,B,negative,tomato dishes,2,Tomato dishes.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a single, brightly colored, cartoon-style fruit (likely a strawberry or cherry) with a simplified, cheerful design. The negative examples feature fruits with complex patterns, shading, and a more realistic style, deviating from this simple, stylized depiction. The query image also features a realistic, shaded strawberry, therefore it belongs to the negative category.",
+0226,A,negative,forklift working,0,A forklift is working.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a forklift moving a large, rectangular object (presumably a pallet of goods) across a concrete floor. The negative examples all show either a forklift moving an object on a different surface (grass, sand, or a brightly colored floor) or with the object being significantly different in shape or size (e.g., a single box or an oddly shaped object). The query image shows a forklift moving a large, rectangular object across a concrete floor, thus it does *not* fit the negative concept.",
+0226,B,negative,forklift working,0,A forklift is working.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a forklift with a load securely attached to its forks. The query image shows a forklift with no load attached to its forks.",
+0738,A,negative,seal lounging penguin colony,0,A seal lounging in the penguin colony.,gemma3:latest,"Category: negative
+Common concept: The positive examples all have a prominent, large, and brightly colored (typically red or pink) sphere in the center of the image. The query image does not have this feature.",
+0738,B,negative,seal lounging penguin colony,0,A seal lounging in the penguin colony.,gemma3:latest,"Category: negative
+Common concept: The negative examples all contain a blurred or distorted version of a dog face, while the positive examples have a clear and recognizable dog face.",
+0228,A,positive,wooden cross,3,Wooden cross.,gemma3:latest,"Category: positive
+Common concept: The common concept is ""wooden chair"" or ""chair with a back"". All positive examples depict a chair with a distinct back support, while the negative examples lack this feature or have a significantly different structure.",
+0228,B,negative,wooden cross,3,Wooden cross.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a single, upright wooden chair, while the negative examples feature multiple chairs, chairs with people sitting on them, or chairs in different orientations. The query image also shows multiple chairs.",
+0739,A,negative,bunch flowers yellow stamens,3,A bunch of flowers with yellow stamens.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a vase with a single flower, while the negative images all show vases with multiple flowers or no flowers at all.",
+0739,B,negative,bunch flowers yellow stamens,3,A bunch of flowers with yellow stamens.,gemma3:latest,"Category: negative
+Common concept: The images show a table setting with a vase of flowers. The query image lacks this setting, specifically the vase and the arrangement of flowers, which are present in the positive examples.",
+0745,A,negative,cartoon unicorn,0,Cartoon unicorn.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict images of cats with closed eyes, while the query image shows a cat with open eyes.",
+0745,B,negative,cartoon unicorn,0,Cartoon unicorn.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict images of cats, while the negative examples depict images of dogs. The query image is a dog.",
+0748,A,positive,wheelbarrow in grass,0,A wheelbarrow in the grass.,gemma3:latest,"Category: positive
+Common concept: Construction equipment (specifically, excavators and bulldozers) operating on a construction site. The images show various pieces of heavy machinery in the context of a building project.",
+0748,B,positive,wheelbarrow in grass,0,A wheelbarrow in the grass.,gemma3:latest,"Category: positive
+Common concept: Images depicting a wheelbarrow, specifically those showcasing its use or presence as a utilitarian tool.",
+0241,A,negative,painting spooky human head,0,A painting of a spooky human head.,gemma3:latest,"Category: negative
+Common concept: The common concept is a large, brightly colored, stylized eye surrounded by a solid, dark background. The positive examples all have this, while the negative examples lack the prominent eye and background.",
+0241,B,negative,painting spooky human head,0,A painting of a spooky human head.,gemma3:latest,"Category: negative
+Common concept: The common concept is the presence of a single, distinct, brightly colored flower (typically red or pink) in the center of the image, with a focus on the flower's details and a blurred background. The negative examples lack this flower, or have a flower that is less prominent or differently colored.",
+0753,A,negative,animals running,4,Animals are running.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a person running on a track, while the negative examples show various scenes with no runners. The query image is a picture of a person running.",
+0753,B,negative,animals running,4,Animals are running.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a running athlete with a distinctive bright colored tracksuit, while the images in the middle row do not. The query image also does not show an athlete in a tracksuit.",
+0755,A,positive,seagull walking beach,0,A seagull walking on the beach.,gemma3:latest,"Category: positive
+Common concept: The positive images all depict a white bird (likely a swan) standing in water, with reflections visible on the surface of the water. The negative examples show variations of this scene, such as different backgrounds, different animals, or altered reflections.",
+0755,B,negative,seagull walking beach,0,A seagull walking on the beach.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show images of a gray cat, while the negative examples show a gray cat with a red collar. The query image shows a gray cat with a red collar.",
+0757,A,negative,animals in meadow,0,Animals in the meadow.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show images of a fluffy, white animal (presumably a sheep) with a prominent, dark patch around its eye. The negative examples lack this eye patch. The query image also lacks this eye patch.",
+0757,B,negative,animals in meadow,0,Animals in the meadow.,gemma3:latest,"Category: negative
+Common concept: The positive examples all contain a distinct, bright, circular shape (likely a star) within a dark background. The negative examples lack this star shape. The query image also lacks this star shape.",
+0247,A,negative,small river filled reeds,0,Small river filled with reeds.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a single, weathered wooden dock extending into the water. The negative examples lack this dock or have a significantly different scene.",
+0247,B,negative,small river filled reeds,0,Small river filled with reeds.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a wooden dock or pier extending into a body of water (lake or river). The negative examples do not show this feature. The query image also lacks a dock or pier.",
+0761,A,negative,multi layer cake,0,Multi layer cake.,gemma3:latest,"Category: Negative
+Common concept: The negative examples all feature a blurred or out-of-focus image, while the positive examples are sharply focused and clear. The query image also contains a blurred and unfocused image.",
+0761,B,negative,multi layer cake,0,Multi layer cake.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a cake with a vibrant, swirling, colorful frosting pattern (like rainbow or marble), while the negative examples show cakes with simple, solid-colored frosting, typically white or vanilla. The query image has a plain, solid white frosting, which is a characteristic of the negative examples.",
+0252,A,negative,horses on grassland,0,Horses on the grassland.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a person riding a horse. The negative examples show various unrelated scenes – a landscape, an indoor shot of a person, and an abstract image. The query image is a landscape, therefore it does not share the common concept of a person riding a horse.",
+0252,B,negative,horses on grassland,0,Horses on the grassland.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a person riding a bicycle, while the negative examples show various other activities and objects. The query image shows a person standing with a surfboard, which does not fit the theme of bicycle riding.",
+0764,A,negative,dim light lamp,0,The dim light of a lamp.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a single, bright light source illuminating a dark space, creating a strong contrast and highlighting a particular object or area. The negative examples depict scenarios lacking this strong illumination, often with multiple light sources, dim lighting, or no discernible light source. The query image shows a dark room with a single, subdued light source, therefore it is a negative example.",
+0764,B,negative,dim light lamp,0,The dim light of a lamp.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a scene with a single chair and a lamp. The negative examples have additional elements that disrupt this simple composition – for instance, multiple chairs, people, or different lighting arrangements. The query image also contains multiple chairs and a person, therefore it is a negative example.",
+0766,A,positive,non-array patterns,5,Non-array patterns.,gemma3:latest,"Category: positive
+Common concept: The positive examples all depict a single, isolated, vibrant red square against a predominantly white background. The key feature is the sharp, distinct boundary between the red square and the white space.  The negative examples all share similar layouts but with additional elements disrupting this isolated square, like multiple squares, distorted shapes, or color variations.",
+0766,B,positive,non-array patterns,5,Non-array patterns.,gemma3:latest,"Category: positive
+Common concept: The common concept is a fluffy, rounded, and blob-like object with a soft, undefined shape. The positive examples all feature this characteristic, while the negative examples lack this defining feature.",
+0769,A,negative,silhouette tree branches,0,A silhouette of tree branches.,gemma3:latest,"Category: negative
+Common concept: The image depicts a lone, dark figure standing against a brightly colored, chaotic cityscape at night. The negative examples share the characteristic of a dark figure juxtaposed with a vibrant, overwhelming urban scene. The query image fits this pattern.",
+0769,B,negative,silhouette tree branches,0,A silhouette of tree branches.,gemma3:latest,"Category: negative
+Common concept: The image depicts a scene with a person skateboarding, suggesting a dynamic activity and movement. The negative examples show static or unrelated scenes, lacking this sense of movement and activity.",
+0780,A,negative,portrait female,0,A portrait of a beautiful female.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict people sitting on benches outdoors. The query image does not contain this element.",
+0780,B,positive,portrait female,0,A portrait of a beautiful female.,gemma3:latest,"Category: positive
+Common concept: The common concept is **road scenes with cyclists**. All the positive images depict cyclists on roads, while the negative images show various scenes without cyclists. The query image also shows a cyclist on a road.",
+0272,A,negative,dried curly leaves ground,0,Dried curly leaves on the ground.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a large, bright, and open flower arrangement, typically with a lot of greenery and a sense of freshness and beauty. The negative examples all feature dark, cluttered, and muted images – often depicting shadows, reflections, or indoor scenes that lack the vibrancy and openness of the positive images. The query image is a dark, blurry image of a reflection, lacking the open, bright floral arrangement.",
+0272,B,negative,dried curly leaves ground,0,Dried curly leaves on the ground.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a red rose in a vase, while the negative images depict various other floral arrangements, objects, and scenes, lacking the specific red rose in a vase.",
+0274,A,negative,lighting candles birthday cake,0,Lighting candles on a birthday cake.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a scene with a person sitting at a table, reading a book. The negative examples feature objects or scenes that deviate from this concept, such as a bird, a chair, and a table with a clock. The query image is a similar scene with a clock, indicating that it shares the same concept as the positive examples.",
+0274,B,negative,lighting candles birthday cake,0,Lighting candles on a birthday cake.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person sitting at a desk, presumably studying or working. The middle row contains images where this is not the case – they show various scenes like a beach, a landscape, an abstract pattern, and a chaotic arrangement of objects. The query image depicts a chaotic and abstract arrangement of objects, mirroring the negative examples.",
+0786,A,positive,colorful heart shaped stone,0,A colorful heart shaped stone.,gemma3:latest,"Category: positive
+Common concept: The images share the concept of a person holding a bong (glass pipe) in a relaxed, casual setting, often outdoors.",
+0786,B,positive,colorful heart shaped stone,0,A colorful heart shaped stone.,gemma3:latest,"Category: positive
+Common concept: The images share the concept of a person with a partially visible face and a large, dark, circular eye. The positive examples show faces with prominent, dark circles around the eyes, while the negative examples lack this feature. The query image also has a face with a dark circle around the eye.",
+0787,A,negative,closeup cat head,0,Closeup of a cat head.,gemma3:latest,"Category: negative
+Common concept: The common concept is the presence of a tabby pattern on the cat. The negative examples all have tabby patterns, while the query image does not.",
+0787,B,negative,closeup cat head,0,Closeup of a cat head.,gemma3:latest,"Category: negative
+Common concept: The positive examples all contain a single, well-defined gray circle (representing a cat), while the negative examples contain multiple, overlapping, or differently shaped gray circles (representing cats). The query image also contains multiple gray circles.",
+0789,A,negative,palm tree leaves,0,A palm tree with large leaves swaying in the wind.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a road or path with vehicles, while the negative examples are simply outdoor scenes without any road or vehicular presence.",
+0789,B,negative,palm tree leaves,0,A palm tree with large leaves swaying in the wind.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a lush, green, and vibrant park scene with trees, grass, and a clear blue sky. The negative examples all depict scenes with muted colors, often overcast skies, and lack the vibrancy and dense vegetation of the positive examples. The query image shows a similarly muted, overcast scene with a gray sky and a gray road, lacking the bright green vegetation of the positive images.",
+0282,A,positive,rear tricycle,0,A rear tricycle.,gemma3:latest,"Category: positive
+Common concept: The positive images all depict a bicycle with a basket on the front, usually carrying flowers.",
+0282,B,negative,rear tricycle,0,A rear tricycle.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a person riding a bicycle, while the negative images show various other activities or objects.",
+0283,A,negative,flags floating flagpole,0,Flags floating on a flagpole.,gemma3:latest,"Category: negative
+Common concept: The positive examples show images of a calm, serene blue sky with clouds, representing a feeling of peace and tranquility. The negative examples have elements disrupting this feeling, such as dark clouds, rain, and a stormy atmosphere. The query image is a stormy sky with dark clouds, mirroring the negative examples.",
+0283,B,negative,flags floating flagpole,0,Flags floating on a flagpole.,gemma3:latest,"Category: negative
+Common concept: The positive images all show a person standing with their arms outstretched, suggesting a sense of freedom, joy, or reaching for something. The negative images show people in various confined or uncomfortable postures, indicating a lack of this freedom or joy. The query image shows a person sitting, which is the opposite.",
+0284,A,negative,horses galloping forest,0,Horses are galloping in the forest.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a forest scene with trees, while the negative examples show various indoor or urban settings like a living room, a street, and a bedroom. The query image also shows an indoor scene with a couch and a window, thus fitting into the negative category.",
+0284,B,negative,horses galloping forest,0,Horses are galloping in the forest.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a sunny, bright, and clear outdoor scene with a prominent sky. The negative examples feature darker, overcast, or blurred backgrounds. The query image shows a very dark, rainy, and blurred scene, therefore it doesn’t match the concept.",
+0796,A,negative,woman smoking cigarette,0,A woman smoking a cigarette.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a person holding a glass of wine, while the negative examples feature items typically associated with a bar or drinking establishment – a glass, a bottle, a beer mug – but without a person holding it. The query image also shows a glass of wine, similar to the positive examples, but there’s no person present.",
+0796,B,negative,woman smoking cigarette,0,A woman smoking a cigarette.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict scenes with a blurry, out-of-focus effect, suggesting a lack of clarity or sharpness. The query image is also blurry and out of focus, sharing this characteristic.",
+0798,A,positive,english root word forg,0,English root word for forg.,gemma3:latest,"Here’s an analysis of the image:
+
+Category: Positive
+Common concept: The image demonstrates different types of animals (dog, cat, bird, fish, rabbit, pig) – representing diverse life forms.
+",
+0798,B,negative,english root word forg,0,English root word for forg.,gemma3:latest,"Category: Negative
+Common concept: The images in the top row all depict animals engaged in playful activities (e.g., rolling, chasing, splashing). The middle row shows animals in sedentary or neutral poses, lacking this activity. The bottom image (query) shows a single cat sitting and staring, it doesn't match any of the active behaviors.",
+0799,A,negative,mushrooms on green meadow,0,Mushrooms on the green meadow.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a clear, bright white circle dominating the image, while the negative examples lack this prominent white circle. The query image also lacks this primary white circle.",
+0799,B,negative,mushrooms on green meadow,0,Mushrooms on the green meadow.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict images of a golden retriever dog, while the negative examples show various other animals and objects, creating a clear distinction between the desired animal and other visuals.",
+0801,A,negative,baseball athletes field,0,Baseball athletes on the field.,gemma3:latest,"Category: negative
+Common concept: The images show a person running, specifically a runner in motion. The positive examples all depict runners in various poses and environments (track, street, etc.), while the negative examples show images of people doing entirely different activities such as sitting, reading, or driving, lacking any resemblance to running. The query image also shows a person running.",
+0801,B,negative,baseball athletes field,0,Baseball athletes on the field.,gemma3:latest,"Category: negative
+Common concept: The images predominantly feature people in outdoor settings, engaged in activities like running, jumping, or sports. The negative examples show people indoors, performing sedentary activities, or in unnatural poses. The query image depicts a person running on a track, aligning with the common concept of outdoor athletic activity.",
+0291,A,positive,cabinets kitchen room,0,Cabinets in the kitchen room.,gemma3:latest,"Category: positive
+Common concept: The images predominantly feature a bright, clean, and modern kitchen setting with a focus on stainless steel appliances and countertops. The color palette is neutral with pops of white and gray, creating a minimalist and contemporary feel.",
+0291,B,positive,cabinets kitchen room,0,Cabinets in the kitchen room.,gemma3:latest,"Category: positive
+Common concept: The common concept is a simple, modern kitchen with white cabinets, a white countertop, and stainless steel appliances. The lighting is bright and the overall style is clean and minimalist.",
+0293,A,negative,motorcycles parked on street,0,Motorcycles parked on the empty street.,gemma3:latest,"Category: negative
+Common concept: The images in the top row depict brightly colored, modern houses with flat roofs and minimalist designs, often featuring large windows and clean lines. The middle row contains images that deviate from this aesthetic, including images of older houses, rural landscapes, and urban scenes. The query image is a photograph of a brick building with a relatively simple, rectangular shape and a traditional roof, which does not match the style of the positive examples.",
+0293,B,positive,motorcycles parked on street,0,Motorcycles parked on the empty street.,gemma3:latest,"Category: positive
+Common concept: The images all depict a person wearing a red hat, likely a baseball cap, indoors.",
+0806,A,negative,yellow daffodils,0,Yellow daffodils.,gemma3:latest,"Category: negative
+Common concept: The positive images all show a person wearing a red/orange/pink top and a white/grey pants, while the negative images show a person wearing a blue/black/grey top and a white/grey pants.",
+0806,B,negative,yellow daffodils,0,Yellow daffodils.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a single, well-defined object – a white flower (likely a lily or similar) against a plain, neutral background.  The query image shows a blurry, out-of-focus object that doesn't meet this criteria. It lacks sharpness, detail, and a clear subject, distinguishing it from the sharp, well-defined flowers in the positive examples.",
+0810,A,negative,mountains range under clouds sky,0,Mountains range under clouds sky.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a person in a suit, standing in a business-like pose, often with a serious or neutral expression. The query image doesn’t contain this specific depiction.",
+0810,B,positive,mountains range under clouds sky,0,Mountains range under clouds sky.,gemma3:latest,"Category: positive
+Common concept: The positive images all depict a clear, bright blue sky with fluffy white clouds, conveying a sense of open space and pleasant weather. The negative images lack this characteristic.",
+0299,A,positive,aerial view houses,0,Aerial view of houses.,gemma3:latest,"Category: positive
+Common concept: The image depicts a clear, bright, and detailed scene of a spherical object (likely a planet) against a dark, starry background. The positive examples share this characteristic of a well-defined, illuminated sphere. The negative examples all feature blurry, indistinct, or completely absent spheres.",
+0299,B,positive,aerial view houses,0,Aerial view of houses.,gemma3:latest,"Category: positive
+Common concept: The images predominantly feature clear, bright skies with scattered, fluffy white clouds, suggesting a pleasant and sunny day. The negative images lack this quality, showing stormy, dark, or overcast skies.",
+0300,A,negative,stack pine cones,0,A stack of pine cones.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict clear, bright, and spacious indoor environments. The negative examples show cluttered, dark, and cramped indoor spaces. The query image shows a cluttered indoor space, matching the negative examples.",
+0300,B,negative,stack pine cones,0,A stack of pine cones.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a single, whole plate with a single, visible food item on it (e.g., apple, banana, etc.). The negative examples show plates with multiple food items, overlapping food items, or a lack of a clear, single food item. The query image shows a plate with multiple food items, matching the negative examples.",
+0811,A,negative,logo top company's headquarters building,0,The logo on top of the company's headquarters building.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person sitting at a desk with a computer, suggesting a typical office work environment. The middle row shows images that don't feature this specific scenario – they represent diverse activities and settings. The query image also shows a person at a desk with a computer, aligning with the concept of office work, therefore it is a negative example.",
+0811,B,negative,logo top company's headquarters building,0,The logo on top of the company's headquarters building.,gemma3:latest,"Category: negative
+Common concept: The image showcases a blurred, out-of-focus cityscape. The negative examples all share this characteristic – a lack of sharp detail and definition, creating a hazy or indistinct impression of urban structures. The query image is also blurred, consistent with the established pattern.",
+0813,A,positive,aerial view city centre,0,Aerial view of the city centre.,gemma3:latest,"Category: positive
+Common concept: The images share the concept of **urban landscapes with dense building clusters and street networks**, suggesting a city environment. The positive images show relatively orderly and structured city layouts, while the negative images depict chaotic and disorganized scenes, such as beaches, forests, and open fields, lacking the characteristic urban elements.",
+0813,B,negative,aerial view city centre,0,Aerial view of the city centre.,gemma3:latest,"Category: negative
+Common concept: The positive images depict urban scenes with visible street grids and buildings, indicating a structured, developed cityscape. The negative images show landscapes lacking these urban elements – they are primarily natural scenes like mountains, forests, and deserts, lacking any organized street patterns or buildings. The query image is a vast, open desert landscape, lacking any signs of urban development.",
+0815,A,negative,orchestra performing symphony concert,0,An orchestra performing a symphony concert.,gemma3:latest,"Category: negative
+Common concept: The positive images depict a concert hall with a large audience, indicating a performance or event taking place. The query image shows an empty stage with a single piano, lacking any audience or performance element, thus representing the absence of the concert hall concept.",
+0815,B,negative,orchestra performing symphony concert,0,An orchestra performing a symphony concert.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a concert setting with a prominent orchestra on stage, featuring a full ensemble of musicians performing. The bottom image lacks this key element – there's no orchestra or musical performance visible.",
+0306,A,negative,wooden pier by river,0,A wooden pier by the calm river.,gemma3:latest,"Category: negative
+Common concept: The images predominantly feature water reflections of cityscapes at night, characterized by bright, artificial light sources (neon signs, buildings illuminated at night) creating a reflective surface. The query image shares this characteristic.",
+0306,B,negative,wooden pier by river,0,A wooden pier by the calm river.,gemma3:latest,"Category: negative
+Common concept: The common concept is a blurry, indistinct scene with a grey or muted color palette, lacking sharp details and a sense of depth. The positive examples are all crisp, well-defined scenes with bright colors and clear details, while the negative examples exhibit a loss of focus and texture, creating a hazy or indistinct appearance. The query image also falls into this category, sharing the same blurry and indistinct characteristics as the negative examples.",
+0820,A,positive,colorful city night scene,0,A colorful city night scene.,gemma3:latest,"Category: positive
+Common concept: The common concept is a vibrant, futuristic cityscape with a focus on neon lights and geometric shapes, suggesting a technologically advanced and visually stimulating urban environment.",
+0820,B,negative,colorful city night scene,0,A colorful city night scene.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a predominantly dark color palette (black, gray, and dark blue), with a sparse distribution of bright, saturated colors (primarily red and yellow) that appear as isolated accents or small areas. The query image also shares this dark, muted color scheme with scattered bright accents, indicating it belongs to the same category of images.",
+0310,A,negative,bridge across river,0,A bridge across a river.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a predominantly gray or muted color palette, with dull, overcast skies and a lack of vibrant colors or textures. They also depict scenes lacking any obvious sign of life or activity – no people, animals, or lush greenery. The query image also shares this characteristic of a drab, colorless, and lifeless scene.",
+0310,B,negative,bridge across river,0,A bridge across a river.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict scenes with very sparse vegetation, dominated by bare rock or concrete, lacking any significant green foliage. The query image also follows this pattern, showing a barren, rocky landscape with no trees or grass.",
+0829,A,positive,oven kitchen,0,An oven in the kitchen.,gemma3:latest,"Category: positive
+Common concept: The images all depict various types of bread (rolls, sliced loaf, croissants, etc.)
+",
+0829,B,negative,oven kitchen,0,An oven in the kitchen.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict kitchen scenes with prominently displayed, gleaming stainless steel appliances – specifically refrigerators and ranges. The negative examples contain kitchen scenes that lack this key feature, or have appliances of different materials (wood, ceramic, etc.). The query image also lacks the prominent stainless steel appliances.",
+0328,A,negative,small baby crawling floor,0,A small baby crawling on the floor.,gemma3:latest,"Category: negative
+Common concept: The query image shows a room with a white wall and a chair, which is a typical indoor setting. The positive examples all depict children playing outdoors with various toys and activities.",
+0328,B,negative,small baby crawling floor,0,A small baby crawling on the floor.,gemma3:latest,"Category: negative
+Common concept: The query image shows a ball on a grey surface, while the positive examples all feature a person (child) interacting with a ball.",
+0329,A,negative,doctor wearing stethoscope,1,Doctor wearing a stethoscope.,gemma3:latest,"Category: negative
+Common concept: The images in the positive row all depict a person wearing a surgical mask, while the negative examples do not.",
+0329,B,negative,doctor wearing stethoscope,1,Doctor wearing a stethoscope.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person wearing a face mask, while the images in the middle row do not. The query image also does not show a person wearing a face mask.",
+0330,A,negative,preschool kids,0,Preschool kids.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict children playing with colorful building blocks, while the negative examples show children engaged in other activities like reading, drawing, or playing with musical instruments. The query image shows a child drawing, so it doesn't share the common concept of building with blocks.",
+0330,B,negative,preschool kids,0,Preschool kids.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a child sitting at a table with a crayon, drawing on paper. The query image shows a child sitting in a car, which does not feature a drawing or a table with a crayon.",
+0841,A,positive,pond surrounded trees,8,A pond surrounded by trees.,gemma3:latest,"Category: positive
+Common concept: The common concept is a picture of a duck swimming in water. All the positive examples depict this scene, while the negative examples show various other subjects like cats, cars, and abstract images.",
+0841,B,positive,pond surrounded trees,8,A pond surrounded by trees.,gemma3:latest,"Category: positive
+Common concept: The common concept is a close-up shot of a yellow duck on a calm body of water, often with reflections and a natural or slightly stylized environment. The positive examples showcase this concept with variations in lighting, reflections, and surrounding elements, while the negative examples lack this specific duck-on-water composition.",
+0842,A,negative,white head seagull,0,A white head seagull.,gemma3:latest,"Category: negative
+Common concept: The common concept is the presence of a white bird with black markings. However, in the negative examples, the black markings are much more extensive and cover a larger portion of the bird's body, obscuring the white feathers. In the query image, the black markings are limited to the wings and tail, leaving a significant portion of the white feathers visible, which is the key distinguishing factor.",
+0842,B,negative,white head seagull,0,A white head seagull.,gemma3:latest,"Category: negative
+Common concept: The negative examples all have a prominent, dark-colored beak, while the positive examples do not.",
+0333,A,negative,white cranes feeding shallow water,0,White cranes feeding in the shallow water.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a white object (presumably a bird) with a dark beak, while the negative examples either lack a beak, have a completely black beak, or the beak is positioned in a way that makes it unrecognisable. The query image also has a black beak, but it is placed in a way that makes it appear as if there is no beak at all.",
+0333,B,negative,white cranes feeding shallow water,0,White cranes feeding in the shallow water.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a gray circle with a black border, while the negative examples do not have this specific shape or color combination. The query image also lacks this gray circle with a black border.",
+0848,A,negative,sun setting top mountains,8,The sun setting at the top of mountains.,gemma3:latest,"Category: negative
+Common concept: The common concept is a silhouette of a person against a sunset/horizon. The negative examples all show figures (people, animals) in silhouette, but they are not against a sunset/horizon; they are in various settings and orientations. The query image is also a silhouette of a person against a sunset/horizon, thus it is a negative example.",
+0848,B,negative,sun setting top mountains,8,The sun setting at the top of mountains.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a sunny beach scene with people enjoying the water (swimming, sunbathing, etc.), while the negative images show various landscapes and scenes with no people or water, thus lacking the central theme.",
+0849,A,positive,yard surrounding country house,0,A beautiful yard surrounding a country house.,gemma3:latest,"Category: positive
+Common concept: The common concept is a red wooden house with a porch, specifically a classic New England-style house. The positive examples all depict this house, while the negative examples show various other scenes (cityscapes, landscapes, abstract shapes, etc.) that do not feature this house.",
+0849,B,positive,yard surrounding country house,0,A beautiful yard surrounding a country house.,gemma3:latest,"Category: positive
+Common concept: The common concept is a street scene with a red telephone booth. The positive examples all depict a street with a red telephone booth, while the negative examples do not. The query image also depicts a street scene with a red telephone booth.",
+0340,A,negative,field red poppies,0,A field of red poppies.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a single, vibrant red flower (likely a rose or tulip) in a simple, elegant vase. The negative examples are characterized by a cluttered scene with multiple flowers, different colors, and a generally busy composition – disrupting the clean, focused presentation of a single flower. The query image also demonstrates this cluttered, multi-flower arrangement, thus it’s a negative example.",
+0340,B,negative,field red poppies,0,A field of red poppies.,gemma3:latest,"Category: negative
+Common concept: The images in the top row depict scenes with vibrant colors and clear visibility, representing positive or desirable outcomes. The images in the middle row have muted colors, blurred visibility, and an overall feeling of gloom or uncertainty, representing negative scenarios. The query image fits into the category of negative images as it has dark tones, blurred vision and an overall gloomy scene.",
+0341,A,negative,bamboo baskets,3,Bamboo baskets.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a person holding a shopping bag, while the negative examples feature various objects or scenes without any person holding a bag.",
+0341,B,negative,bamboo baskets,3,Bamboo baskets.,gemma3:latest,"Category: negative
+Common concept: The images in the positive row all show a person wearing a backpack. The negative examples do not share this feature.",
+0857,A,negative,handwritten notes on blackboard,9,Handwritten notes on the blackboard.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a single, whole object. The bottom row image shows a fragmented, incomplete object.",
+0857,B,negative,handwritten notes on blackboard,9,Handwritten notes on the blackboard.,gemma3:latest,"Category: negative
+Common concept: The images depict a stylized representation of a person with a hat, a prominent feature distinguishing them as a ""person with a hat"". The positive examples show individuals wearing hats, while the negative examples show various objects and scenes without this element. The query image also shows a person with a hat.",
+0858,A,negative,town surrounded by mountains,8,A town surrounded by mountains.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a sunny outdoor scene with a person on a bicycle. The negative images all depict indoor scenes, typically with a person sitting or in a room, lacking the outdoor setting and bicycle. The query image also depicts a person sitting indoors, without the bicycle or outdoor setting.",
+0858,B,positive,town surrounded by mountains,8,A town surrounded by mountains.,gemma3:latest,"Category: positive
+Common concept: The images depict scenes of a city street with cyclists riding on the road. The positive examples show cyclists on the road, while the negative examples show scenes without cyclists. The query image also shows a cyclist on a street, thus belonging to the same concept.",
+0348,A,negative,fox playing snow,0,A fox playing in the snow.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all feature a person skiing on snow, while the middle row shows images without skiers or snow. The query image shows a car parked on a street, which does not align with the skiing concept.",
+0348,B,negative,fox playing snow,0,A fox playing in the snow.,gemma3:latest,"Category: negative
+Common concept: The images are all scenes with a single person skiing. The positive examples show skiers in motion, while the negative examples show people in various stationary or less active positions. The query image depicts a person skiing, thus fitting the common concept.",
+0351,A,negative,people carrying umbrellas rainy street,0,A group of people carrying umbrellas on a rainy street.,gemma3:latest,"Category: negative
+Common concept: The images are all depicting scenes of rainy weather, but the query image shows a street scene with a person walking under an umbrella, lacking any discernible buildings or urban elements. The other images show urban scenes with rain and people under umbrellas, whereas the query image is a simpler, more isolated image.",
+0351,B,negative,people carrying umbrellas rainy street,0,A group of people carrying umbrellas on a rainy street.,gemma3:latest,"Category: negative
+Common concept: The images are all scenes depicting a street with people walking. The positive examples all show people walking on the street, while the negative examples depict various other scenarios such as a beach, a forest, and an abstract pattern. The query image shows a single person walking on a street, which aligns with the concept of people walking on the street.",
+0867,A,negative,painting woman distorted head,0,A painting of a woman with a distorted head.,gemma3:latest,"Category: negative
+Common concept: The common concept is a vase with a single flower inside. The positive examples all have a vase with a flower, while the negative examples do not.",
+0867,B,negative,painting woman distorted head,0,A painting of a woman with a distorted head.,gemma3:latest,"Category: negative
+Common concept: The common concept is a woman holding a transparent glass vase with flowers. The positive examples all show women holding transparent glass vases with flowers, while the negative examples do not.",
+0878,A,negative,stack money,0,A stack of money.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict images of a person holding a large, colourful balloon, typically red or pink. The query image does not contain any balloons or people holding balloons.",
+0878,B,negative,stack money,0,A stack of money.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show an animal (dog, cat, horse, elephant, penguin, rabbit) looking directly at the camera, while the negative examples show animals with various expressions or in different poses, making them unsuitable as visual representations of the concept.",
+0369,A,negative,doctors debugging reagents laboratory,0,Doctors debugging reagents in the laboratory.,gemma3:latest,"Category: negative
+Common concept: The common concept is a simple, geometric shape – specifically a square. The positive examples all feature squares, while the negative examples depict various other shapes, effectively excluding squares.",
+0369,B,negative,doctors debugging reagents laboratory,0,Doctors debugging reagents in the laboratory.,gemma3:latest,"Category: negative
+Common concept: The common concept is a cartoon-like rendering of a simple house. The positive examples all depict houses, while the negative examples do not.",
+0372,A,negative,soy foods,0,Soy foods,gemma3:latest,"Category: negative
+Common concept: The positive examples all show images of a greyhound dog, while the negative examples show images of other animals, objects, and scenes. The query image does not show a greyhound dog.",
+0372,B,positive,soy foods,0,Soy foods,gemma3:latest,"Category: positive
+Common concept: The images all depict a green pepper. The positive examples show peppers in various settings (e.g., on a plate, on a table), while the negative examples show objects that do not resemble peppers.",
+0376,A,negative,oil painting,0,An oil painting.,gemma3:latest,"Category: negative
+Common concept: The image shows a gray-scale photograph of a cityscape with a prominent building and what appears to be a street scene. It’s a monochrome image, lacking color, emphasizing the texture and tonal variations of the scene.  The negative examples would likely have vibrant colors and detailed scenes, while this image is deliberately muted and abstract in its lack of color.",
+0376,B,negative,oil painting,0,An oil painting.,gemma3:latest,"Category: negative
+Common concept: The image predominantly features dark, muted tones and a somber atmosphere, suggesting sadness, despair, or a lack of vibrancy. The composition focuses on shadows and muted colors, creating a feeling of melancholy.",
+0890,A,negative,old barn grassy fields,4,An old barn in the lush grassy fields.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with a clear, bright, sunny sky, while the negative examples show cloudy or overcast skies. The query image also has a cloudy sky.",
+0890,B,negative,old barn grassy fields,4,An old barn in the lush grassy fields.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a red barn, while the negative examples show various other buildings and landscapes, lacking the specific red barn element.",
+0892,A,negative,Sharpened head screws,9,Sharpened head screws.,gemma3:latest,"Category: negative
+Common concept: The images in the positive examples all depict a solid, closed shape formed by straight lines, with no gaps or holes. The query image shows a partially open, empty space, violating this concept.",
+0892,B,negative,Sharpened head screws,9,Sharpened head screws.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a single, well-defined object in a room setting, with a clear, uncluttered background and appropriate lighting. The query image shows a cluttered, poorly lit scene with multiple objects, making it visually confusing and lacking a clear focal point.",
+0381,A,negative,bent trunks in forest,9,Bent trunks in a forest.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with clear, bright skies and distinct, well-defined shapes. The negative examples share the common feature of overcast or hazy skies, and a lack of clear, defined shapes, often resulting in a dull or muted color palette. The query image also has an overcast sky and lacks a strong, defined shape, fitting the negative category.",
+0381,B,negative,bent trunks in forest,9,Bent trunks in a forest.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with a clear, bright sky and a distinct, well-defined object (e.g., a tree, a building, a person) that dominates the foreground. The negative examples lack this clarity—they are blurry, have dark skies, or feature ambiguous shapes. The query image also lacks this clarity, presenting a blurry, dark scene with indistinct shapes, fitting the negative category.",
+0895,A,positive,floral pattern center plate,0,Floral pattern in the center of the plate.,gemma3:latest,"Category: positive
+Common concept: The positive images all feature repeating floral patterns, specifically stylized flowers and leaves, arranged in concentric circles or radiating patterns. The negative examples lack this structured, repeating floral design.",
+0895,B,negative,floral pattern center plate,0,Floral pattern in the center of the plate.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict stylized, almost cartoonish representations of flowers, specifically roses. They are brightly colored and have a distinct, simplified aesthetic. The negative images lack this flower style and simplified rendering. The query image also doesn't display this style of flower.",
+0386,A,positive,gift box pink ribbon,0,A gift box with a pink ribbon.,gemma3:latest,"Category: positive
+Common concept: Pictures of a red rose in a vase.",
+0386,B,positive,gift box pink ribbon,0,A gift box with a pink ribbon.,gemma3:latest,"Category: positive
+Common concept: The images all depict a single, bright red rose in a vase, typically showcasing the flower’s beauty and elegance.",
+0906,A,negative,a dog,0,A dog.,gemma3:latest,"Category: negative
+Common concept: The images are all scenes depicting a dog walking on a sidewalk or street. The positive examples show dogs actively walking, while the negative examples show various other activities (e.g., a cat, a person sitting, a car) in similar outdoor settings. The query image is a scene with a dog sitting on a sidewalk.",
+0906,B,negative,a dog,0,A dog.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a cat sitting on a window sill, while the negative examples show cats in various other settings (e.g., playing, sleeping, outside). The query image shows a cat sitting on a window sill, matching the common concept.",
+0907,A,negative,crowds parade,0,Crowds parade.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes of vibrant, colorful celebrations or festivals, characterized by bright colors, festive decorations, and people enjoying themselves. The negative examples show various landscapes and natural scenes, lacking these celebratory elements. The query image also shows a grey and desolate landscape, aligning with the negative examples in terms of the absence of celebratory or colorful elements.",
+0907,B,negative,crowds parade,0,Crowds parade.,gemma3:latest,"Category: negative
+Common concept: The images in the top row depict a group of people wearing formal attire, specifically suits, and are posed in a structured, celebratory manner, suggesting a formal event like a parade or a gala. The middle row images contain a variety of scenes, but none share this structured, formal celebratory setting. The query image also depicts a scene with people, but it is a casual street scene, lacking the formal structure and celebratory element present in the positive examples.",
+0909,A,negative,carnival mask,0,Carnival mask.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a person wearing a hat. The negative examples do not show anyone wearing a hat.",
+0909,B,negative,carnival mask,0,Carnival mask.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a group of people (typically children) gathered together, often smiling or engaged in playful activities. The negative examples depict solitary individuals or scenes without this group dynamic. The query image also shows a solitary person.",
+0399,A,negative,closeup fingers pair hands,0,A closeup of fingers for the pair of hands.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all feature a person holding a smartphone in their hand. The query image does not show this.",
+0399,B,negative,closeup fingers pair hands,0,A closeup of fingers for the pair of hands.,gemma3:latest,"Category: negative
+Common concept: The positive examples show images of people wearing sunglasses, while the negative examples do not. The query image also does not show people wearing sunglasses.",
+0402,A,negative,u shaped logo,3,U shaped logo.,gemma3:latest,"Category: negative
+Common concept: The common concept is that all the images feature a person (or part of a person) wearing a hat. The negative examples show figures without hats, thereby excluding the shared concept.",
+0402,B,negative,u shaped logo,3,U shaped logo.,gemma3:latest,"Category: negative
+Common concept: The images in the positive rows all feature a brightly colored, geometric shape (typically a circle or square) with a solid background, conveying a sense of playfulness and simplicity, often associated with children's illustrations. The images in the negative row all have complex backgrounds and irregular shapes, lacking the simplicity and color schemes of the positive examples.",
+0919,A,positive,symbol king,0,A symbol of king.,gemma3:latest,"Category: positive
+Common concept: The common concept is images of dogs. The positive examples show dogs of different breeds and in various poses, while the negative examples do not depict dogs. The query image is a dog.",
+0919,B,positive,symbol king,0,A symbol of king.,gemma3:latest,"Category: positive
+Common concept: Images of cats wearing sunglasses.",
+0408,A,negative,doctors operate patients,0,Doctors operate on patients.,gemma3:latest,"Category: negative
+Common concept: The query image does not exhibit the presence of a large, dark, central shape resembling a bat.  The positive examples all show this specific characteristic, while the negative examples lack it.",
+0408,B,negative,doctors operate patients,0,Doctors operate on patients.,gemma3:latest,"Category: negative
+Common concept: The query image shows a zebra pattern, while the positive images depict various animal patterns like leopard, giraffe, and stripes, but not the specific zebra pattern.",
+0409,A,negative,cartoon cover mad magazine,0,The cartoon cover of mad magazine.,gemma3:latest,"Category: Negative
+Common concept: Images depicting scenes of chaos, destruction, or distress. The positive images show scenes of order, serenity, and beauty, while the negative images portray disarray and suffering.",
+0409,B,negative,cartoon cover mad magazine,0,The cartoon cover of mad magazine.,gemma3:latest,"Category: Negative
+Common concept: The images in the top two rows depict scenes of physical and emotional distress – injuries, pain, and expressions of suffering.  The bottom image shows a stylized, abstract depiction of a cityscape, with no obvious indicators of distress.",
+0920,A,negative,european map,6,European map.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a distinct, isolated color patch representing a single building or structure, lacking any surrounding context or integration with a larger scene.  The query image also exhibits this isolated color patch characteristic, indicating it shares the same feature.",
+0920,B,negative,european map,6,European map.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict continents without visible coastlines, implying they are interior landmasses rather than islands or continents with surrounding oceans. The query image also lacks coastlines, confirming the concept.",
+0411,A,negative,photos photo frames,0,Photos in photo frames.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person wearing sunglasses. The images in the middle row do not. The query image also depicts a person with sunglasses.",
+0411,B,negative,photos photo frames,0,Photos in photo frames.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict scenes with people actively engaged in sports activities - specifically, tennis. The images in the middle row show various scenes, none of which involve tennis. The query image is a landscape scene with mountains and a lake, so it doesn't share this common concept.",
+0929,A,negative,plate green vegetables table,0,A plate of green vegetables on the table.,gemma3:latest,"Category: negative
+Common concept: The images in the positive examples all feature a solid color background with a single, prominent, brightly colored object (usually a fruit or vegetable) occupying most of the frame. The negative examples share the same arrangement but feature a different colored object or a cluttered background, disrupting the simple, isolated presentation. The query image follows the same pattern, showing a red apple on a white background.",
+0929,B,negative,plate green vegetables table,0,A plate of green vegetables on the table.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show close-up images of bright green herbs (mint, basil, cilantro, parsley, etc.) on a dark surface, emphasizing their freshness and color. The negative examples all depict various food items – fruits, vegetables, and other dishes – that don’t share this focus on fresh herbs and their color.",
+0418,A,negative,herd cattle grazing pasture,0,A herd of cattle grazing on a pasture.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a clear blue sky with white fluffy clouds, while the negative examples feature dark, overcast skies or other distracting elements like buildings or foliage. The query image also shows a dark, cloudy sky.",
+0418,B,negative,herd cattle grazing pasture,0,A herd of cattle grazing on a pasture.,gemma3:latest,"Category: negative
+Common concept: The common concept is a golden retriever dog sitting on a beach with a ball in its mouth. The positive examples all show golden retrievers in similar poses on beaches with balls. The negative examples lack this specific pose and setting.",
+0419,A,negative,children's drawings,9,Children's drawings.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict images with excessive contrast and high saturation, making them visually jarring and unpleasant. The query image also follows this pattern, featuring similar high contrast and intense colors.",
+0419,B,negative,children's drawings,9,Children's drawings.,gemma3:latest,"Category: negative
+Common concept: The common concept is that all the images in the top row depict objects with clear, defined outlines and bright colors, suggesting a sense of clarity and definition. The bottom image is a blurry, indistinct image, lacking these characteristics.",
+0936,A,negative,people all wearing black clothes,0,This group of people all wearing black clothes.,gemma3:latest,"Category: negative
+Common concept: The images in the first two rows depict people posing formally, typically in business attire, and with a serious or neutral expression. The query image shows a child in casual clothes, engaging in a playful activity (swinging), and with a smiling expression, significantly deviating from the formal poses and expressions of the other images.",
+0936,B,negative,people all wearing black clothes,0,This group of people all wearing black clothes.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all feature people in formal business attire - suits, ties, and polished shoes. The query image shows a child in casual play clothes, clearly lacking this formal business attire.",
+0938,A,negative,climbers celebrating top mountain,0,Climbers celebrating at the top of a mountain.,gemma3:latest,"Category: negative
+Common concept: The images in the first row depict people smiling and engaging in cheerful activities, while the images in the middle row depict people with serious or unhappy expressions. The query image shows a person wearing a helmet and protective gear, suggesting a potentially hazardous or dangerous situation, contrasting with the positive expressions in the first row.",
+0938,B,negative,climbers celebrating top mountain,0,Climbers celebrating at the top of a mountain.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with a clear, bright, and inviting feeling – often involving bright colors, open spaces, and a sense of optimism. The negative examples, conversely, feature muted colors, cluttered scenes, and a feeling of unease or darkness. The query image fits into the negative category as it contains a dark, confined, and chaotic space.",
+0427,A,negative,girl weightlifting gym,0,A girl weightlifting at the gym.,gemma3:latest,"Category: negative
+Common concept: All the images in the top row show a person performing a bicep curl with a dumbbell. The query image does not show anyone performing a bicep curl with a dumbbell.",
+0427,B,negative,girl weightlifting gym,0,A girl weightlifting at the gym.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a person lifting a barbell, while the negative examples show various other activities, such as running, swimming, and sitting on a chair.",
+0940,A,negative,walking reindeer,7,A walking reindeer.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a gray and white cat sitting on a windowsill, while the negative examples depict various other animals, objects, and scenes. The query image depicts a cat sitting on a couch, lacking the specific setting and color scheme of the positive examples.",
+0940,B,negative,walking reindeer,7,A walking reindeer.,gemma3:latest,"Category: negative
+Common concept: The positive images all show a deer standing upright in a grassy field, while the negative images show deer in various postures (lying down, side-lying, etc.) and/or environments (urban settings, indoors, etc.).",
+0435,A,negative,models perform stage show,0,Fashion models perform a stage show.,gemma3:latest,"Category: negative
+Common concept: The positive images depict a woman in a long, flowing dress, often with a dramatic pose and a spotlight effect, suggesting a glamorous or theatrical scene. The negative images show women in various outfits, often casual or everyday wear, without any of the dramatic lighting or posing. The query image shows a woman in a casual, somewhat blurred, indoor setting, lacking any dramatic elements.",
+0435,B,negative,models perform stage show,0,Fashion models perform a stage show.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a person wearing a long, flowing, dark-colored dress with a high slit, creating a dramatic and revealing pose. The query image shows a person in a short, black dress, lacking the key characteristics of the positive examples.",
+0438,A,negative,extremely tall skyscrapers,0,Extremely tall skyscrapers.,gemma3:latest,"Category: negative
+Common concept: The positive images depict scenes with bright sunlight and clear skies, while the negative images show dark, overcast, and rainy weather conditions. The query image also depicts a dark, rainy scene with heavy clouds, aligning with the negative examples.",
+0438,B,negative,extremely tall skyscrapers,0,Extremely tall skyscrapers.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a clear, sunny daytime scene with a prominent skyscraper dominating the skyline. The negative examples feature dark, overcast skies, blurred or obscured buildings, and generally a sense of gloom or uncertainty. The query image similarly shows a dark, rainy cityscape with a hazy skyline, fitting with the negative examples.",
+0440,A,negative,wooden stairs outside house,0,Wooden stairs outside the house.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with a prominent, dark-colored wooden railing or balustrade surrounding a body of water (likely a pool or lake). The negative examples lack this railing/balustrade feature.",
+0440,B,negative,wooden stairs outside house,0,Wooden stairs outside the house.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a white, enclosed doorway or entranceway – a classic, clean, and welcoming architectural element. The negative examples lack this specific feature, exhibiting various other architectural styles and open spaces. The query image also lacks this white, enclosed doorway.",
+0443,A,positive,street corner suburban town,0,A street corner in a suburban town.,gemma3:latest,"Category: positive
+Common concept: The common concept is a **street scene with a crosswalk and traffic lights**. The positive examples all depict this, while the negative examples lack these key elements.",
+0443,B,positive,street corner suburban town,0,A street corner in a suburban town.,gemma3:latest,"Category: positive
+Common concept: The common concept is a crosswalk with pedestrians. All positive images depict pedestrians crossing a street with a marked crosswalk. The query image also features a crosswalk with pedestrians.",
+0451,A,negative,bunch purple flowers,0,A bunch of purple flowers.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict flowers, while the negative images depict objects that are not flowers. The query image also depicts a vase with flowers, so it is a negative example.",
+0451,B,negative,bunch purple flowers,0,A bunch of purple flowers.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes of people relaxing outdoors, typically in a natural setting (beach, forest, etc.) with clear blue skies. The negative examples all depict indoor scenes, often with artificial lighting and objects, and do not feature natural outdoor elements or blue skies. The query image also depicts an indoor scene with artificial lighting, lacking any natural outdoor elements.",
+0963,A,negative,statue Jesus hanging on cross,6,A statue of Jesus hanging on a cross.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a grayscale image of a famous sculpture (particularly the Statue of Liberty). The negative examples show various other grayscale images, some recognizable, some abstract. The query image shows a black and white landscape scene, which does not share the characteristic of depicting a famous sculpture.",
+0963,B,negative,statue Jesus hanging on cross,6,A statue of Jesus hanging on a cross.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict a single, clear, and distinct human figure in a frontal pose, with a simple background. The negative images show blurry, fragmented, or otherwise disrupted figures, indicating a lack of clarity or distinctness. The query image also presents a blurred and indistinct human figure, fitting the pattern of the negative examples.",
+0457,A,negative,variety sweet drinks,2,A variety of sweet drinks.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a clear glass of water. The middle row contains images of various beverages (coffee, soda, juice) that are not water, thus distinguishing them as negative examples. The query image is a cup of coffee, and therefore negative.",
+0457,B,negative,variety sweet drinks,2,A variety of sweet drinks.,gemma3:latest,"Category: negative
+Common concept: The negative examples all depict a close-up shot of a glass of water with condensation on the outside, implying a cold temperature. The query image also shows a glass of water with condensation, thus sharing the same feature.",
+0969,A,negative,propeller aircraft,0,Propeller aircraft.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes of **people or animals wearing sunglasses**. The negative examples feature various other subjects and scenes without this specific element. The query image shows a cat wearing sunglasses.",
+0969,B,negative,propeller aircraft,0,Propeller aircraft.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a stylized, almost cartoonish representation of a bird in flight, with a focus on exaggerated features like large wings and a streamlined body. The negative examples lack this stylized representation, featuring more realistic or abstract depictions of birds or simply non-representational shapes. The query image continues this trend by presenting a very simple, almost childlike drawing of a bird, lacking any stylistic details.",
+0459,A,negative,small plush animal toy,0,A small plush animal toy.,gemma3:latest,"Category: negative
+Common concept: The images in the positive row all depict objects with a smooth, reflective surface, commonly associated with mirrors. The query image does not show a reflective surface, so it is a negative example.",
+0459,B,negative,small plush animal toy,0,A small plush animal toy.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict objects with rounded shapes and a distinct “bump” or protrusion on their surface. The negative examples lack this characteristic rounded bump or protrusion.",
+0971,A,negative,chimney on house roof,0,Chimney on the house roof.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with a single, prominent white object (bird) against a neutral background, often with a clear, uncluttered composition. The negative examples deviate from this, featuring complex scenes, multiple objects, and/or a lack of a clear focal point for the white object.  The query image similarly shows a complex scene with a blurred, indistinct white object, lacking a clear focal point.",
+0971,B,negative,chimney on house roof,0,Chimney on the house roof.,gemma3:latest,"Category: negative
+Common concept: The common concept is a fireplace. All the positive examples show a fireplace, while the negative examples do not. The query image shows a blank wall, lacking any fireplace elements.",
+0974,A,negative,fire truck road,0,A fire truck on the road.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a red car with a white roof. The negative examples have various colors, roof styles, and general car types. The query image also shows a car, but it's blue with a black roof, so it doesn't share the common concept.",
+0974,B,negative,fire truck road,0,A fire truck on the road.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a red bus. The negative examples contain various other vehicles and objects, such as cars, trucks, bicycles, and buildings. The query image also shows a car, not a bus.",
+0467,A,negative,statue buddha intricate carvings,6,A statue of Buddha with intricate carvings.,gemma3:latest,"Category: negative
+Common concept: The positive examples all contain a significant amount of white space, often dominated by white or light colors, creating a feeling of openness and lightness. The negative examples lack this, instead featuring complex patterns, dark colors, and a lack of open space, creating a sense of clutter and density. The query image similarly has a complex dark pattern and lacks substantial white space, confirming it belongs to the negative category.",
+0467,B,negative,statue buddha intricate carvings,6,A statue of Buddha with intricate carvings.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict people walking on a wet street surface, reflecting the sky and surrounding buildings. The bottom image, however, shows a blurred street scene with a single person walking, lacking the wet reflection and the specific arrangement of the other images.",
+0980,A,negative,pet hamster,0,Pet hamster.,gemma3:latest,"Category: negative
+Common concept: The positive examples all feature a cat on a bed, while the negative examples show cats in various other locations (on the floor, outside, etc.).",
+0980,B,negative,pet hamster,0,Pet hamster.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a person sitting on a chair, while the negative examples show people in various other activities or locations. The query image shows a person sitting on a chair, therefore it's a negative example.",
+0990,A,positive,cross sea bridge,0,A cross sea bridge.,gemma3:latest,"Category: positive
+Common concept: The common concept is a long, straight, light-colored bridge spanning a body of water (likely a river or ocean). The bridge has a sleek, modern design and is prominently featured in the image.",
+0990,B,positive,cross sea bridge,0,A cross sea bridge.,gemma3:latest,"Category: positive
+Common concept: The positive examples all depict a single, prominent, bright object (typically a geometric shape like a sphere or cube) against a dark background, with a strong, directional light source illuminating the object. The negative examples lack this single, highlighted object and directional lighting. The query image also features a single, brightly lit sphere against a dark background, matching this concept.",
+0479,A,negative,knitwear hat,3,A cozy knitwear hat.,gemma3:latest,"Category: negative
+Common concept: The positive images show a single cat sitting on a rug, while the negative images show cats with various other elements in the scene, such as multiple cats, people, or other objects. The query image shows a cat sitting on a rug, which is similar to the positive examples.",
+0479,B,negative,knitwear hat,3,A cozy knitwear hat.,gemma3:latest,"Category: negative
+Common concept: The positive images all show a person wearing a hat, specifically a baseball cap. The query image shows a person without a hat.",
+0994,A,negative,ball with various colors,9,A ball with various colors on it.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict children smiling or engaging in happy activities (playing, laughing). The images in the middle row depict children looking sad, distressed, or engaged in unhappy activities (crying, looking down). The query image shows a child looking down, fitting the negative category.",
+0994,B,negative,ball with various colors,9,A ball with various colors on it.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a person wearing a helmet, while the positive examples do not.",
+0996,A,positive,people surfing sea,1,People surfing in the sea.,gemma3:latest,"Category: positive
+Common concept: The image depicts a beach scene with a person standing on the sand near the water, suggesting a pleasant beach experience.",
+0996,B,positive,people surfing sea,1,People surfing in the sea.,gemma3:latest,"Category: positive
+Common concept: Beach scenes with people swimming or engaging in water activities.",
+0485,A,negative,colorful cartoon dinosaur illustration,0,A colorful cartoon dinosaur illustration.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict animals in a natural, outdoor setting, while the negative examples depict animals in unnatural or indoor settings.",
+0485,B,negative,colorful cartoon dinosaur illustration,0,A colorful cartoon dinosaur illustration.,gemma3:latest,"Category: negative
+Common concept: The positive images all show objects with a solid, uniform color background, while the objects themselves have a distinct, well-defined shape. The negative images have transparent backgrounds, rendering the objects as faint outlines or silhouettes.",
+0486,A,negative,plate vegetable salad,2,A plate of vegetable salad.,gemma3:latest,"Category: negative
+Common concept: The positive images all show a plate with a single, whole, fresh strawberry. The negative images show plates with strawberries sliced, crushed, or mixed into other foods. The query image shows a strawberry in a container, which doesn't fit the characteristic of a whole, fresh strawberry.",
+0486,B,negative,plate vegetable salad,2,A plate of vegetable salad.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a bowl of mixed salad with various vegetables (lettuce, tomatoes, cucumbers, peppers, etc.), while the negative examples show bowls with a single, isolated fruit, typically a banana or orange, suggesting a lack of a complex salad composition.",
+0487,A,negative,bright red maple leaves,0,Bright red maple leaves in autumn.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict scenes with a focus on vibrant, lush, and colorful foliage – specifically, scenes featuring maple trees with stunning autumn leaves. The negative examples, conversely, show scenes devoid of this characteristic foliage, often with muted or grayscale tones, and lack the distinctive patterns of maple leaves. The query image exhibits a similar lack of vibrant maple leaves and is grayscale, thus falling into the negative category.",
+0487,B,negative,bright red maple leaves,0,Bright red maple leaves in autumn.,gemma3:latest,"Category: negative
+Common concept: The positive images all depict realistic and detailed leaves of deciduous trees in various stages of autumn color, showing visible veins and textures. The negative images show abstract or distorted leaf patterns, resulting in an unrealistic or unnatural appearance. The query image also presents an abstract and distorted leaf pattern, lacking the detail and realism of the positive examples, thus falling into the negative category.",
+0999,A,negative,well trimmed bonsai tree pot,0,A well trimmed bonsai tree in a pot.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a table with a single cup of coffee on it, while the negative examples show various other items on tables or different arrangements of cups. The query image also shows a table with a cup of coffee, thus it fits the concept.",
+0999,B,negative,well trimmed bonsai tree pot,0,A well trimmed bonsai tree in a pot.,gemma3:latest,"Category: negative
+Common concept: The images show different types of bonsai trees. The positive examples are well-maintained and aesthetically pleasing, while the negative examples are poorly maintained, overgrown, or have issues like yellowing leaves or a generally unkempt appearance. The query image (a bonsai tree with a visible pot and some foliage) doesn't fit the aesthetic of the well-maintained, desirable bonsai trees in the positive examples.",
+1001,A,negative,american flag flying top flagpole,6,American flag flying in the wind at the top of the flagpole.,gemma3:latest,"Category: negative
+Common concept: The images in the top row all depict a person holding a large, colorful balloon. The middle row contains images without this feature. The query image does not have a person holding a balloon.",
+1001,B,positive,american flag flying top flagpole,6,American flag flying in the wind at the top of the flagpole.,gemma3:latest,"Category: positive
+Common concept: The positive images all depict a white surface (cloud, wall, etc.) with a single, prominent dark shape (bird, silhouette, etc.) against it. The negative images lack this key element – the distinct shape contrasting with the white background.",
+1007,A,negative,bouquet flowers oval petals,3,A bouquet of flowers with oval petals.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show a red rose in a vase, while the negative examples show various other floral arrangements, fruits, and objects, lacking the specific red rose in a vase theme.",
+1007,B,negative,bouquet flowers oval petals,3,A bouquet of flowers with oval petals.,gemma3:latest,"Category: negative
+Common concept: The positive examples all show images of roses, while the negative examples do not. The query image also does not show a rose.",
+0497,A,negative,door chapel,0,The door of a chapel.,gemma3:latest,"Category: negative
+Common concept: The positive examples all depict a single, complete human figure in a relatively static pose, often with a clear focus on the face and torso, and generally in a well-lit environment. The negative examples, on the other hand, all feature fragmented or incomplete figures, blurry images, or distorted perspectives, indicating a lack of a complete or clear representation of a human form. The query image shares this characteristic of an incomplete and distorted representation of a human figure.",
+0497,B,negative,door chapel,0,The door of a chapel.,gemma3:latest,"Category: negative
+Common concept: The negative examples all feature a strong, prominent, and sharp vertical line (a dark band) across the center of the image, effectively dividing the scene into two distinct halves. The query image lacks this prominent vertical line.",
+0505,A,positive,colored pencils,0,Colored pencils.,gemma3:latest,"Category: positive
+Common concept: A bowl of fruit. The positive examples all show various types of fruit in a bowl, while the negative examples show objects that are not fruit or bowls.",
+0505,B,negative,colored pencils,0,Colored pencils.,gemma3:latest,"Category: negative
+Common concept: The image shows a single, closed orange juice carton. The negative examples all depict open orange juice cartons, implying an action of drinking or pouring. The query image shows a closed carton, representing the absence of this action.",
+0509,A,negative,red heart shaped,0,A red heart shaped.,gemma3:latest,"Category: negative
+Common concept: The query image depicts a red heart, while the positive examples are objects that contain or resemble a heart shape (e.g., a heart-shaped balloon, a Valentine's card with a heart). The negative examples are objects that do not share this heart shape.",
+0509,B,negative,red heart shaped,0,A red heart shaped.,gemma3:latest,"Category: negative
+Common concept: The common concept is a black and white striped shirt. The negative examples all lack this shirt, while the query image does have it.",
