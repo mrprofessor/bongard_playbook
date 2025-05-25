@@ -1,20 +1,12 @@
+import os
 import re
+import sys
 import json
 import copy
 import random
 from openai import OpenAI
 import argparse
 
-# Load your API key from an environment variable or secret management service
-# Initialize OpenAI client for Ollama
-client = OpenAI(
-    base_url='http://localhost:11434/v1',
-    api_key='ollama'  # Required but can be anything for Ollama
-)
-
-# client = OpenAI(
-#     api_key=''  # GPT API_KEY
-# )
 
 prompt_base = '''TASK: Identify the common pattern in positive examples and classify a query.
 
@@ -41,6 +33,22 @@ DO NOT include explanations, reasoning, or extra text. Follow the format exactly
 
 DATA TO ANALYZE:
 '''
+
+
+def create_client(llm):
+    base_url = 'http://localhost:11434/v1'
+    api_key = 'ollama'
+
+    if llm == "gpt41":
+        base_url = 'https://api.openai.com/v1'
+        api_key = os.getenv('OPENAI_API_KEY')
+        if not api_key:
+            print("Error: OPENAI_API_KEY environment variable is not set")
+            sys.exit(1)
+
+    client = OpenAI(base_url=base_url, api_key=api_key)
+    return client
+
 
 
 def extract_answer(text):
@@ -79,6 +87,7 @@ def main(args):
         "gpt41": "gpt-4.1",
     }
     llm_model = llm_models.get(llm)
+    client = create_client(llm)
 
     query_list = []
     with open(caption_path, 'r') as f:
