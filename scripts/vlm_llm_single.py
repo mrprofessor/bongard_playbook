@@ -1,4 +1,3 @@
-import os
 import re
 import json
 import copy
@@ -12,6 +11,10 @@ client = OpenAI(
     base_url='http://localhost:11434/v1',
     api_key='ollama'  # Required but can be anything for Ollama
 )
+
+# client = OpenAI(
+#     api_key=''  # GPT API_KEY
+# )
 
 prompt_base = '''TASK: Pattern Recognition and Classification
 
@@ -37,6 +40,7 @@ DO NOT include explanations, reasoning, or extra text. Follow the format exactly
 
 DATA TO ANALYZE:
 '''
+
 
 def extract_answer(text):
     """
@@ -66,6 +70,7 @@ def main(args):
     llm_models = {
         "llama": "llama4:scout",
         "deepseek": "deepseek-r1:70b",
+        "gpt41": "gpt-4.1",
     }
     llm_model = llm_models.get(llm)
 
@@ -78,7 +83,7 @@ def main(args):
             concept = sample['concept']
             caption = sample['caption']
             imageFiles = sample['imageFiles']
-            
+
             captions = sample['captions']
             positive = captions[:6]
             query_a = captions[6]
@@ -99,7 +104,7 @@ def main(args):
             query['uid'] = uid + '_B'
             query['query'] = query_b
             query_list.append(copy.deepcopy(query))
-        
+
         random.shuffle(query_list)
 
         summary = []
@@ -133,7 +138,7 @@ def main(args):
 
                 text = response.choices[0].message.content + '\n'
                 query['answer'], query['sentence'] = extract_answer(text)
-                
+
                 print(response)
                 print(query['answer'])
                 print(query['sentence'])
@@ -148,11 +153,12 @@ def main(args):
                 }
                 error_list.append(error)
                 print(f"Error processing query {query['uid']}: {e}")
-        
+
         with open(save_path, "w") as file:
             json.dump(summary, file, indent=4)
-        
+
         print(error_list)
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -160,9 +166,8 @@ if __name__ == '__main__':
                         choices=['blip2', 'instructBLIP', 'chatcap'],
                         help='choose a caption model')
     parser.add_argument('--llm', type=str, required=True,
-                        choices=['llama', 'deepseek'],
+                        choices=['llama', 'deepseek', 'gpt41'],
                         help='choose a LLM model')
 
     args = parser.parse_args()
     main(args)
-
