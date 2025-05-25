@@ -16,25 +16,26 @@ client = OpenAI(
 #     api_key=''  # GPT API_KEY
 # )
 
-prompt_base = '''TASK: Pattern Recognition and Classification
+prompt_base = '''TASK: Identify the common pattern in positive examples and classify a query.
 
-GIVEN DATA:
-- POSITIVE examples (6 sentences): These share a common pattern
-- NEGATIVE examples (6 sentences): These do NOT share that pattern
-- QUERY (1 sentence): Classify this as positive or negative
+You will be given:
+- 6 positive sentences: These share a common underlying characteristic or pattern.
+- 6 negative sentences: These explicitly *do not* share the pattern of the positive sentences.
+- 1 query sentence: This sentence needs to be classified.
 
-INSTRUCTIONS:
-1. Find the pattern that ALL positive sentences share
-2. Check if query matches this pattern
-3. Respond in the EXACT format below
+Your goal is to:
+1. **Classify** the query sentence as "positive" or "negative" based on whether it exhibits this identified pattern.
+2. **Identify** the core concept or pattern common to *all* positive sentences.
 
-REQUIRED OUTPUT FORMAT:
-Classification: [positive OR negative]
-Common sentence: [one sentence describing the shared pattern of positive examples]
+**Your response must be in the following exact JSON format:**
 
-EXAMPLE:
-Classification: positive
-Common sentence: All positive sentences describe round objects.
+```json
+{
+  "classification": "[positive OR negative]",
+  "pattern": "[one concise sentence describing the common pattern identified in positive sentences]",
+  "reason": "[one concise sentence explaining why the query matches or doesn't match the common pattern]"
+}
+```
 
 DO NOT include explanations, reasoning, or extra text. Follow the format exactly.
 
@@ -44,20 +45,25 @@ DATA TO ANALYZE:
 
 def extract_answer(text):
     """
-    Extract classification (positive/negative) and common sentence from LLM response.
-    If the common sentence is not found, returns the entire text as the sentence.
+    Extract classification (positive/negative) and reason from LLM response.
+    If the reason is not found, returns the entire text as the sentence.
     Args:
         text (str): Raw response text from LLM
     Returns:
-        tuple: (classification, sentence) both as strings
+        tuple: (classification, common_pattern, sentence) as strings
     """
-    classification_match = re.search(r'Classification:\s*(positive|negative)', text, re.IGNORECASE)
-    sentence_match = re.search(r'Common sentence:\s*(.+?)(?:\n|$)', text, re.IGNORECASE | re.DOTALL)
+    # classification_match = re.search(r'Classification:\s*(positive|negative)', text, re.IGNORECASE)
+    # sentence_match = re.search(r'Reason:\s*(.+?)(?:\n|$)', text, re.IGNORECASE | re.DOTALL)
+
+    classification_match = re.search(r'"classification":\s*"(positive|negative)"', text, re.IGNORECASE | re.DOTALL)
+    common_pattern_match = re.search(r'"pattern":\s*"(.*?)"', text, re.IGNORECASE | re.DOTALL)
+    reason_match = re.search(r'"reason":\s*"(.*?)"', text, re.IGNORECASE | re.DOTALL)
 
     answer = classification_match.group(1).lower() if classification_match else "unknown"
-    sentence = sentence_match.group(1).strip() if sentence_match else text.strip()
+    common_pattern = common_pattern_match.group(1).strip() if common_pattern_match else "Error"
+    sentence = reason_match.group(1).strip() if reason_match else text.strip()
 
-    return answer, sentence
+    return answer, common_pattern, sentence
 
 
 def main(args):
@@ -112,6 +118,7 @@ def main(args):
         total_queries = len(query_list)
 
         for idx, query in enumerate(query_list):
+            print("="*100)
             print(f"Processing query {idx+1}/{total_queries} ({(idx+1)/total_queries:.2%})")
             print(f"UID: {query['uid']}")
 
@@ -129,19 +136,20 @@ def main(args):
                         "role": "user",
                         "content": prompt
                     }],
-                    max_tokens=1024,
-                    temperature=1.0,
+                    max_tokens=4096,
+                    temperature=0.7,
                     n=1,
                     frequency_penalty=0,
                     presence_penalty=0
                 )
 
-                text = response.choices[0].message.content + '\n'
-                query['answer'], query['sentence'] = extract_answer(text)
+                text = response.choices[0].message.content
+                query['answer'], query['common_pattern'], query['sentence'] = extract_answer(text)
 
-                print(response)
-                print(query['answer'])
-                print(query['sentence'])
+                print(text)
+                print(f"Answer: {query['answer']}")
+                print(f"Common Pattern: {query['common_pattern']}")
+                print(f"Sentence: {query['sentence']}")
                 print()
 
                 summary.append(copy.deepcopy(query))

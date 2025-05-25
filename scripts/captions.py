@@ -9,19 +9,24 @@ from transformers import Blip2Processor, Blip2ForConditionalGeneration, Instruct
 
 def main(args):
     vlm = args.vlm
+
+    vlm_models = {
+        "blip2": "Salesforce/blip2-opt-6.7b",
+        "instructBLIP": "Salesforce/instructblip-vicuna-7b",
+    }
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     # Load model and processor based on VLM choice
     if vlm == 'blip2':
-        model_name = "Salesforce/blip2-opt-6.7b"
+        model_name = vlm_models.get(vlm)
         processor = Blip2Processor.from_pretrained(model_name)
         model = Blip2ForConditionalGeneration.from_pretrained(
             model_name, 
             torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32
         )
-    else:  # instructBLIP
-        model_name = "Salesforce/instructblip-vicuna-7b"
+    elif vlm == 'instructBLIP':
+        model_name = vlm_models.get(vlm)
         processor = InstructBlipProcessor.from_pretrained(model_name)
         model = InstructBlipForConditionalGeneration.from_pretrained(
             model_name,
@@ -81,8 +86,9 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--vlm', type=str, choices=['blip2', 'instructBLIP'], help='choose a caption model')
+    parser.add_argument('--vlm', type=str, required=True,
+                    choices=['blip2', 'instructBLIP'],
+                    help='choose a caption model')
 
-    
     args = parser.parse_args()
     main(args)

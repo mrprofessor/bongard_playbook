@@ -8,7 +8,6 @@ def main(args):
     llm = args.llm
 
     results_path = f'{vlm}_{llm}.json'
-    breakpoint()
 
     # Load the data
     with open(results_path, 'r') as f:
@@ -48,6 +47,7 @@ def main(args):
     b_accuracy = (b_correct / b_total) * 100 if b_total > 0 else 0
 
     # Output
+    print(f"Results file: {results_path}")
     print(f"Total records: {total}")
     print(f"Correct predictions: {correct}")
     print(f"Accuracy: {overall_accuracy:.2f}%\n")
