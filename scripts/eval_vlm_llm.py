@@ -11,6 +11,7 @@ from pycocoevalcap.rouge.rouge import Rouge
 from pycocoevalcap.spice.spice import Spice
 from pycocoevalcap.tokenizer.ptbtokenizer import PTBTokenizer
 from torchmetrics.text.bert import BERTScore
+from constants import VLM_MODELS, LLM_MODELS
 
 
 def compute_caption_metric(ground_truth, prediction):
@@ -60,7 +61,7 @@ def main(args):
     ground_truth, prediction = [], []
     cs_true_list, cs_cnt_list = [0]*10, [0]*10
 
-    results_path = f'{vlm}_{llm}.json'
+    results_path = f'results/{vlm}_{llm}.json'
 
     with open(results_path, 'r') as f:
         results = json.load(f)
@@ -152,8 +153,12 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--vlm', type=str, choices=['blip2', 'instructBLIP'], help='choose a caption model')
-    parser.add_argument('--llm', type=str, choices=['llama', 'deepseek'], help='choose a LLM model')
+    parser.add_argument('--vlm', type=str, required=True,
+                        choices=VLM_MODELS,
+                        help='choose a caption model')
+    parser.add_argument('--llm', type=str, required=True,
+                        choices=LLM_MODELS,
+                        help='choose a LLM model')
 
     args = parser.parse_args()
     main(args)

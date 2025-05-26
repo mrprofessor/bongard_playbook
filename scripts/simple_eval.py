@@ -1,13 +1,15 @@
 import json
 import argparse
 
+from constants import VLM_MODELS, LLM_MODELS
+
 
 def main(args):
 
     vlm = args.vlm
     llm = args.llm
 
-    results_path = f'{vlm}_{llm}.json'
+    results_path = f'results/{vlm}_{llm}.json'
 
     # Load the data
     with open(results_path, 'r') as f:
@@ -57,8 +59,12 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--vlm', type=str, choices=['blip2', 'instructBLIP'], help='choose a caption model')
-    parser.add_argument('--llm', type=str, choices=['llama', 'deepseek', 'gpt41'], help='choose a LLM model')
+    parser.add_argument('--vlm', type=str, required=True,
+                        choices=VLM_MODELS,
+                        help='choose a caption model')
+    parser.add_argument('--llm', type=str, required=True,
+                        choices=LLM_MODELS,
+                        help='choose a LLM model')
 
     args = parser.parse_args()
     main(args)

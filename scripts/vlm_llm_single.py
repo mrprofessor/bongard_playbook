@@ -4,38 +4,35 @@ import sys
 import json
 import copy
 import random
-from openai import OpenAI
 import argparse
 
+from openai import OpenAI
+from constants import VLM_MODELS, LLM_MODELS
 
-prompt_base = '''TASK: Identify the common pattern in positive examples and classify a query.
 
-You will be given:
-- 6 positive sentences: These share a common underlying characteristic or pattern.
-- 6 negative sentences: These explicitly *do not* share the pattern of the positive sentences.
-- 1 query sentence: This sentence needs to be classified.
+def generate_prompt(positive_set, negative_set, query_desc):
+    return f"""
+        Positive: {positive_set}
 
-Your goal is to:
-1. **Classify** the query sentence as "positive" or "negative" based on whether it exhibits this identified pattern.
-2. **Identify** the core concept or pattern common to *all* positive sentences.
+        Negative: {negative_set}
 
-**Your response must be in the following exact JSON format:**
+        Query: {query_desc}
 
-```json
-{
-  "classification": "[positive OR negative]",
-  "pattern": "[one concise sentence describing the common pattern identified in positive sentences]",
-  "reason": "[one concise sentence explaining why the query matches or doesn't match the common pattern]"
-}
-```
+        Which set does the query image belong to? Positive or Negative?
 
-DO NOT include explanations, reasoning, or extra text. Follow the format exactly.
+        **Your response must be in the following exact JSON format:**
 
-DATA TO ANALYZE:
-'''
-
+        ```json
+        {{
+            "classification": "[positive OR negative]",
+            "pattern": "[one concise sentence describing the common pattern identified in positive sentences]",
+            "reasoning": "[one concise sentence explaining why the query matches or doesn't match the common pattern]"
+        }}
+        ```
+    """
 
 def create_client(llm):
+
     base_url = 'http://localhost:11434/v1'
     api_key = 'ollama'
 
@@ -49,8 +46,6 @@ def create_client(llm):
     client = OpenAI(base_url=base_url, api_key=api_key)
     return client
 
-
-
 def extract_answer(text):
     """
     Extract classification (positive/negative) and reason from LLM response.
@@ -58,7 +53,7 @@ def extract_answer(text):
     Args:
         text (str): Raw response text from LLM
     Returns:
-        tuple: (classification, common_pattern, sentence) as strings
+        tuple: (classification, common_pattern, reasoning) as strings
     """
     # classification_match = re.search(r'Classification:\s*(positive|negative)', text, re.IGNORECASE)
     # sentence_match = re.search(r'Reason:\s*(.+?)(?:\n|$)', text, re.IGNORECASE | re.DOTALL)
@@ -69,21 +64,22 @@ def extract_answer(text):
 
     answer = classification_match.group(1).lower() if classification_match else "unknown"
     common_pattern = common_pattern_match.group(1).strip() if common_pattern_match else "Error"
-    sentence = reason_match.group(1).strip() if reason_match else text.strip()
+    reasoning = reason_match.group(1).strip() if reason_match else text.strip()
 
-    return answer, common_pattern, sentence
+    return answer, common_pattern, reasoning
 
 
 def main(args):
     vlm = args.vlm
     llm = args.llm
 
-    caption_path = f'{vlm}.json'
-    save_path = f'{vlm}_{llm}.json'
+    caption_path = f'captions/{vlm}.json'
+    save_path = f'results/{vlm}_{llm}.json'
 
     llm_models = {
         "llama": "llama4:scout",
         "deepseek": "deepseek-r1:70b",
+        "qwen3": "qwen3:32b",
         "gpt41": "gpt-4.1",
     }
     llm_model = llm_models.get(llm)
@@ -131,12 +127,7 @@ def main(args):
             print(f"Processing query {idx+1}/{total_queries} ({(idx+1)/total_queries:.2%})")
             print(f"UID: {query['uid']}")
 
-            prompt = copy.deepcopy(prompt_base)
-            prompt += 'positive: ' + str(query['positive']) + '\n'
-            prompt += 'negative: ' + str(query['negative']) + '\n'
-            prompt += 'query: ' + str(query['query']) + '\n\n'
-
-            prompt += 'Answer:\npositive or negative:'
+            prompt = generate_prompt(query['positive'], query['negative'], query['query'])
 
             try:
                 response = client.chat.completions.create(
@@ -180,10 +171,10 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--vlm', type=str, required=True,
-                        choices=['blip2', 'instructBLIP', 'chatcap'],
+                        choices=VLM_MODELS,
                         help='choose a caption model')
     parser.add_argument('--llm', type=str, required=True,
-                        choices=['llama', 'deepseek', 'gpt41'],
+                        choices=LLM_MODELS,
                         help='choose a LLM model')
 
     args = parser.parse_args()
