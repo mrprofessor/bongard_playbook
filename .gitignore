@@ -176,6 +176,6 @@ cython_debug/
 
 # Repo stuff
 
-assets/*
+assets/data/bongard-ow/images
 debug/*
-debug_images/
+canvases/*

@@ -6,7 +6,7 @@ import copy
 import random
 import argparse
 
-from openai import OpenAI
+from utils import create_client
 from constants import VLM_MODELS, LLM_MODELS
 
 
@@ -17,6 +17,10 @@ def generate_prompt(positive_set, negative_set, query_desc):
         Negative: {negative_set}
 
         Query: {query_desc}
+
+        Based on the visual patterns:
+            1. Identify what distinguishes positive from negative examples
+            2. Determine if the query image has this feature and classify whether it's positive or negative.
 
         Which set does the query image belong to? Positive or Negative?
 
@@ -31,20 +35,6 @@ def generate_prompt(positive_set, negative_set, query_desc):
         ```
     """
 
-def create_client(llm):
-
-    base_url = 'http://localhost:11434/v1'
-    api_key = 'ollama'
-
-    if llm == "gpt41":
-        base_url = 'https://api.openai.com/v1'
-        api_key = os.getenv('OPENAI_API_KEY')
-        if not api_key:
-            print("Error: OPENAI_API_KEY environment variable is not set")
-            sys.exit(1)
-
-    client = OpenAI(base_url=base_url, api_key=api_key)
-    return client
 
 def extract_answer(text):
     """
@@ -55,9 +45,6 @@ def extract_answer(text):
     Returns:
         tuple: (classification, common_pattern, reasoning) as strings
     """
-    # classification_match = re.search(r'Classification:\s*(positive|negative)', text, re.IGNORECASE)
-    # sentence_match = re.search(r'Reason:\s*(.+?)(?:\n|$)', text, re.IGNORECASE | re.DOTALL)
-
     classification_match = re.search(r'"classification":\s*"(positive|negative)"', text, re.IGNORECASE | re.DOTALL)
     common_pattern_match = re.search(r'"pattern":\s*"(.*?)"', text, re.IGNORECASE | re.DOTALL)
     reason_match = re.search(r'"reason":\s*"(.*?)"', text, re.IGNORECASE | re.DOTALL)
@@ -73,16 +60,10 @@ def main(args):
     vlm = args.vlm
     llm = args.llm
 
-    caption_path = f'captions/{vlm}.json'
+    caption_path = f'metadata/{vlm}.json'
     save_path = f'results/{vlm}_{llm}.json'
 
-    llm_models = {
-        "llama": "llama4:scout",
-        "deepseek": "deepseek-r1:70b",
-        "qwen3": "qwen3:32b",
-        "gpt41": "gpt-4.1",
-    }
-    llm_model = llm_models.get(llm)
+    llm_model = LLM_MODELS.get(llm)
     client = create_client(llm)
 
     query_list = []
@@ -171,10 +152,10 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--vlm', type=str, required=True,
-                        choices=VLM_MODELS,
+                        choices=VLM_MODELS.keys(),
                         help='choose a caption model')
     parser.add_argument('--llm', type=str, required=True,
-                        choices=LLM_MODELS,
+                        choices=LLM_MODELS.keys(),
                         help='choose a LLM model')
 
     args = parser.parse_args()
