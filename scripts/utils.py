@@ -27,7 +27,7 @@ def encode_image(image_path: str) -> str:
             img = img.convert("RGB")  # Ensure RGB format
             img.thumbnail((512, 512))  # Optional: resize to reduce payload
             buffer = io.BytesIO()
-            img.save(buffer, format="JPEG")
+            img.save(buffer, format="jpeg")
             return base64.b64encode(buffer.getvalue()).decode('utf-8')
     except Exception as e:
         raise RuntimeError(f"Failed to process image '{image_path}': {e}")
