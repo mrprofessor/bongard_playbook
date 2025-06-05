@@ -1,71 +1,117 @@
 #!/usr/bin/env python3
-import os
 import re
 import json
 import copy
 import random
+import logging
+import textwrap
 import argparse
 from typing import List, Tuple
+
 
 import utils
 import constants
 
 
 class BongardCMR:
-    def __init__(self, vlm: str, llm: str, captions_path: str, output_path: str):
+    """Caption Mediated Reasoning"""
+
+    def __init__(
+        self,
+        vlm: str,
+        llm: str,
+        max_tokens: int,
+        temperature: float,
+        captions_path: str,
+        output_path: str,
+    ):
         self.vlm = vlm
         self.llm = llm
-        self.llm_model = constants.LLM_MODELS[llm]
         self.client = utils.create_client(llm)
 
+        self.max_tokens = max_tokens
+        self.temperature = temperature
         self.caption_path = captions_path
         self.output_path = output_path
+        self.model_id = constants.LLM_MODELS[llm]
 
         self.query_list = []
         self.results = []
         self.errors = []
 
     @staticmethod
-    def generate_prompt(positive_set: List[str], negative_set: List[str], query_desc: str) -> str:
-        return f"""
-            Positive: {positive_set}
+    def generate_prompt(
+        positive_set: List[str], negative_set: List[str], query_desc: str
+    ) -> str:
+        return textwrap.dedent(
+            f"""\
+            Compare these two groups of image descriptions and classify the query.
 
-            Negative: {negative_set}
+            GROUP A:
+            {chr(10).join(f"{i+1}. {caption}" for i, caption in enumerate(positive_set))}
 
-            Query: {query_desc}
+            GROUP B:
+            {chr(10).join(f"{i+1}. {caption}" for i, caption in enumerate(negative_set))}
 
-            Based on the visual patterns:
-                1. Identify what distinguishes positive from negative examples
-                2. Determine if the query image has this feature and classify whether it's positive or negative.
+            QUERY:
+            {query_desc}
 
-            Which set does the query image belong to? Positive or Negative?
+            Your task is to:
+            1. Identify the visual feature or pattern shared among `group_a` descriptions that clearly distinguishes them from `group_b`.
+            2. Analyze the `query_description` for the presence or absence of this feature.
+            3. Classify the `query_description` as belonging to either `group_a` or `group_b`.
 
-            **Your response must be in the following exact JSON format:**
+            IMPORTANT:
+            - The distinguishing feature should be something consistent across all `group_a` images, even if it appears occasionally in `group_b`.
+            - Return ONLY a valid JSON block, formatted exactly like this: (Do not produce any other text)
 
-            ```json
+            ```
             {{
-                "classification": "[positive OR negative]",
-                "pattern": "[one concise sentence describing the common pattern identified in positive sentences]",
-                "reasoning": "[one concise sentence explaining why the query matches or doesn't match the common pattern]"
+                "analysis": "Brief analysis comparing group_a and group_b examples",
+                "distinguishing_feature": "Distinguishing feature between group_a and group_b.",
+                "query_image": "What you observe in the query image",
+                "classification": "group_a" or "group_b"
             }}
             ```
-        """
+            """
+        )
 
     @staticmethod
-    def extract_answer(text: str) -> Tuple[str, str, str]:
-        classification_match = re.search(
-            r'"classification":\s*"(positive|negative)"', text, re.IGNORECASE | re.DOTALL
-        )
-        common_pattern_match = re.search(
-            r'"pattern":\s*"(.*?)"', text, re.IGNORECASE | re.DOTALL
-        )
-        reason_match = re.search(r'"reason":\s*"(.*?)"', text, re.IGNORECASE | re.DOTALL)
+    def parse_response(response_text: str) -> Tuple[str, str, str, str]:
+        try:
+            analysis = ""
+            distinguishing_feature = ""
+            query_details = ""
+            classification = ""
 
-        answer = classification_match.group(1).lower() if classification_match else "unknown"
-        common_pattern = common_pattern_match.group(1).strip() if common_pattern_match else "Error"
-        reasoning = reason_match.group(1).strip() if reason_match else text.strip()
+            # Clean response of any backticks or markdown wrappers
+            cleaned = response_text.replace("```json", "").replace("```", "").strip()
 
-        return answer, common_pattern, reasoning
+            # Extract fields using regex
+            def extract_field(field_name: str) -> str:
+                pattern = rf'"?{field_name}"?\s*:\s*"([^"]+)"'
+                match = re.search(pattern, cleaned, re.IGNORECASE)
+                return match.group(1).strip() if match else ""
+
+            analysis = extract_field("analysis")
+            distinguishing_feature = extract_field("distinguishing_feature")
+            query_details = extract_field("query_image")
+            conclusion = extract_field("classification")
+
+            # Normalize classification
+            final_classification = conclusion.lower()
+            if "group_a" in final_classification:
+                classification = "positive"
+            elif "group_b" in final_classification:
+                classification = "negative"
+            else:
+                classification = "unknown"
+
+            return classification, distinguishing_feature, analysis, query_details
+
+        except Exception as e:
+            logging.error(f"Error extracting fields: {e}")
+            return "unknown", "", "", ""
 
     def load_queries(self):
         with open(self.caption_path, "r") as f:
@@ -94,48 +140,66 @@ class BongardCMR:
 
         random.shuffle(self.query_list)
 
+    def query_model(self, content: str) -> str:
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model_id,
+                messages=[{"role": "user", "content": content}],
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
+                # think = False,
+            )
+            return response.choices[0].message.content or ""
+        except Exception as e:
+            logging.error(f"Error querying model: {e}")
+            return ""
+
     def evaluate(self):
         total = len(self.query_list)
         for idx, query in enumerate(self.query_list):
-            print("=" * 100)
-            print(f"Processing query {idx + 1}/{total} ({(idx + 1) / total:.2%})")
-            print(f"UID: {query['uid']}")
+            logging.info("=" * 100)
+            logging.info(
+                f"Processing query {idx + 1}/{total} ({(idx + 1) / total:.2%})"
+            )
+            logging.info(f"UID: {query['uid']}")
 
-            prompt = self.generate_prompt(query["positive"], query["negative"], query["query"])
+            prompt = self.generate_prompt(
+                query["positive"], query["negative"], query["query"]
+            )
 
             try:
-                response = self.client.chat.completions.create(
-                    model=self.llm_model,
-                    messages=[{"role": "user", "content": prompt}],
-                    max_tokens=4096,
-                    temperature=0.7,
-                    n=1,
-                    frequency_penalty=0,
-                    presence_penalty=0,
+                model_response = self.query_model(prompt)
+                (
+                    query["answer"],
+                    query["distinguishing_feature"],
+                    query["analysis"],
+                    query["query_details"],
+                ) = self.parse_response(model_response)
+
+                logging.info(f"\n{model_response} \n")
+                logging.info(f'Answer: {query["answer"]}')
+                logging.info(
+                    f'Distinguishing Feature: {query["distinguishing_feature"]}'
                 )
-
-                text = response.choices[0].message.content
-                query["answer"], query["common_pattern"], query["sentence"] = self.extract_answer(text)
-
-                print(text)
-                print(f"Answer: {query['answer']}")
-                print(f"Common Pattern: {query['common_pattern']}")
-                print(f"Sentence: {query['sentence']}\n")
+                logging.info(f'Analysis: {query["analysis"]}')
+                logging.info(f'Query Details: {query["query_details"],}\n')
 
                 self.results.append(copy.deepcopy(query))
             except Exception as e:
-                self.errors.append({"uid": query["uid"], "query": query["query"], "error": str(e)})
-                print(f"Error processing query {query['uid']}: {e}")
+                self.errors.append(
+                    {"uid": query["uid"], "query": query["query"], "error": str(e)}
+                )
+                logging.error(f"Error processing query {query['uid']}: {e}")
 
     def save_results(self):
         with open(self.output_path, "w") as file:
             json.dump(self.results, file, indent=4)
 
-        print(f"\nResults saved to: {self.output_path}")
+        logging.info(f"\nResults saved to: {self.output_path}")
         if self.errors:
-            print("\nErrors:")
+            logging.error("\nErrors:")
             for err in self.errors:
-                print(err)
+                logging.error(err)
 
     def run(self):
         self.load_queries()
@@ -149,7 +213,7 @@ if __name__ == "__main__":
         "--vlm",
         type=str,
         required=True,
-        choices=constants.VLM_MODELS.keys(),
+        choices=[*constants.VLM_MODELS.keys(), *constants.AIO_MODELS.keys()],
         help="choose a caption model",
     )
     parser.add_argument(
@@ -161,8 +225,17 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    caption_path = f"{constants.CAPTIONS_DIR}/{args.vlm}_captions.json"
-    output_path = f"{constants.RESULTS_DIR}/{args.vlm}_{args.llm}.json"
+    # Initialize logging
+    logging.basicConfig(level=logging.INFO)
+    logging.info(f"\tCaption Mediated Reasoning:\tVLM: {args.vlm} \t Model: {args.llm}")
 
-    evaluator = BongardCMR(args.vlm, args.llm, caption_path, output_path)
+    # Initialize the evaluator
+    max_tokens = 4092
+    temperature = 0
+    caption_path = f"{constants.CAPTIONS_DIR}/{args.vlm}_captions.json"
+    output_path = f"{constants.RESULTS_DIR}/cmr_{args.vlm}_{args.llm}.json"
+
+    evaluator = BongardCMR(
+        args.vlm, args.llm, max_tokens, temperature, caption_path, output_path
+    )
     evaluator.run()

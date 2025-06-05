@@ -12,6 +12,7 @@ LLM_MODELS = {
     "llama4": "llama4:scout",
     "deepseekr1": "deepseek-r1:70b",
     "qwen3": "qwen3:32b",
+    "gemma3": "gemma3:27b",
     "gpt41": "gpt-4.1",
 }
 

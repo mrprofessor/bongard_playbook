@@ -12,6 +12,8 @@ import utils
 
 
 class BongardCVR:
+    """Contrastive Visual Reasoning"""
+
     def __init__(
         self,
         model_name: str,
@@ -112,8 +114,8 @@ class BongardCVR:
             response = self.client.chat.completions.create(
                 model=self.model_id,
                 messages=[{"role": "user", "content": content}],
-                max_tokens=4096,
-                temperature=0,
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
             )
             return response.choices[0].message.content
         except Exception as e:
@@ -217,7 +219,6 @@ if __name__ == "__main__":
     model_name = args.model
     dataset_path = constants.TRANSFORMED_DATASET
     output_path = f"{constants.RESULTS_DIR}/cvr_{args.model}.json"
-
     max_tokens = 4092
     temperature = 0
     evaluator = BongardCVR(
