@@ -28,6 +28,7 @@ AIO_MODELS = {
     "llava16": "llava:34b",
     "qwen25": "qwen2.5vl:72b",
     "gemma3": "gemma3:27b",
+    "mistral3": "mistral-small3.2",
     # Premium Models
     # "gemini25":  "gemini-2.5-flash-preview-05-20",
     "gpt41": "gpt-4.1",

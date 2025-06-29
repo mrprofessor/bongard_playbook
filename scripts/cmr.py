@@ -46,6 +46,7 @@ class BongardCMR:
         return textwrap.dedent(
             f"""\
             Compare these two groups of image descriptions and classify the query.
+            The descriptions are provided in a JSON format.
 
             GROUP A:
             {chr(10).join(f"{i+1}. {caption}" for i, caption in enumerate(positive_set))}
@@ -75,6 +76,12 @@ class BongardCMR:
             ```
             """
         )
+    
+
+    # group_a = positive. group_b = negative
+    # 1. Identify the visual feature or pattern shared among `group_a` descriptions that clearly distinguishes them from `group_b`.
+    # Note: The distinguishing feature should be something consistent across all `group_a` images, even if it appears occasionally in `group_b`.
+
 
     @staticmethod
     def parse_response(response_text: str) -> Tuple[str, str, str, str]:
@@ -232,8 +239,10 @@ if __name__ == "__main__":
     # Initialize the evaluator
     max_tokens = 4092
     temperature = 0
-    caption_path = f"{constants.CAPTIONS_DIR}/{args.vlm}_captions.json"
-    output_path = f"{constants.RESULTS_DIR}/cmr_{args.vlm}_{args.llm}.json"
+    caption_path = f"{constants.CAPTIONS_DIR}/{args.vlm}_structured.json"
+    output_path = f"{constants.RESULTS_DIR}/scmr_{args.vlm}_{args.llm}.json"
+    logging.info(f"Caption path: {caption_path}")
+    logging.info(f"Output path: {output_path}")
 
     evaluator = BongardCMR(
         args.vlm, args.llm, max_tokens, temperature, caption_path, output_path
