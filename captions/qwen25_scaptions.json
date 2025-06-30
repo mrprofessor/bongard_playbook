@@ -1,0 +1,419 @@
+[
+    {
+        "uid": "0008",
+        "commonSense": "0",
+        "concept": "perched mantis hanging plant",
+        "caption": "A perched mantis hanging on a plant.",
+        "imageFiles": [
+            "images/0008/pos__0__2023-03-18-07-48-14__https:__kymkemp.com__wp-content__uploads__2020__08__a-noresize-1.jpg",
+            "images/0008/pos__1__2023-03-18-07-47-40__https:__previews.123rf.com__images__de19__de192101__de19210100207__162715085-mantodea-hierodula-patellifera-a-green-praying-mantis-perched-on-a-branch-in-nature-against-a.jpg",
+            "images/0008/pos__2__2023-03-18-07-48-21__https:__simplegardenlife.com__wp-content__uploads__2022__06__praying-mantis-chinese-mantid.jpg.webp.jpg",
+            "images/0008/pos__3__2023-03-18-07-47-43__https:__previews.123rf.com__images__davemontreuil__davemontreuil1309__davemontreuil130900056__22606375-a-praying-mantis-with-a-leaf-shaped-abdomen-hanging-from-a-thorny-branch.jpg.webp.jpg",
+            "images/0008/pos__4__2023-03-18-07-47-54__https:__ucanr.edu__blogs__bugsquad____blogfiles__38207_original.jpg",
+            "images/0008/pos__5__2023-03-18-07-48-33__https:__c8.alamy.com__zooms__9__654d3548fead47d18061762da0fee82d__2ccah9c.jpg",
+            "images/0008/pos__6__2023-03-18-07-48-06__https:__cdn.shopify.com__s__files__1__1964__9109__products__76bde3c648530421132026cb1fc2582eaae3ee3d75a8a9c3fe55be03521d8262_1200x.jpg?v=1644411524.jpg",
+            "images/0008/neg__0__2023-03-18-07-47-46__https:__cdn11.bigcommerce.com__s-h5626twfcp__images__stencil__1280x1280__products__129__744__Swallowtail-Crescent-Hanging-Plant-Rooter-Vase_635__66817.1662404556.JPG?c=2.jpg",
+            "images/0008/neg__1__2023-03-18-07-48-18__https:__cdn7.dissolve.com__p__D869_25_269__D869_25_269_1200.jpg",
+            "images/0008/neg__2__2023-03-18-07-48-27__https:__previews.123rf.com__images__paulvinten__paulvinten1704__paulvinten170400057__76531378-small-wild-bird-perched-on-branch-of-a-hibiscus-rosa-sinensis-plant-with-large-red-flower.jpg.webp.jpg",
+            "images/0008/neg__3__2023-03-18-07-48-09__https:__c8.alamy.com__comp__2C8D5P9__a-colorful-portrait-of-a-ladybug-or-ladybird-on-a-wilted-flower-hanging-on-a-branch-of-a-plant-the-beetle-insect-was-hunting-for-some-food-2C8D5P9.jpg",
+            "images/0008/neg__4__2023-03-18-07-48-03__http:__d1q8o8ch5u48ua.cloudfront.net__images__detailed__184__Bee_Pollen1_GI.jpg?t=1631783341.jpg",
+            "images/0008/neg__5__2023-03-18-07-48-29__https:__images.fineartamerica.com__images__artworkimages__mediumlarge__2__1-praying-mantis-in-rain-twomeows.jpg",
+            "images/0008/neg__6__2023-03-18-07-47-42__https:__c8.alamy.com__comp__2CCJCE5__close-up-of-a-brown-praying-mantis-sitting-on-a-green-leaf-2CCJCE5.jpg"
+        ],
+        "captions": [
+            {
+                "scene": "Natural environment with a focus on greenery, likely a forestside or garden setting.",
+                "objects": {
+                    "living": {
+                        "insect": "A green praying mantis with long antennae and folded forelegs, perched on a bamboo stem."
+                    },
+                    "non_living": {
+                        "bamboo": "A green bamboo stem with a natural texture, and a few smaller bamboo branches in the background."
+                    }
+                },
+                "activities": "The praying mantis is stationary, clinging to the bamboo stem.",
+                "perspective_viewpoint": "Close-up shot, focusing on the praying mantis and the bamboo stem it is on.",
+                "spatial_layout": "The praying mantis is in the foreground, centered on the bamboo stem. The background consists of blurred greenery and bamboo branches, indicating a shallow depth of field.",
+                "quantities_and_scale": {
+                    "object_counts": "One praying mantis, one prominent bamboo stem, and several smaller bamboo branches in the background.",
+                    "relative_sizes": "The praying mantis is relatively small compared to the bamboo stem but is the focal point due to its positioning and clarity.",
+                    "crowd_density": "Individual presence of the praying mantis with no other animals or people visible."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No signs of movement; the praying mantis and the bamboo are static.",
+                    "energy_level": "Calm and still, with no dynamic action or movement."
+                },
+                "textual_information": "No visible text, signs, or labels.",
+                "visual_patterns": "The praying mantis has a green color that blends with the bamboo and background. The bamboo has a smooth, segmented texture with a natural green hue.",
+                "contextual_factors": "The lighting is soft and natural, suggesting daytime. The background is blurred, indicating a shallow depth of field. No specific weather conditions or season indicators are visible.",
+                "emotional_undertones": "The image conveys a sense of tranquility and natural beauty.",
+                "summary": "A close-up of a green praying mantis perched on a bamboo stem in a natural, green environment."
+            },
+            {
+                "scene": "Natural environment with a blurred green background suggesting foliage.",
+                "objects": {
+                    "living": {
+                        "insect": "A green praying mantis with prominent eyes, folded front legs, and wings partially visible, perched on a branch."
+                    },
+                    "non_living": {
+                        "branch": "A thin, horizontal branch on which the praying mantis is perched."
+                    }
+                },
+                "activities": "The praying mantis is stationary, with no observable movement or interaction.",
+                "perspective_viewpoint": "Close-up shot focusing on the praying mantis, with a shallow depth of field blurring the background.",
+                "spatial_layout": "The praying mantis is positioned in the foreground, centered slightly to the left, with the branch extending horizontally across the image. The background is uniformly blurred.",
+                "quantities_and_scale": {
+                    "object_counts": "One praying mantis, one branch.",
+                    "relative_sizes": "The praying mantis is the most prominent object, taking up a significant portion of the foreground, while the branch is slightly larger in length but less prominent.",
+                    "crowd_density": "Individual presence of the praying mantis."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No signs of movement; the praying mantis appears static.",
+                    "energy_level": "Calm and static."
+                },
+                "textual_information": "Watermark text '123RF' is visible in a repeating pattern across the image.",
+                "visual_patterns": "The praying mantis has a green coloration with a textured body, and the background is a soft green blur. The branch is brown and rough-textured.",
+                "contextual_factors": "The lighting is soft and diffused, suggesting an overcast day or shaded area. No specific weather conditions, season indicators, or time of day are discernible.",
+                "emotional_undertones": "No emotional undertones as the subject is an insect.",
+                "summary": "A close-up of a green praying mantis perched on a branch against a blurred green background."
+            },
+            {
+                "scene": "Natural environment with dense green foliage.",
+                "objects": {
+                    "living": {
+                        "insects": "Two praying mantises, one larger and one smaller, both with green and brown coloration."
+                    },
+                    "non_living": {
+                        "plants": "Green leaves with visible veins, some showing signs of yellowing."
+                    }
+                },
+                "activities": "The larger praying mantis is perched on a leaf, while the smaller one is positioned slightly above and to the left, also on a leaf.",
+                "perspective_viewpoint": "Close-up shot focusing on the praying mantises and the surrounding leaves.",
+                "spatial_layout": "The praying mantises are in the foreground, with the larger one in the center and the smaller one to the left. The background consists of blurred green leaves.",
+                "quantities_and_scale": {
+                    "object_counts": "Two praying mantises and multiple leaves.",
+                    "relative_sizes": "The larger praying mantis is more prominent in the image, with the smaller one being noticeably smaller in size.",
+                    "crowd_density": "Individual presence of praying mantises with no other animals or people visible."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No visible signs of movement; the praying mantises appear static.",
+                    "energy_level": "Calm and still."
+                },
+                "textual_information": "No visible text or labels.",
+                "visual_patterns": "The praying mantises have a green and brown coloration that blends with the green leaves. The leaves have a textured appearance with visible veins.",
+                "contextual_factors": "The lighting suggests daytime with natural light. The environment appears to be a natural habitat with no signs of human interference.",
+                "emotional_undertones": "No facial expressions or body language to indicate mood.",
+                "summary": "A close-up image of two praying mantises perched on green leaves in a natural setting."
+            },
+            {
+                "scene": "Natural environment with a blurred green background suggesting foliage.",
+                "objects": {
+                    "living": {
+                        "insect": "A green praying mantis with long legs, two antennae, and a triangular head, perched on a thorny branch."
+                    },
+                    "non_living": {
+                        "branch": "A brown thorny branch with several sharp thorns, extending diagonally across the image."
+                    }
+                },
+                "activities": "The praying mantis is stationary, clinging to the thorny branch.",
+                "perspective_viewpoint": "Close-up shot focusing on the praying mantis, with a shallow depth of field blurring the background.",
+                "spatial_layout": "The praying mantis is in the foreground, centered slightly to the right, with the thorny branch extending diagonally from the bottom left to the top right. The background is out of focus.",
+                "quantities_and_scale": {
+                    "object_counts": "One praying mantis, one thorny branch.",
+                    "relative_sizes": "The praying mantis is relatively large compared to the thorns on the branch, but smaller than the branch itself.",
+                    "crowd_density": "Individual presence of the praying mantis."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No signs of movement; the praying mantis appears static.",
+                    "energy_level": "Calm and still."
+                },
+                "textual_information": "Watermarks with the text '123RF' and a logo are scattered across the image.",
+                "visual_patterns": "The praying mantis has a green coloration with a patterned texture on its body. The thorns on the branch are sharp and pointed. The background is a blurred green, suggesting foliage.",
+                "contextual_factors": "The lighting is soft and natural, suggesting daytime. The background is blurred, indicating a shallow depth of field.",
+                "emotional_undertones": "The praying mantis appears calm and alert, with its body language suggesting readiness.",
+                "summary": "A close-up of a green praying mantis perched on a thorny branch against a blurred green background."
+            },
+            {
+                "scene": "Natural environment with a focus on green foliage.",
+                "objects": {
+                    "living": {
+                        "insects": "Two green praying mantises with long antennae, segmented bodies, and spiny forelegs. One mantis is positioned on top of the other."
+                    },
+                    "non_living": {
+                        "plants": "Large green leaves with visible veins, serving as the surface on which the mantises are perched."
+                    }
+                },
+                "activities": "The mantises are stationary, with one mantis positioned on top of the other, suggesting a possible interaction or behavior.",
+                "perspective_viewpoint": "Close-up shot focusing on the mantises and the leaves, with a shallow depth of field blurring the background.",
+                "spatial_layout": "The mantises are in the foreground, centered in the image, with the leaves providing a natural platform. The background is out of focus, emphasizing the mantises and leaves.",
+                "quantities_and_scale": {
+                    "object_counts": "Two mantises and several large leaves.",
+                    "relative_sizes": "The mantises are relatively small compared to the leaves, which dominate the foreground.",
+                    "crowd_density": "Individual presence of mantises and leaves."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No visible signs of movement; the mantises appear static.",
+                    "energy_level": "Calm and still, with no indication of active movement."
+                },
+                "textual_information": "A watermark in the bottom left corner reads '(c) Kathy Keatley Garvey'.",
+                "visual_patterns": "The mantises have a green coloration with subtle patterns on their bodies, blending with the green leaves. The leaves have a textured surface with prominent veins.",
+                "contextual_factors": "The lighting suggests a daytime setting with natural light, and the greenery indicates a natural, possibly outdoor environment.",
+                "emotional_undertones": "The mantises appear neutral, with no discernible emotional expressions.",
+                "summary": "A close-up image of two green praying mantises perched on large green leaves in a natural setting."
+            },
+            {
+                "scene": "Natural environment with a focus on green foliage.",
+                "objects": {
+                    "living": {
+                        "insect": "A green praying mantis with long, slender legs and a segmented body, positioned on a leaf."
+                    },
+                    "non_living": {
+                        "leaf": "A large, green leaf with visible veins, serving as the mantis's perch.",
+                        "background_foliage": "Blurred green leaves and stems, indicating a dense plant environment."
+                    }
+                },
+                "activities": "The praying mantis is stationary, perched on the leaf.",
+                "perspective_viewpoint": "Close-up, eye-level shot focusing on the praying mantis and the leaf it is on.",
+                "spatial_layout": "The praying mantis is in the foreground, centered on the leaf, with the background foliage out of focus and extending to the edges of the image.",
+                "quantities_and_scale": {
+                    "object_counts": "One praying mantis, one prominent leaf, and multiple blurred leaves in the background.",
+                    "relative_sizes": "The praying mantis is small compared to the leaf it is on, and the leaf is prominent in the image.",
+                    "crowd_density": "Individual presence of the praying mantis with no other animals or people visible."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No visible signs of movement; the mantis appears static.",
+                    "energy_level": "Calm and still, with no dynamic action observed."
+                },
+                "textual_information": "The text 'alamy - 2CCAH9C' is visible at the bottom of the image.",
+                "visual_patterns": "The praying mantis has a green coloration that blends with the leaf. The leaf has a smooth texture with visible veins. The background is a uniform green with a soft blur.",
+                "contextual_factors": "The lighting is soft and natural, suggesting daytime. The environment appears to be outdoors with no indication of weather conditions.",
+                "emotional_undertones": "The mantis's posture is neutral, and there are no visible emotional expressions.",
+                "summary": "A close-up image of a green praying mantis perched on a leaf in a natural, green environment."
+            },
+            {
+                "scene": "A minimalistic setting with a white background and a section of green plant stems.",
+                "objects": {
+                    "living": {
+                        "plants": "Green, thin, elongated plant stems forming a cluster on the right side of the image."
+                    },
+                    "non_living": {
+                        "origami": "A yellow origami figure resembling a praying mantis, positioned on the plant stems."
+                    }
+                },
+                "activities": "The origami mantis is stationary, perched on the plant stems.",
+                "perspective_viewpoint": "Eye-level perspective, focusing on the origami mantis and the plant stems.",
+                "spatial_layout": "The origami mantis is in the foreground, positioned on the left side of the plant stems. The plant stems occupy the right side of the image, extending from the bottom to the top. The background is a plain white surface.",
+                "quantities_and_scale": {
+                    "object_counts": "One origami mantis and multiple green plant stems.",
+                    "relative_sizes": "The origami mantis is smaller in size compared to the cluster of plant stems.",
+                    "crowd_density": "Sparse arrangement of objects."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No signs of movement; all elements are static.",
+                    "energy_level": "Calm and still."
+                },
+                "textual_information": "No visible text, signs, or labels.",
+                "visual_patterns": "The origami mantis has a geometric, folded pattern with a yellow color. The plant stems are thin, green, and have a natural, organic texture.",
+                "contextual_factors": "The lighting is even and bright, suggesting an indoor setting with controlled lighting. No weather conditions or time of day indicators are present.",
+                "emotional_undertones": "The image conveys a sense of simplicity and tranquility.",
+                "summary": "A yellow origami praying mantis is perched on green plant stems against a plain white background, creating a simple and serene composition."
+            },
+            {
+                "scene": "A minimalistic setting with a white background, emphasizing the object in focus.",
+                "objects": {
+                    "living": {
+                        "plants": "A small green plant with several heart-shaped leaves, placed inside a transparent glass container."
+                    },
+                    "non_living": {
+                        "structures": "A circular metal frame with a hook at the top for hanging. A small metallic butterfly ornament is attached to the frame. The glass container holding the plant is suspended within the frame. A small, light-colored object, possibly a cork or plug, is at the bottom of the glass container."
+                    }
+                },
+                "activities": "No observable actions or interactions; the scene is static.",
+                "perspective_viewpoint": "Eye-level view, directly facing the object, with a clear and unobstructed perspective.",
+                "spatial_layout": "The circular frame is centered in the image. The plant is positioned slightly off-center to the left within the frame. The butterfly ornament is on the right side of the frame. The background is uniformly white, providing no additional context.",
+                "quantities_and_scale": {
+                    "object_counts": "One plant, one circular frame, one butterfly ornament, one glass container.",
+                    "relative_sizes": "The plant and butterfly ornament are small in comparison to the circular frame. The glass container is proportionate to the plant it holds.",
+                    "crowd_density": "Individual presence of objects with no crowding."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No signs of movement; all elements are static.",
+                    "energy_level": "Calm and static, with no indication of activity or motion."
+                },
+                "textual_information": "No visible text, signs, labels, or writing.",
+                "visual_patterns": "The image features a contrast between the green leaves, metallic gray of the frame and butterfly, and the transparent glass. The heart-shaped leaves and intricate butterfly design are distinctive features.",
+                "contextual_factors": "No weather conditions, season indicators, or environmental clues are present. The lighting is even and bright, suggesting a controlled indoor setting. There are no shadows or reflections.",
+                "emotional_undertones": "No facial expressions or body language to assess. The overall mood is serene and minimalistic.",
+                "summary": "A small green plant in a transparent glass container is suspended within a circular metal frame, accompanied by a metallic butterfly ornament, all set against a plain white background."
+            },
+            {
+                "scene": "A close-up view of a natural setting with a focus on a plant and a caterpillar.",
+                "objects": {
+                    "living": {
+                        "caterpillar": "A black and yellow striped caterpillar hanging from a plant stem."
+                    },
+                    "non_living": {
+                        "plant": "A plant with green leaves and a red stem, with the caterpillar attached to it."
+                    }
+                },
+                "activities": "The caterpillar is hanging from the plant stem, seemingly stationary.",
+                "perspective_viewpoint": "Close-up shot focusing on the caterpillar and the plant stem.",
+                "spatial_layout": "The caterpillar is in the foreground, hanging from the plant stem, with the leaves and stem forming the background.",
+                "quantities_and_scale": {
+                    "object_counts": "One caterpillar, one plant with multiple leaves.",
+                    "relative_sizes": "The caterpillar is small compared to the plant stem and leaves.",
+                    "crowd_density": "Individual presence of the caterpillar and plant."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "The caterpillar appears static with no visible motion blur.",
+                    "energy_level": "Calm and still."
+                },
+                "textual_information": "The word 'DISSOLVE' is repeated as a watermark across the image.",
+                "visual_patterns": "The caterpillar has black and yellow stripes, the plant has green leaves with visible veins and a red stem.",
+                "contextual_factors": "The background is a blurred mix of green and yellow, suggesting a natural environment. The lighting is bright, indicating daytime.",
+                "emotional_undertones": "The image conveys a sense of stillness and natural beauty.",
+                "summary": "A close-up of a black and yellow striped caterpillar hanging from a red-stemmed plant with green leaves in a bright, natural setting."
+            },
+            {
+                "scene": "Natural setting with a focus on a plant and a bird, with a blurred background suggesting an outdoor environment.",
+                "objects": {
+                    "living": {
+                        "bird": "A small bird with a grayish-blue body and a lighter underside, perched on a branch.",
+                        "flowers": "Two red hibiscus flowers with prominent yellow stamens, attached to the plant.",
+                        "plant": "A plant with green leaves and stems, supporting the flowers and the bird."
+                    },
+                    "non_living": {
+                        "branch": "A thin branch extending horizontally, supporting the bird and flowers."
+                    }
+                },
+                "activities": "The bird is perched on the branch, and there are no other observable actions or interactions.",
+                "perspective_viewpoint": "Eye-level perspective, focusing on the bird and flowers with a shallow depth of field that blurs the background.",
+                "spatial_layout": "The bird is positioned on the left side of the branch, with one flower directly below it and another flower further along the branch to the right. The background is out of focus, emphasizing the bird and flowers in the foreground.",
+                "quantities_and_scale": {
+                    "object_counts": "One bird, two flowers, multiple leaves.",
+                    "relative_sizes": "The bird is smaller than the flowers, and the flowers are prominent in the image.",
+                    "crowd_density": "Individual presence of the bird and flowers."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No visible signs of movement; the bird and flowers are in a static position.",
+                    "energy_level": "Calm and still."
+                },
+                "textual_information": "No visible text, signs, or labels.",
+                "visual_patterns": "The bird has a smooth, grayish-blue plumage. The flowers are bright red with a yellow center, and the leaves are green with a smooth texture. The background is a soft blur of green and white.",
+                "contextual_factors": "The lighting suggests a daytime scene with natural light. The background blur indicates a shallow depth of field, typical of a natural outdoor setting.",
+                "emotional_undertones": "The bird appears calm and still, with no visible emotional expressions.",
+                "summary": "A small grayish-blue bird perches on a branch with two bright red hibiscus flowers, set against a softly blurred natural background."
+            },
+            {
+                "scene": "A close-up view of a natural setting with a blurred green and purple background.",
+                "objects": {
+                    "living": {
+                        "ladybug": "A red ladybug with black spots is visible on a plant stem."
+                    },
+                    "non_living": {
+                        "plant_stem": "A green plant stem with some dried, brown, curled leaves attached to it."
+                    }
+                },
+                "activities": "The ladybug is stationary on the plant stem.",
+                "perspective_viewpoint": "Close-up, eye-level shot focusing on the ladybug and plant stem.",
+                "spatial_layout": "The ladybug is positioned on the right side of the plant stem, which is in the foreground. The background is out of focus.",
+                "quantities_and_scale": {
+                    "object_counts": "One ladybug, one plant stem with a few dried leaves.",
+                    "relative_sizes": "The ladybug is small compared to the plant stem, which is the most prominent object in the image.",
+                    "crowd_density": "Individual presence of the ladybug and plant stem."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No signs of movement; the ladybug and plant stem are static.",
+                    "energy_level": "Calm and still."
+                },
+                "textual_information": "The word 'alamy' is repeated as a watermark across the image. There is additional text at the bottom left and right corners, including 'alamy', an image ID, and a website URL.",
+                "visual_patterns": "The ladybug has a bright red color with black spots. The plant stem is green with a smooth texture, and the dried leaves are brown and curled. The background has a gradient of green and purple hues.",
+                "contextual_factors": "The lighting is soft, and the background suggests a natural outdoor setting. The time of day and weather conditions are not discernible.",
+                "emotional_undertones": "The image conveys a sense of tranquility and simplicity.",
+                "summary": "A close-up image of a red ladybug with black spots resting on a green plant stem with dried leaves, set against a blurred green and purple background."
+            },
+            {
+                "scene": "Natural environment, specifically a close-up view of green foliage.",
+                "objects": {
+                    "living": {
+                        "bee": "A single bee with a yellow and black striped body, transparent wings, and visible antennae, perched on a leaf."
+                    },
+                    "non_living": {
+                        "leaves": "Green leaves with visible veins, some in focus and others blurred in the background."
+                    }
+                },
+                "activities": "The bee is stationary on a leaf, possibly feeding or resting.",
+                "perspective_viewpoint": "Close-up shot, focusing on the bee and the leaf it is on, with a shallow depth of field blurring the background.",
+                "spatial_layout": "The bee is positioned in the center of the image on a leaf, with other leaves surrounding it in the background.",
+                "quantities_and_scale": {
+                    "object_counts": "One bee, multiple leaves.",
+                    "relative_sizes": "The bee is relatively small compared to the leaves, but it is the focal point of the image.",
+                    "crowd_density": "Individual presence of the bee, no other animals or people visible."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No visible motion blur; the bee appears static.",
+                    "energy_level": "Calm and still."
+                },
+                "textual_information": "There is a watermark in the bottom left corner with cursive text that reads 'Luz de Luna'.",
+                "visual_patterns": "The bee has a striped pattern of yellow and black, and the leaves have a textured pattern with visible veins. The overall color palette is green with yellow and black accents.",
+                "contextual_factors": "The lighting suggests daytime with natural light, and the environment appears to be outdoors. No specific weather conditions or season indicators are visible.",
+                "emotional_undertones": "The image conveys a sense of tranquility and focus on the natural world.",
+                "summary": "A close-up image of a bee resting on a green leaf, surrounded by blurred foliage, with a 'Luz de Luna' watermark in the corner."
+            },
+            {
+                "scene": "Natural environment with a close-up view of grass and a blurred background with bokeh effects.",
+                "objects": {
+                    "living": {
+                        "insect": "A praying mantis with large, prominent eyes, and folded front legs, positioned on green grass."
+                    },
+                    "non_living": {
+                        "grass": "Green blades of grass surrounding the praying mantis.",
+                        "background": "Blurred background with bokeh light effects in various colors."
+                    }
+                },
+                "activities": "The praying mantis is stationary, with no observable movement or interaction.",
+                "perspective_viewpoint": "Close-up, eye-level shot focusing on the praying mantis.",
+                "spatial_layout": "The praying mantis is centrally located in the foreground, with grass blades around it and a blurred background.",
+                "quantities_and_scale": {
+                    "object_counts": "One praying mantis, multiple blades of grass.",
+                    "relative_sizes": "The praying mantis is the most prominent object, with grass blades and background bokeh effects smaller in scale."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "No signs of movement; the image is static.",
+                    "energy_level": "Calm and still."
+                },
+                "textual_information": "No visible text, signs, or labels.",
+                "visual_patterns": "The praying mantis has a brownish color with detailed textures on its body and legs. The grass is vibrant green, and the background features circular bokeh lights in various colors.",
+                "contextual_factors": "The lighting suggests a bright environment, possibly during the day, with no clear indicators of weather conditions or season.",
+                "emotional_undertones": "The praying mantis appears alert, with no visible emotional undertones.",
+                "summary": "A close-up image of a praying mantis on green grass with a vibrant, bokeh-filled background."
+            },
+            {
+                "scene": "Natural environment with a blurred green background.",
+                "objects": {
+                    "living": {
+                        "insect": "A brown praying mantis with long antennae, prominent front legs, and a segmented body."
+                    },
+                    "non_living": {}
+                },
+                "activities": "The praying mantis is stationary, facing forward.",
+                "perspective_viewpoint": "Close-up, eye-level view focusing on the praying mantis.",
+                "spatial_layout": "The praying mantis is centered in the foreground, with a blurred green background occupying the rest of the image.",
+                "quantities_and_scale": {
+                    "object_counts": "One praying mantis.",
+                    "relative_sizes": "The praying mantis is the largest and most prominent object in the image.",
+                    "crowd_density": "Individual presence."
+                },
+                "motion_and_dynamics": {
+                    "motion_evidence": "Static positioning with no signs of movement.",
+                    "energy_level": "Calm and still."
+                },
+                "textual_information": "Watermarks reading 'alamy' are scattered across the image.",
+                "visual_patterns": "The praying mantis has a brown color with visible segmentation and texture on its body. The background is a uniform green with a soft blur.",
+                "contextual_factors": "The lighting is even, suggesting a daytime setting. The background suggests a natural habitat.",
+                "emotional_undertones": "The mantis appears neutral, with no discernible emotional expression.",
+                "summary": "A close-up of a brown praying mantis in a natural setting with a blurred green background."
+            }
+        ]
+    }
+]
