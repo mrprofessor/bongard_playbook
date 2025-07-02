@@ -13,6 +13,7 @@ LLM_MODELS = {
     "deepseekr1": "deepseek-r1:70b",
     "qwen3": "qwen3:32b",
     "gemma3": "gemma3:27b",
+    "gemini20": "gemini-2.0-flash",
     "gpt41": "gpt-4.1",
 }
 
@@ -30,6 +31,7 @@ AIO_MODELS = {
     "gemma3": "gemma3:27b",
     "mistral3": "mistral-small3.2",
     # Premium Models
-    # "gemini25":  "gemini-2.5-flash-preview-05-20",
+    "gemini20": "gemini-2.0-flash",
+    "gemini25": "gemini-2.5-flash",
     "gpt41": "gpt-4.1",
 }

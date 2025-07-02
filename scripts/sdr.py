@@ -48,26 +48,26 @@ class BongardSDR:
             Analyze these two groups of image descriptions to identify the distinguishing feature.
             The descriptions are provided below.
 
-            GROUP A:
+            group_a:
             {chr(10).join(f"{i+1}. {caption}" for i, caption in enumerate(positive_set))}
 
-            GROUP B:
+            group_b:
             {chr(10).join(f"{i+1}. {caption}" for i, caption in enumerate(negative_set))}
 
             Your task is to:
-            1. Carefully compare the detailed JSON descriptions in GROUP A and GROUP B.
-            2. Identify the visual feature or pattern that is consistently present in GROUP A descriptions and distinguishes them from GROUP B.
-            3. The distinguishing feature should be something that appears in all or most GROUP A images, even if it occasionally appears in GROUP B.
+            1. Carefully compare the detailed JSON descriptions in group_a and group_b.
+            2. Identify the visual feature or pattern that is consistently present in group_a descriptions and distinguishes them from group_b.
+            3. The distinguishing feature should be something that appears in all or most group_a images, even if it occasionally appears in group_b.
 
             IMPORTANT:
             - Focus on identifying the key distinguishing characteristic
-            - Be specific and clear about what makes GROUP A different from GROUP B
+            - Be specific and clear about what makes group_a different from group_b
             - Return ONLY a valid JSON block, formatted exactly like this: (Do not produce any other text)
 
             ```
             {{
-                "analysis": "Brief analysis comparing GROUP A and GROUP B examples",
-                "distinguishing_feature": "The key visual feature that distinguishes GROUP A from GROUP B"
+                "analysis": "Brief analysis comparing group_a and group_b examples",
+                "distinguishing_feature": "The key visual feature that distinguishes group_a from group_b"
             }}
             ```
             """
@@ -81,7 +81,7 @@ class BongardSDR:
             Now, based on the distinguishing feature you identified in your previous analysis, classify the following query image description.
 
             QUERY IMAGE DESCRIPTION:
-            
+
             {query_desc}
 
             Your task is to:

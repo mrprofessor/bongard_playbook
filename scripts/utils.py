@@ -17,6 +17,12 @@ def create_client(model):
         if not api_key:
             print("Error: OPENAI_API_KEY environment variable is not set")
             sys.exit(1)
+    elif model.startswith("gemini"):
+        base_url = "https://generativelanguage.googleapis.com/v1beta/openai/"
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            print("Error: GOOGLE_API_KEY environment variable is not set")
+            sys.exit(1)
 
     client = OpenAI(base_url=base_url, api_key=api_key)
     return client
