@@ -239,8 +239,8 @@ if __name__ == "__main__":
     # Initialize the evaluator
     max_tokens = 4092
     temperature = 0
-    caption_path = f"{constants.CAPTIONS_DIR}/{args.vlm}_scaptions.json"
-    output_path = f"{constants.RESULTS_DIR}/sdr1_{args.vlm}_{args.llm}.json"
+    caption_path = f"{constants.CAPTIONS_DIR}/{args.vlm}_captions.json"
+    output_path = f"{constants.RESULTS_DIR}/cmr_{args.vlm}_{args.llm}.json"
     logging.info(f"Caption path: {caption_path}")
     logging.info(f"Output path: {output_path}")
 
