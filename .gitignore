@@ -178,4 +178,7 @@ cython_debug/
 
 assets/data/bongard-ow/images
 debug/*
+debug_images/*
 canvases/*
+
+.DS_Store
