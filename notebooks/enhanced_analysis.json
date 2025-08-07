@@ -5,11 +5,6 @@
       "correct": 276,
       "total": 400
     },
-    "sdr1_gpt41_gpt41": {
-      "accuracy": 0.69,
-      "correct": 276,
-      "total": 400
-    },
     "cvr_gemini20": {
       "accuracy": 0.745,
       "correct": 298,
@@ -65,11 +60,6 @@
       "correct": 264,
       "total": 400
     },
-    "scmr2_gpt41_gpt41": {
-      "accuracy": 0.72,
-      "correct": 288,
-      "total": 400
-    },
     "cvr_gemma3": {
       "accuracy": 0.6725,
       "correct": 269,
@@ -78,11 +68,6 @@
     "cvr_mistral3": {
       "accuracy": 0.635,
       "correct": 254,
-      "total": 400
-    },
-    "scmr_gpt41_gpt41": {
-      "accuracy": 0.71,
-      "correct": 284,
       "total": 400
     },
     "cmr_qwen25_gemma3": {
@@ -145,11 +130,6 @@
       "correct": 255,
       "total": 400
     },
-    "scmr_gpt41_qwen3": {
-      "accuracy": 0.71,
-      "correct": 284,
-      "total": 400
-    },
     "cmr_llava16_gemma3": {
       "accuracy": 0.6025,
       "correct": 241,
@@ -180,24 +160,9 @@
       "correct": 288,
       "total": 400
     },
-    "scmr2_gpt41_qwen3": {
-      "accuracy": 0.69,
-      "correct": 276,
-      "total": 400
-    },
     "cmr_gemma3_llama4": {
       "accuracy": 0.665,
       "correct": 266,
-      "total": 400
-    },
-    "scmr_gemma3_gemma3": {
-      "accuracy": 0.61,
-      "correct": 244,
-      "total": 400
-    },
-    "scmr_gemma3_qwen3": {
-      "accuracy": 0.6875,
-      "correct": 275,
       "total": 400
     }
   },
@@ -206,12 +171,6 @@
       "A_correct": 155,
       "A_total": 200,
       "B_correct": 121,
-      "B_total": 200
-    },
-    "sdr1_gpt41_gpt41": {
-      "A_correct": 162,
-      "A_total": 200,
-      "B_correct": 114,
       "B_total": 200
     },
     "cvr_gemini20": {
@@ -280,12 +239,6 @@
       "B_correct": 110,
       "B_total": 200
     },
-    "scmr2_gpt41_gpt41": {
-      "A_correct": 131,
-      "A_total": 200,
-      "B_correct": 157,
-      "B_total": 200
-    },
     "cvr_gemma3": {
       "A_correct": 166,
       "A_total": 200,
@@ -296,12 +249,6 @@
       "A_correct": 154,
       "A_total": 200,
       "B_correct": 100,
-      "B_total": 200
-    },
-    "scmr_gpt41_gpt41": {
-      "A_correct": 159,
-      "A_total": 200,
-      "B_correct": 125,
       "B_total": 200
     },
     "cmr_qwen25_gemma3": {
@@ -376,12 +323,6 @@
       "B_correct": 123,
       "B_total": 200
     },
-    "scmr_gpt41_qwen3": {
-      "A_correct": 150,
-      "A_total": 200,
-      "B_correct": 134,
-      "B_total": 200
-    },
     "cmr_llava16_gemma3": {
       "A_correct": 153,
       "A_total": 200,
@@ -418,35 +359,16 @@
       "B_correct": 119,
       "B_total": 200
     },
-    "scmr2_gpt41_qwen3": {
-      "A_correct": 131,
-      "A_total": 200,
-      "B_correct": 145,
-      "B_total": 200
-    },
     "cmr_gemma3_llama4": {
       "A_correct": 140,
       "A_total": 200,
       "B_correct": 126,
-      "B_total": 200
-    },
-    "scmr_gemma3_gemma3": {
-      "A_correct": 158,
-      "A_total": 200,
-      "B_correct": 86,
-      "B_total": 200
-    },
-    "scmr_gemma3_qwen3": {
-      "A_correct": 150,
-      "A_total": 200,
-      "B_correct": 125,
       "B_total": 200
     }
   },
   "common_sense_performance": {
     "Functionality / Status / Affordance": {
       "cmr_qwen25_llama4": 0.6,
-      "sdr1_gpt41_gpt41": 0.7,
       "cvr_gemini20": 0.6,
       "cmr_gemma3_deepseekr1": 0.7,
       "sdr_gpt41_llama4": 0.8,
@@ -458,10 +380,8 @@
       "cvr_gemini25": 0.7,
       "cmr_llama4_deepseekr1": 0.7,
       "cmr_llama4_llama4": 0.5,
-      "scmr2_gpt41_gpt41": 0.7,
       "cvr_gemma3": 0.5,
       "cvr_mistral3": 0.5,
-      "scmr_gpt41_gpt41": 0.7,
       "cmr_qwen25_gemma3": 0.5,
       "cmr_gemma3_qwen3": 0.7,
       "cmr_gpt41_gemma3": 0.6,
@@ -474,21 +394,16 @@
       "cmr_gemma3_gemma3": 0.7,
       "cmr_llava16_qwen3": 0.5,
       "cmr_llava16_deepseekr1": 0.6,
-      "scmr_gpt41_qwen3": 0.7,
       "cmr_llava16_gemma3": 0.7,
       "cvr_gpt41": 0.7,
       "sdr_gpt41_qwen3": 0.6,
       "cmr_llama4_gemma3": 0.5,
       "cmr_qwen25_qwen3": 0.5,
       "cvr_qwen25": 0.7,
-      "scmr2_gpt41_qwen3": 0.7,
-      "cmr_gemma3_llama4": 0.7,
-      "scmr_gemma3_gemma3": 0.8,
-      "scmr_gemma3_qwen3": 0.7
+      "cmr_gemma3_llama4": 0.7
     },
     "Anything else*": {
       "cmr_qwen25_llama4": 0.7137931034482758,
-      "sdr1_gpt41_gpt41": 0.7344827586206897,
       "cvr_gemini20": 0.7517241379310344,
       "cmr_gemma3_deepseekr1": 0.7068965517241379,
       "sdr_gpt41_llama4": 0.5517241379310345,
@@ -500,10 +415,8 @@
       "cvr_gemini25": 0.7551724137931034,
       "cmr_llama4_deepseekr1": 0.7,
       "cmr_llama4_llama4": 0.6724137931034483,
-      "scmr2_gpt41_gpt41": 0.7379310344827587,
       "cvr_gemma3": 0.6724137931034483,
       "cvr_mistral3": 0.6620689655172414,
-      "scmr_gpt41_gpt41": 0.7310344827586207,
       "cmr_qwen25_gemma3": 0.6724137931034483,
       "cmr_gemma3_qwen3": 0.7448275862068966,
       "cmr_gpt41_gemma3": 0.6931034482758621,
@@ -516,21 +429,16 @@
       "cmr_gemma3_gemma3": 0.6586206896551724,
       "cmr_llava16_qwen3": 0.6689655172413793,
       "cmr_llava16_deepseekr1": 0.6620689655172414,
-      "scmr_gpt41_qwen3": 0.7413793103448276,
       "cmr_llava16_gemma3": 0.6413793103448275,
       "cvr_gpt41": 0.7482758620689656,
       "sdr_gpt41_qwen3": 0.6275862068965518,
       "cmr_llama4_gemma3": 0.6448275862068965,
       "cmr_qwen25_qwen3": 0.7137931034482758,
       "cvr_qwen25": 0.7413793103448276,
-      "scmr2_gpt41_qwen3": 0.7,
-      "cmr_gemma3_llama4": 0.6724137931034483,
-      "scmr_gemma3_gemma3": 0.6241379310344828,
-      "scmr_gemma3_qwen3": 0.6931034482758621
+      "cmr_gemma3_llama4": 0.6724137931034483
     },
     "Factual Knowledge": {
       "cmr_qwen25_llama4": 0.8333333333333334,
-      "sdr1_gpt41_gpt41": 0.6666666666666666,
       "cvr_gemini20": 0.8333333333333334,
       "cmr_gemma3_deepseekr1": 0.9166666666666666,
       "sdr_gpt41_llama4": 0.25,
@@ -542,10 +450,8 @@
       "cvr_gemini25": 0.8333333333333334,
       "cmr_llama4_deepseekr1": 0.75,
       "cmr_llama4_llama4": 0.75,
-      "scmr2_gpt41_gpt41": 0.75,
       "cvr_gemma3": 0.9166666666666666,
       "cvr_mistral3": 0.5,
-      "scmr_gpt41_gpt41": 0.6666666666666666,
       "cmr_qwen25_gemma3": 0.75,
       "cmr_gemma3_qwen3": 0.8333333333333334,
       "cmr_gpt41_gemma3": 0.75,
@@ -558,21 +464,16 @@
       "cmr_gemma3_gemma3": 0.75,
       "cmr_llava16_qwen3": 0.5833333333333334,
       "cmr_llava16_deepseekr1": 0.75,
-      "scmr_gpt41_qwen3": 0.75,
       "cmr_llava16_gemma3": 0.6666666666666666,
       "cvr_gpt41": 0.75,
       "sdr_gpt41_qwen3": 0.5833333333333334,
       "cmr_llama4_gemma3": 0.5833333333333334,
       "cmr_qwen25_qwen3": 0.8333333333333334,
       "cvr_qwen25": 0.6666666666666666,
-      "scmr2_gpt41_qwen3": 0.6666666666666666,
-      "cmr_gemma3_llama4": 0.6666666666666666,
-      "scmr_gemma3_gemma3": 0.5,
-      "scmr_gemma3_qwen3": 0.6666666666666666
+      "cmr_gemma3_llama4": 0.6666666666666666
     },
     "Color / Material / Shape": {
       "cmr_qwen25_llama4": 0.4642857142857143,
-      "sdr1_gpt41_gpt41": 0.42857142857142855,
       "cvr_gemini20": 0.6785714285714286,
       "cmr_gemma3_deepseekr1": 0.5714285714285714,
       "sdr_gpt41_llama4": 0.42857142857142855,
@@ -584,10 +485,8 @@
       "cvr_gemini25": 0.6785714285714286,
       "cmr_llama4_deepseekr1": 0.4642857142857143,
       "cmr_llama4_llama4": 0.4642857142857143,
-      "scmr2_gpt41_gpt41": 0.6071428571428571,
       "cvr_gemma3": 0.5357142857142857,
       "cvr_mistral3": 0.35714285714285715,
-      "scmr_gpt41_gpt41": 0.6071428571428571,
       "cmr_qwen25_gemma3": 0.42857142857142855,
       "cmr_gemma3_qwen3": 0.4642857142857143,
       "cmr_gpt41_gemma3": 0.5,
@@ -600,21 +499,16 @@
       "cmr_gemma3_gemma3": 0.42857142857142855,
       "cmr_llava16_qwen3": 0.42857142857142855,
       "cmr_llava16_deepseekr1": 0.39285714285714285,
-      "scmr_gpt41_qwen3": 0.4642857142857143,
       "cmr_llava16_gemma3": 0.25,
       "cvr_gpt41": 0.7142857142857143,
       "sdr_gpt41_qwen3": 0.42857142857142855,
       "cmr_llama4_gemma3": 0.5357142857142857,
       "cmr_qwen25_qwen3": 0.5357142857142857,
       "cvr_qwen25": 0.5357142857142857,
-      "scmr2_gpt41_qwen3": 0.5714285714285714,
-      "cmr_gemma3_llama4": 0.5,
-      "scmr_gemma3_gemma3": 0.42857142857142855,
-      "scmr_gemma3_qwen3": 0.5714285714285714
+      "cmr_gemma3_llama4": 0.5
     },
     "Relationship": {
       "cmr_qwen25_llama4": 0.625,
-      "sdr1_gpt41_gpt41": 0.75,
       "cvr_gemini20": 0.75,
       "cmr_gemma3_deepseekr1": 0.875,
       "sdr_gpt41_llama4": 0.5,
@@ -626,10 +520,8 @@
       "cvr_gemini25": 0.75,
       "cmr_llama4_deepseekr1": 0.875,
       "cmr_llama4_llama4": 0.75,
-      "scmr2_gpt41_gpt41": 0.625,
       "cvr_gemma3": 0.75,
       "cvr_mistral3": 0.625,
-      "scmr_gpt41_gpt41": 0.75,
       "cmr_qwen25_gemma3": 0.75,
       "cmr_gemma3_qwen3": 0.875,
       "cmr_gpt41_gemma3": 0.625,
@@ -642,21 +534,16 @@
       "cmr_gemma3_gemma3": 0.875,
       "cmr_llava16_qwen3": 0.5,
       "cmr_llava16_deepseekr1": 0.625,
-      "scmr_gpt41_qwen3": 0.75,
       "cmr_llava16_gemma3": 0.5,
       "cvr_gpt41": 0.75,
       "sdr_gpt41_qwen3": 0.5,
       "cmr_llama4_gemma3": 0.75,
       "cmr_qwen25_qwen3": 0.75,
       "cvr_qwen25": 0.75,
-      "scmr2_gpt41_qwen3": 0.75,
-      "cmr_gemma3_llama4": 0.75,
-      "scmr_gemma3_gemma3": 0.625,
-      "scmr_gemma3_qwen3": 0.625
+      "cmr_gemma3_llama4": 0.75
     },
     "Meta Class": {
       "cmr_qwen25_llama4": 0.625,
-      "sdr1_gpt41_gpt41": 0.5,
       "cvr_gemini20": 0.875,
       "cmr_gemma3_deepseekr1": 0.625,
       "sdr_gpt41_llama4": 0.375,
@@ -668,10 +555,8 @@
       "cvr_gemini25": 0.875,
       "cmr_llama4_deepseekr1": 0.75,
       "cmr_llama4_llama4": 0.875,
-      "scmr2_gpt41_gpt41": 0.875,
       "cvr_gemma3": 0.875,
       "cvr_mistral3": 0.75,
-      "scmr_gpt41_gpt41": 0.75,
       "cmr_qwen25_gemma3": 0.625,
       "cmr_gemma3_qwen3": 0.75,
       "cmr_gpt41_gemma3": 0.75,
@@ -684,21 +569,16 @@
       "cmr_gemma3_gemma3": 0.625,
       "cmr_llava16_qwen3": 0.875,
       "cmr_llava16_deepseekr1": 0.75,
-      "scmr_gpt41_qwen3": 0.75,
       "cmr_llava16_gemma3": 0.625,
       "cvr_gpt41": 0.875,
       "sdr_gpt41_qwen3": 0.75,
       "cmr_llama4_gemma3": 0.75,
       "cmr_qwen25_qwen3": 0.5,
       "cvr_qwen25": 0.75,
-      "scmr2_gpt41_qwen3": 0.875,
-      "cmr_gemma3_llama4": 0.625,
-      "scmr_gemma3_gemma3": 0.625,
-      "scmr_gemma3_qwen3": 0.75
+      "cmr_gemma3_llama4": 0.625
     },
     "HOI": {
       "cmr_qwen25_llama4": 0.75,
-      "sdr1_gpt41_gpt41": 0.6666666666666666,
       "cvr_gemini20": 0.8333333333333334,
       "cmr_gemma3_deepseekr1": 0.6666666666666666,
       "sdr_gpt41_llama4": 0.5833333333333334,
@@ -710,10 +590,8 @@
       "cvr_gemini25": 0.75,
       "cmr_llama4_deepseekr1": 0.6666666666666666,
       "cmr_llama4_llama4": 0.5,
-      "scmr2_gpt41_gpt41": 0.75,
       "cvr_gemma3": 0.75,
       "cvr_mistral3": 1.0,
-      "scmr_gpt41_gpt41": 0.8333333333333334,
       "cmr_qwen25_gemma3": 0.8333333333333334,
       "cmr_gemma3_qwen3": 0.75,
       "cmr_gpt41_gemma3": 0.9166666666666666,
@@ -726,21 +604,16 @@
       "cmr_gemma3_gemma3": 0.75,
       "cmr_llava16_qwen3": 0.75,
       "cmr_llava16_deepseekr1": 0.75,
-      "scmr_gpt41_qwen3": 0.75,
       "cmr_llava16_gemma3": 0.8333333333333334,
       "cvr_gpt41": 1.0,
       "sdr_gpt41_qwen3": 0.8333333333333334,
       "cmr_llama4_gemma3": 0.5833333333333334,
       "cmr_qwen25_qwen3": 0.8333333333333334,
       "cvr_qwen25": 0.9166666666666666,
-      "scmr2_gpt41_qwen3": 0.8333333333333334,
-      "cmr_gemma3_llama4": 0.75,
-      "scmr_gemma3_gemma3": 0.75,
-      "scmr_gemma3_qwen3": 0.8333333333333334
+      "cmr_gemma3_llama4": 0.75
     },
     "And / Or / Not": {
       "cmr_qwen25_llama4": 0.625,
-      "sdr1_gpt41_gpt41": 0.625,
       "cvr_gemini20": 0.625,
       "cmr_gemma3_deepseekr1": 0.625,
       "sdr_gpt41_llama4": 0.5,
@@ -752,10 +625,8 @@
       "cvr_gemini25": 0.5,
       "cmr_llama4_deepseekr1": 0.625,
       "cmr_llama4_llama4": 0.875,
-      "scmr2_gpt41_gpt41": 0.625,
       "cvr_gemma3": 0.625,
       "cvr_mistral3": 0.625,
-      "scmr_gpt41_gpt41": 0.5,
       "cmr_qwen25_gemma3": 0.25,
       "cmr_gemma3_qwen3": 0.5,
       "cmr_gpt41_gemma3": 0.25,
@@ -768,21 +639,16 @@
       "cmr_gemma3_gemma3": 0.375,
       "cmr_llava16_qwen3": 0.375,
       "cmr_llava16_deepseekr1": 0.625,
-      "scmr_gpt41_qwen3": 0.375,
       "cmr_llava16_gemma3": 0.375,
       "cvr_gpt41": 0.625,
       "sdr_gpt41_qwen3": 0.625,
       "cmr_llama4_gemma3": 0.5,
       "cmr_qwen25_qwen3": 0.5,
       "cvr_qwen25": 0.625,
-      "scmr2_gpt41_qwen3": 0.25,
-      "cmr_gemma3_llama4": 0.625,
-      "scmr_gemma3_gemma3": 0.375,
-      "scmr_gemma3_qwen3": 0.625
+      "cmr_gemma3_llama4": 0.625
     },
     "Taste / Nutrition / Food": {
       "cmr_qwen25_llama4": 0.625,
-      "sdr1_gpt41_gpt41": 0.625,
       "cvr_gemini20": 0.625,
       "cmr_gemma3_deepseekr1": 0.875,
       "sdr_gpt41_llama4": 0.625,
@@ -794,10 +660,8 @@
       "cvr_gemini25": 0.75,
       "cmr_llama4_deepseekr1": 0.75,
       "cmr_llama4_llama4": 0.875,
-      "scmr2_gpt41_gpt41": 0.75,
       "cvr_gemma3": 0.75,
       "cvr_mistral3": 0.625,
-      "scmr_gpt41_gpt41": 0.625,
       "cmr_qwen25_gemma3": 0.625,
       "cmr_gemma3_qwen3": 0.625,
       "cmr_gpt41_gemma3": 0.625,
@@ -810,21 +674,16 @@
       "cmr_gemma3_gemma3": 0.625,
       "cmr_llava16_qwen3": 0.625,
       "cmr_llava16_deepseekr1": 0.75,
-      "scmr_gpt41_qwen3": 0.625,
       "cmr_llava16_gemma3": 0.625,
       "cvr_gpt41": 0.625,
       "sdr_gpt41_qwen3": 0.5,
       "cmr_llama4_gemma3": 0.625,
       "cmr_qwen25_qwen3": 0.75,
       "cvr_qwen25": 0.625,
-      "scmr2_gpt41_qwen3": 0.875,
-      "cmr_gemma3_llama4": 0.625,
-      "scmr_gemma3_gemma3": 0.5,
-      "scmr_gemma3_qwen3": 0.625
+      "cmr_gemma3_llama4": 0.625
     },
     "Unusual Observations": {
       "cmr_qwen25_llama4": 0.6875,
-      "sdr1_gpt41_gpt41": 0.5,
       "cvr_gemini20": 0.75,
       "cmr_gemma3_deepseekr1": 0.5625,
       "sdr_gpt41_llama4": 0.5625,
@@ -836,10 +695,8 @@
       "cvr_gemini25": 0.5625,
       "cmr_llama4_deepseekr1": 0.625,
       "cmr_llama4_llama4": 0.5625,
-      "scmr2_gpt41_gpt41": 0.5625,
       "cvr_gemma3": 0.625,
       "cvr_mistral3": 0.5,
-      "scmr_gpt41_gpt41": 0.5625,
       "cmr_qwen25_gemma3": 0.5625,
       "cmr_gemma3_qwen3": 0.625,
       "cmr_gpt41_gemma3": 0.5625,
@@ -852,69 +709,65 @@
       "cmr_gemma3_gemma3": 0.625,
       "cmr_llava16_qwen3": 0.4375,
       "cmr_llava16_deepseekr1": 0.375,
-      "scmr_gpt41_qwen3": 0.6875,
       "cmr_llava16_gemma3": 0.375,
       "cvr_gpt41": 0.6875,
       "sdr_gpt41_qwen3": 0.5,
       "cmr_llama4_gemma3": 0.5,
       "cmr_qwen25_qwen3": 0.5625,
       "cvr_qwen25": 0.625,
-      "scmr2_gpt41_qwen3": 0.625,
-      "cmr_gemma3_llama4": 0.75,
-      "scmr_gemma3_gemma3": 0.6875,
-      "scmr_gemma3_qwen3": 0.75
+      "cmr_gemma3_llama4": 0.75
     }
   },
   "common_sense_difficulty": {
     "Functionality / Status / Affordance": {
-      "success_rate": 0.65,
-      "total_attempts": 400,
-      "difficulty_score": 0.35
+      "success_rate": 0.6363636363636364,
+      "total_attempts": 330,
+      "difficulty_score": 0.36363636363636365
     },
     "Anything else*": {
-      "success_rate": 0.6962068965517242,
-      "total_attempts": 11600,
-      "difficulty_score": 0.3037931034482758
+      "success_rate": 0.693521421107628,
+      "total_attempts": 9570,
+      "difficulty_score": 0.30647857889237196
     },
     "Factual Knowledge": {
-      "success_rate": 0.7104166666666667,
-      "total_attempts": 480,
-      "difficulty_score": 0.2895833333333333
+      "success_rate": 0.7196969696969697,
+      "total_attempts": 396,
+      "difficulty_score": 0.2803030303030303
     },
     "Color / Material / Shape": {
-      "success_rate": 0.5071428571428571,
-      "total_attempts": 1120,
-      "difficulty_score": 0.4928571428571429
+      "success_rate": 0.5032467532467533,
+      "total_attempts": 924,
+      "difficulty_score": 0.4967532467532467
     },
     "Relationship": {
-      "success_rate": 0.703125,
-      "total_attempts": 320,
-      "difficulty_score": 0.296875
+      "success_rate": 0.7045454545454546,
+      "total_attempts": 264,
+      "difficulty_score": 0.2954545454545454
     },
     "Meta Class": {
-      "success_rate": 0.721875,
-      "total_attempts": 320,
-      "difficulty_score": 0.27812499999999996
+      "success_rate": 0.7196969696969697,
+      "total_attempts": 264,
+      "difficulty_score": 0.2803030303030303
     },
     "HOI": {
-      "success_rate": 0.7770833333333333,
-      "total_attempts": 480,
-      "difficulty_score": 0.22291666666666665
+      "success_rate": 0.7777777777777778,
+      "total_attempts": 396,
+      "difficulty_score": 0.2222222222222222
     },
     "And / Or / Not": {
-      "success_rate": 0.540625,
-      "total_attempts": 320,
-      "difficulty_score": 0.459375
+      "success_rate": 0.553030303030303,
+      "total_attempts": 264,
+      "difficulty_score": 0.446969696969697
     },
     "Taste / Nutrition / Food": {
-      "success_rate": 0.66875,
-      "total_attempts": 320,
-      "difficulty_score": 0.33125000000000004
+      "success_rate": 0.6704545454545454,
+      "total_attempts": 264,
+      "difficulty_score": 0.3295454545454546
     },
     "Unusual Observations": {
-      "success_rate": 0.578125,
-      "total_attempts": 640,
-      "difficulty_score": 0.421875
+      "success_rate": 0.5681818181818182,
+      "total_attempts": 528,
+      "difficulty_score": 0.43181818181818177
     }
   },
   "common_sense_mapping": {
