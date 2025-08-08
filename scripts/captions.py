@@ -59,11 +59,13 @@ class BongardCaptioner:
                             ],
                         }
                     ]
+                    completion_params = utils.get_completion_params(
+                        self.model, self.max_tokens, self.temperature
+                    )
                     response = self.client.chat.completions.create(
                         model=constants.AIO_MODELS.get(self.model),
                         messages=messages,
-                        max_tokens=self.max_tokens,
-                        temperature=self.temperature,
+                        **completion_params,
                     )
                     caption = response.choices[0].message.content
                     logging.info("====")

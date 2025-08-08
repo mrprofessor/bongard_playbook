@@ -111,11 +111,13 @@ class BongardCVR:
 
     def query_model(self, content: List[dict]) -> str:
         try:
+            completion_params = utils.get_completion_params(
+                self.model_name, self.max_tokens, self.temperature
+            )
             response = self.client.chat.completions.create(
                 model=self.model_id,
                 messages=[{"role": "user", "content": content}],
-                max_tokens=self.max_tokens,
-                temperature=self.temperature,
+                **completion_params,
             )
             return response.choices[0].message.content
         except Exception as e:

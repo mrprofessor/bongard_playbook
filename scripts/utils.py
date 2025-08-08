@@ -11,7 +11,7 @@ def create_client(model):
     base_url = "http://localhost:11434/v1"
     api_key = "ollama"
 
-    if model == "gpt41":
+    if model in ["gpt41", "gpt5"]:
         base_url = "https://api.openai.com/v1"
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
@@ -26,6 +26,23 @@ def create_client(model):
 
     client = OpenAI(base_url=base_url, api_key=api_key)
     return client
+
+
+def get_completion_params(model, max_tokens, temperature):
+    """Return the correct parameters for chat completion based on the model type"""
+    if model == "gpt5":
+        params = {
+            "max_completion_tokens": max_tokens
+        }
+        # GPT-5 only supports default temperature of 1, skip temperature parameter if it's 0
+        if temperature != 0:
+            params["temperature"] = temperature
+        return params
+    else:
+        return {
+            "max_tokens": max_tokens,
+            "temperature": temperature
+        }
 
 
 def encode_image(image_path: str) -> str:

@@ -15,6 +15,7 @@ LLM_MODELS = {
     "gemma3": "gemma3:27b",
     "gemini20": "gemini-2.0-flash",
     "gpt41": "gpt-4.1",
+    "gpt5": "gpt-5",
 }
 
 VLM_MODELS = {
@@ -34,4 +35,5 @@ AIO_MODELS = {
     "gemini20": "gemini-2.0-flash",
     "gemini25": "gemini-2.5-flash",
     "gpt41": "gpt-4.1",
+    "gpt5": "gpt-5",
 }

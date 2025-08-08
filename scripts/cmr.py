@@ -149,11 +149,13 @@ class BongardCMR:
 
     def query_model(self, content: str) -> str:
         try:
+            completion_params = utils.get_completion_params(
+                self.llm, self.max_tokens, self.temperature
+            )
             response = self.client.chat.completions.create(
                 model=self.model_id,
                 messages=[{"role": "user", "content": content}],
-                max_tokens=self.max_tokens,
-                temperature=self.temperature,
+                **completion_params,
                 # think = False,
             )
             return response.choices[0].message.content or ""
