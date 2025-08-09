@@ -13,6 +13,7 @@ LLM_MODELS = {
     "deepseekr1": "deepseek-r1:70b",
     "qwen3": "qwen3:32b",
     "gemma3": "gemma3:27b",
+    "gptoss": "gpt-oss:120b",
     "gemini20": "gemini-2.0-flash",
     "gpt41": "gpt-4.1",
     "gpt5": "gpt-5",
