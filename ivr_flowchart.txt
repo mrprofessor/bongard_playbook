@@ -1,0 +1,137 @@
+IVR (Iterative Visual Reasoning) Flowchart - Single Integrated Loop
+==================================================================
+
+                    ┌─────────────────┐
+                    │ Load Dataset    │
+                    │ (Images A/B +   │
+                    │  Query Image)   │
+                    └─────┬───────────┘
+                          │
+                          v
+                    ┌─────────────────┐
+                    │ Stage 1:        │
+                    │ Initial Visual  │
+                    │ Analysis        │
+                    │ (Pattern +      │
+                    │  Classification)│
+                    │ + Confidence    │
+                    └─────┬───────────┘
+                          │
+                          v
+    ┌─────────────────────────────────────────────────────┐
+    │         INTEGRATED VISUAL REASONING LOOP            │
+    │                                                     │
+    │    ┌─────────────────┐                             │
+    │    │ Stage 2:        │                             │
+    │    │ Holistic        │                             │
+    │    │ Re-examination  │                             │
+    │    │ - Re-check      │                             │
+    │    │   pattern       │                             │
+    │    │ - Re-check      │                             │
+    │    │   query fit     │                             │
+    │    │ - Update both   │                             │
+    │    └─────┬───────────┘                             │
+    │          │                                         │
+    │          v                                         │
+    │    ┌─────────────────┐    No   ┌─────────────────┐ │
+    │    │ Overall         │◄────────┤ Max Iterations  │ │
+    │    │ Confidence >    │         │ (3) Reached?    │ │
+    │    │ Threshold?      │         │                 │ │
+    │    └─────┬─────────┬─┘         └─────────────────┘ │
+    │          │ Yes     │ No                            │
+    │          │         v                               │
+    │          │   ┌─────────────────┐                   │
+    │          │   │ Stage 3:        │                   │
+    │          │   │ Critical        │                   │
+    │          │   │ Self-Questions: │                   │
+    │          │   │ - Right pattern?│                   │
+    │          │   │ - Right fit?    │                   │
+    │          │   │ - Any doubts?   │                   │
+    │          │   └─────┬───────────┘                   │
+    │          │         │                               │
+    │          │         └───────────────────────────────┘
+    │          │
+    └──────────┼─────────────────────────────────────────
+               v
+         ┌─────────────────┐
+         │ Final Answer    │
+         │ with Overall    │
+         │ Visual          │
+         │ Confidence      │
+         └─────────────────┘
+
+Key Stages Explained:
+====================
+
+Stage 1: Initial Visual Analysis
+- View all 13 images together (6 group_a + 6 group_b + 1 query)
+- Identify distinguishing visual pattern
+- Make initial classification of query
+- Rate overall confidence (0.0-1.0)
+
+Stage 2: Holistic Re-examination
+- Re-examine ALL images with fresh perspective
+- Validate pattern against every group_a and group_b image
+- Re-assess query image fit with the pattern
+- Update both pattern understanding AND classification together
+
+Stage 3: Critical Self-Questions
+- "Does this pattern actually work for all group_a images?"
+- "Does the query truly match this pattern or just superficially?"
+- "Am I seeing the right distinguishing feature?"
+- "Could there be a better pattern I'm missing?"
+- "What would change my mind about this classification?"
+
+Final Output:
+============
+- Overall Visual Confidence: Single confidence score for the analysis
+- Detailed iteration history showing reasoning evolution
+- Final classification with comprehensive visual reasoning
+- Pattern refinement history across iterations
+
+Critical Self-Questions Asked Each Iteration:
+============================================
+
+Pattern Validation:
+- "Looking at ALL group_a images, is this pattern truly consistent?"
+- "Are there group_a images that don't fit my identified pattern?"
+- "Do any group_b images accidentally match my pattern?"
+- "Is there a more fundamental visual difference I'm missing?"
+
+Query Classification Validation:
+- "Does the query image show the EXACT same visual pattern as group_a?"
+- "Could this be visually similar but fundamentally different?"
+- "What specific visual elements make me think it belongs to group_a/b?"
+- "If I cover the group labels, where would I naturally place this query?"
+
+Integrated Reasoning:
+- "Am I being consistent in how I apply this pattern?"
+- "Does my classification make visual sense when I look at all images together?"
+- "What's the strongest visual evidence for/against this classification?"
+
+Advantages Over Dual-Loop Approach:
+==================================
+✅ More Natural: Mirrors human visual reasoning (holistic pattern recognition)
+✅ Efficient: Fewer API calls, single conversation thread
+✅ Integrated: Pattern discovery and application happen together
+✅ Flexible: Can adjust both pattern and classification simultaneously
+✅ Visual Focus: Direct image analysis without artificial text separation
+
+Expected Benefits for Difficult Cases:
+=====================================
+- Direct visual comparison avoids caption translation errors
+- Holistic reasoning catches subtle visual distinctions
+- Iterative refinement improves on uncertain classifications
+- Self-questioning prevents overconfident wrong answers
+
+Example Flow for 0753_B (Animals Running):
+=========================================
+1. Initial Analysis: See images directly, identify "motion" pattern
+2. Iteration 1: Re-examine - distinguish "locomotion motion" vs "interaction motion"
+3. Iteration 2: Focus on query - "are these hares running or fighting?"
+4. Iteration 3: Final validation - visual evidence for interaction vs locomotion
+5. Result: Hopefully correct classification based on actual visual evidence
+
+The single-loop approach treats visual reasoning as the integrated cognitive
+process it naturally is, rather than artificially separating pattern discovery
+from pattern application.

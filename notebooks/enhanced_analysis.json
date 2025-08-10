@@ -45,6 +45,11 @@
       "correct": 276,
       "total": 400
     },
+    "sdr_gpt41_gptoss": {
+      "accuracy": 0.69,
+      "correct": 276,
+      "total": 400
+    },
     "cmr_llama4_qwen3": {
       "accuracy": 0.7075,
       "correct": 283,
@@ -130,6 +135,11 @@
       "correct": 269,
       "total": 400
     },
+    "cmr_gpt41_gptoss": {
+      "accuracy": 0.7325,
+      "correct": 293,
+      "total": 400
+    },
     "cmr_llava16_qwen3": {
       "accuracy": 0.6325,
       "correct": 253,
@@ -163,6 +173,11 @@
     "cvr_gemini25": {
       "accuracy": 0.74,
       "correct": 296,
+      "total": 400
+    },
+    "cmr_gpt5_gpt5": {
+      "accuracy": 0.7475,
+      "correct": 299,
       "total": 400
     },
     "cmr_llama4_llama4": {
@@ -224,6 +239,12 @@
       "A_correct": 144,
       "A_total": 200,
       "B_correct": 132,
+      "B_total": 200
+    },
+    "sdr_gpt41_gptoss": {
+      "A_correct": 137,
+      "A_total": 200,
+      "B_correct": 139,
       "B_total": 200
     },
     "cmr_llama4_qwen3": {
@@ -328,6 +349,12 @@
       "B_correct": 103,
       "B_total": 200
     },
+    "cmr_gpt41_gptoss": {
+      "A_correct": 155,
+      "A_total": 200,
+      "B_correct": 138,
+      "B_total": 200
+    },
     "cmr_llava16_qwen3": {
       "A_correct": 131,
       "A_total": 200,
@@ -370,6 +397,12 @@
       "B_correct": 116,
       "B_total": 200
     },
+    "cmr_gpt5_gpt5": {
+      "A_correct": 158,
+      "A_total": 200,
+      "B_correct": 141,
+      "B_total": 200
+    },
     "cmr_llama4_llama4": {
       "A_correct": 154,
       "A_total": 200,
@@ -388,6 +421,7 @@
       "cmr_gemma3_qwen3": 0.7448275862068966,
       "cmr_qwen25_deepseekr1": 0.696551724137931,
       "cmr_qwen25_qwen3": 0.7137931034482758,
+      "sdr_gpt41_gptoss": 0.7275862068965517,
       "cmr_llama4_qwen3": 0.7413793103448276,
       "cmr_gemini20_gemini20": 0.7344827586206897,
       "cmr_gpt41_gpt41": 0.7206896551724138,
@@ -405,6 +439,7 @@
       "cmr_gemma3_deepseekr1": 0.7068965517241379,
       "cmr_llava16_deepseekr1": 0.6620689655172414,
       "cvr_gemma3": 0.6724137931034483,
+      "cmr_gpt41_gptoss": 0.7620689655172413,
       "cmr_llava16_qwen3": 0.6689655172413793,
       "cmr_llama4_gemma3": 0.6448275862068965,
       "cvr_mistral3": 0.6620689655172414,
@@ -412,6 +447,7 @@
       "sdr_gpt41_llama4": 0.5517241379310345,
       "cmr_llava16_gemma3": 0.6413793103448275,
       "cvr_gemini25": 0.7551724137931034,
+      "cmr_gpt5_gpt5": 0.7689655172413793,
       "cmr_llama4_llama4": 0.6724137931034483
     },
     "Color / Material / Shape": {
@@ -424,6 +460,7 @@
       "cmr_gemma3_qwen3": 0.4642857142857143,
       "cmr_qwen25_deepseekr1": 0.6071428571428571,
       "cmr_qwen25_qwen3": 0.5357142857142857,
+      "sdr_gpt41_gptoss": 0.6785714285714286,
       "cmr_llama4_qwen3": 0.4642857142857143,
       "cmr_gemini20_gemini20": 0.6071428571428571,
       "cmr_gpt41_gpt41": 0.6071428571428571,
@@ -441,6 +478,7 @@
       "cmr_gemma3_deepseekr1": 0.5714285714285714,
       "cmr_llava16_deepseekr1": 0.39285714285714285,
       "cvr_gemma3": 0.5357142857142857,
+      "cmr_gpt41_gptoss": 0.6071428571428571,
       "cmr_llava16_qwen3": 0.42857142857142855,
       "cmr_llama4_gemma3": 0.5357142857142857,
       "cvr_mistral3": 0.35714285714285715,
@@ -448,6 +486,7 @@
       "sdr_gpt41_llama4": 0.42857142857142855,
       "cmr_llava16_gemma3": 0.25,
       "cvr_gemini25": 0.6785714285714286,
+      "cmr_gpt5_gpt5": 0.6071428571428571,
       "cmr_llama4_llama4": 0.4642857142857143
     },
     "HOI": {
@@ -460,6 +499,7 @@
       "cmr_gemma3_qwen3": 0.75,
       "cmr_qwen25_deepseekr1": 0.8333333333333334,
       "cmr_qwen25_qwen3": 0.8333333333333334,
+      "sdr_gpt41_gptoss": 0.75,
       "cmr_llama4_qwen3": 0.75,
       "cmr_gemini20_gemini20": 0.8333333333333334,
       "cmr_gpt41_gpt41": 0.75,
@@ -477,6 +517,7 @@
       "cmr_gemma3_deepseekr1": 0.6666666666666666,
       "cmr_llava16_deepseekr1": 0.75,
       "cvr_gemma3": 0.75,
+      "cmr_gpt41_gptoss": 0.75,
       "cmr_llava16_qwen3": 0.75,
       "cmr_llama4_gemma3": 0.5833333333333334,
       "cvr_mistral3": 1.0,
@@ -484,6 +525,7 @@
       "sdr_gpt41_llama4": 0.5833333333333334,
       "cmr_llava16_gemma3": 0.8333333333333334,
       "cvr_gemini25": 0.75,
+      "cmr_gpt5_gpt5": 1.0,
       "cmr_llama4_llama4": 0.5
     },
     "Unusual Observations": {
@@ -496,6 +538,7 @@
       "cmr_gemma3_qwen3": 0.625,
       "cmr_qwen25_deepseekr1": 0.6875,
       "cmr_qwen25_qwen3": 0.5625,
+      "sdr_gpt41_gptoss": 0.3125,
       "cmr_llama4_qwen3": 0.625,
       "cmr_gemini20_gemini20": 0.625,
       "cmr_gpt41_gpt41": 0.625,
@@ -513,6 +556,7 @@
       "cmr_gemma3_deepseekr1": 0.5625,
       "cmr_llava16_deepseekr1": 0.375,
       "cvr_gemma3": 0.625,
+      "cmr_gpt41_gptoss": 0.4375,
       "cmr_llava16_qwen3": 0.4375,
       "cmr_llama4_gemma3": 0.5,
       "cvr_mistral3": 0.5,
@@ -520,6 +564,7 @@
       "sdr_gpt41_llama4": 0.5625,
       "cmr_llava16_gemma3": 0.375,
       "cvr_gemini25": 0.5625,
+      "cmr_gpt5_gpt5": 0.5625,
       "cmr_llama4_llama4": 0.5625
     },
     "Factual Knowledge": {
@@ -532,6 +577,7 @@
       "cmr_gemma3_qwen3": 0.8333333333333334,
       "cmr_qwen25_deepseekr1": 0.75,
       "cmr_qwen25_qwen3": 0.8333333333333334,
+      "sdr_gpt41_gptoss": 0.5833333333333334,
       "cmr_llama4_qwen3": 0.75,
       "cmr_gemini20_gemini20": 0.75,
       "cmr_gpt41_gpt41": 0.75,
@@ -549,6 +595,7 @@
       "cmr_gemma3_deepseekr1": 0.9166666666666666,
       "cmr_llava16_deepseekr1": 0.75,
       "cvr_gemma3": 0.9166666666666666,
+      "cmr_gpt41_gptoss": 0.5833333333333334,
       "cmr_llava16_qwen3": 0.5833333333333334,
       "cmr_llama4_gemma3": 0.5833333333333334,
       "cvr_mistral3": 0.5,
@@ -556,6 +603,7 @@
       "sdr_gpt41_llama4": 0.25,
       "cmr_llava16_gemma3": 0.6666666666666666,
       "cvr_gemini25": 0.8333333333333334,
+      "cmr_gpt5_gpt5": 0.6666666666666666,
       "cmr_llama4_llama4": 0.75
     },
     "Relationship": {
@@ -568,6 +616,7 @@
       "cmr_gemma3_qwen3": 0.875,
       "cmr_qwen25_deepseekr1": 0.75,
       "cmr_qwen25_qwen3": 0.75,
+      "sdr_gpt41_gptoss": 0.625,
       "cmr_llama4_qwen3": 0.75,
       "cmr_gemini20_gemini20": 0.75,
       "cmr_gpt41_gpt41": 0.75,
@@ -585,6 +634,7 @@
       "cmr_gemma3_deepseekr1": 0.875,
       "cmr_llava16_deepseekr1": 0.625,
       "cvr_gemma3": 0.75,
+      "cmr_gpt41_gptoss": 0.75,
       "cmr_llava16_qwen3": 0.5,
       "cmr_llama4_gemma3": 0.75,
       "cvr_mistral3": 0.625,
@@ -592,6 +642,7 @@
       "sdr_gpt41_llama4": 0.5,
       "cmr_llava16_gemma3": 0.5,
       "cvr_gemini25": 0.75,
+      "cmr_gpt5_gpt5": 0.75,
       "cmr_llama4_llama4": 0.75
     },
     "Functionality / Status / Affordance": {
@@ -604,6 +655,7 @@
       "cmr_gemma3_qwen3": 0.7,
       "cmr_qwen25_deepseekr1": 0.8,
       "cmr_qwen25_qwen3": 0.5,
+      "sdr_gpt41_gptoss": 0.6,
       "cmr_llama4_qwen3": 0.6,
       "cmr_gemini20_gemini20": 0.5,
       "cmr_gpt41_gpt41": 0.7,
@@ -621,6 +673,7 @@
       "cmr_gemma3_deepseekr1": 0.7,
       "cmr_llava16_deepseekr1": 0.6,
       "cvr_gemma3": 0.5,
+      "cmr_gpt41_gptoss": 0.7,
       "cmr_llava16_qwen3": 0.5,
       "cmr_llama4_gemma3": 0.5,
       "cvr_mistral3": 0.5,
@@ -628,6 +681,7 @@
       "sdr_gpt41_llama4": 0.8,
       "cmr_llava16_gemma3": 0.7,
       "cvr_gemini25": 0.7,
+      "cmr_gpt5_gpt5": 0.8,
       "cmr_llama4_llama4": 0.5
     },
     "Taste / Nutrition / Food": {
@@ -640,6 +694,7 @@
       "cmr_gemma3_qwen3": 0.625,
       "cmr_qwen25_deepseekr1": 0.875,
       "cmr_qwen25_qwen3": 0.75,
+      "sdr_gpt41_gptoss": 0.75,
       "cmr_llama4_qwen3": 0.375,
       "cmr_gemini20_gemini20": 0.875,
       "cmr_gpt41_gpt41": 0.75,
@@ -657,6 +712,7 @@
       "cmr_gemma3_deepseekr1": 0.875,
       "cmr_llava16_deepseekr1": 0.75,
       "cvr_gemma3": 0.75,
+      "cmr_gpt41_gptoss": 0.875,
       "cmr_llava16_qwen3": 0.625,
       "cmr_llama4_gemma3": 0.625,
       "cvr_mistral3": 0.625,
@@ -664,6 +720,7 @@
       "sdr_gpt41_llama4": 0.625,
       "cmr_llava16_gemma3": 0.625,
       "cvr_gemini25": 0.75,
+      "cmr_gpt5_gpt5": 0.625,
       "cmr_llama4_llama4": 0.875
     },
     "Meta Class": {
@@ -676,6 +733,7 @@
       "cmr_gemma3_qwen3": 0.75,
       "cmr_qwen25_deepseekr1": 0.625,
       "cmr_qwen25_qwen3": 0.5,
+      "sdr_gpt41_gptoss": 0.625,
       "cmr_llama4_qwen3": 0.75,
       "cmr_gemini20_gemini20": 0.875,
       "cmr_gpt41_gpt41": 0.625,
@@ -693,6 +751,7 @@
       "cmr_gemma3_deepseekr1": 0.625,
       "cmr_llava16_deepseekr1": 0.75,
       "cvr_gemma3": 0.875,
+      "cmr_gpt41_gptoss": 0.75,
       "cmr_llava16_qwen3": 0.875,
       "cmr_llama4_gemma3": 0.75,
       "cvr_mistral3": 0.75,
@@ -700,6 +759,7 @@
       "sdr_gpt41_llama4": 0.375,
       "cmr_llava16_gemma3": 0.625,
       "cvr_gemini25": 0.875,
+      "cmr_gpt5_gpt5": 0.75,
       "cmr_llama4_llama4": 0.875
     },
     "And / Or / Not": {
@@ -712,6 +772,7 @@
       "cmr_gemma3_qwen3": 0.5,
       "cmr_qwen25_deepseekr1": 0.375,
       "cmr_qwen25_qwen3": 0.5,
+      "sdr_gpt41_gptoss": 0.375,
       "cmr_llama4_qwen3": 0.75,
       "cmr_gemini20_gemini20": 0.5,
       "cmr_gpt41_gpt41": 0.75,
@@ -729,6 +790,7 @@
       "cmr_gemma3_deepseekr1": 0.625,
       "cmr_llava16_deepseekr1": 0.625,
       "cvr_gemma3": 0.625,
+      "cmr_gpt41_gptoss": 0.75,
       "cmr_llava16_qwen3": 0.375,
       "cmr_llama4_gemma3": 0.5,
       "cvr_mistral3": 0.625,
@@ -736,59 +798,60 @@
       "sdr_gpt41_llama4": 0.5,
       "cmr_llava16_gemma3": 0.375,
       "cvr_gemini25": 0.5,
+      "cmr_gpt5_gpt5": 0.625,
       "cmr_llama4_llama4": 0.875
     }
   },
   "common_sense_difficulty": {
     "Anything else*": {
-      "success_rate": 0.6968559837728194,
-      "total_attempts": 9860,
-      "difficulty_score": 0.30314401622718057
+      "success_rate": 0.7013979496738117,
+      "total_attempts": 10730,
+      "difficulty_score": 0.29860205032618825
     },
     "Color / Material / Shape": {
-      "success_rate": 0.5105042016806722,
-      "total_attempts": 952,
-      "difficulty_score": 0.48949579831932777
+      "success_rate": 0.5202702702702703,
+      "total_attempts": 1036,
+      "difficulty_score": 0.4797297297297297
     },
     "HOI": {
-      "success_rate": 0.7843137254901961,
-      "total_attempts": 408,
-      "difficulty_score": 0.21568627450980393
+      "success_rate": 0.7882882882882883,
+      "total_attempts": 444,
+      "difficulty_score": 0.21171171171171166
     },
     "Unusual Observations": {
-      "success_rate": 0.5735294117647058,
-      "total_attempts": 544,
-      "difficulty_score": 0.42647058823529416
+      "success_rate": 0.5625,
+      "total_attempts": 592,
+      "difficulty_score": 0.4375
     },
     "Factual Knowledge": {
-      "success_rate": 0.7205882352941176,
-      "total_attempts": 408,
-      "difficulty_score": 0.27941176470588236
+      "success_rate": 0.7117117117117117,
+      "total_attempts": 444,
+      "difficulty_score": 0.28828828828828834
     },
     "Relationship": {
-      "success_rate": 0.7058823529411765,
-      "total_attempts": 272,
-      "difficulty_score": 0.2941176470588235
+      "success_rate": 0.706081081081081,
+      "total_attempts": 296,
+      "difficulty_score": 0.29391891891891897
     },
     "Functionality / Status / Affordance": {
-      "success_rate": 0.638235294117647,
-      "total_attempts": 340,
-      "difficulty_score": 0.361764705882353
+      "success_rate": 0.6432432432432432,
+      "total_attempts": 370,
+      "difficulty_score": 0.3567567567567568
     },
     "Taste / Nutrition / Food": {
-      "success_rate": 0.6691176470588235,
-      "total_attempts": 272,
-      "difficulty_score": 0.3308823529411765
+      "success_rate": 0.6756756756756757,
+      "total_attempts": 296,
+      "difficulty_score": 0.32432432432432434
     },
     "Meta Class": {
-      "success_rate": 0.7242647058823529,
-      "total_attempts": 272,
-      "difficulty_score": 0.2757352941176471
+      "success_rate": 0.722972972972973,
+      "total_attempts": 296,
+      "difficulty_score": 0.277027027027027
     },
     "And / Or / Not": {
-      "success_rate": 0.5588235294117647,
-      "total_attempts": 272,
-      "difficulty_score": 0.4411764705882353
+      "success_rate": 0.5608108108108109,
+      "total_attempts": 296,
+      "difficulty_score": 0.43918918918918914
     }
   },
   "common_sense_mapping": {

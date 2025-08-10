@@ -191,7 +191,7 @@ def main():
     logging.basicConfig(level=logging.INFO)
 
     # Initialize parameters
-    max_tokens = 1024  # Increased for more detailed responses
+    max_tokens = 4096
     temperature = 0
     dataset_path = constants.TEST_DATASET
     output_path = os.path.join(constants.CAPTIONS_DIR, f"{args.model}_scaptions.json")
