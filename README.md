@@ -2,6 +2,33 @@
 
 Evaluation playbook for the [Bongard-OpenWorld benchmark](https://github.com/rujiewu/Bongard-OpenWorld) - a benchmark that challenges models to identify concepts from positive/negative image sets using real-world images and open-vocabulary concepts.
 
+## Dataset Preparation
+
+Before running evaluations, you need to prepare the Bongard-OpenWorld dataset from the [original repository](https://github.com/rujiewu/Bongard-OpenWorld):
+
+### Download Dataset
+
+1. Download the backup dataset from the [Google Drive link](https://drive.google.com/drive/folders/1dS_FU8Gv7JcZJDVBhE-gQNKAyKpJ2qeJ) provided in the original repository
+2. Extract the images to create this directory structure:
+   ```
+   assets/data/bongard-ow/
+   ├── images/
+   │   ├── 0000/
+   │   ├── 0001/
+   │   └── ... (up to 1009)
+   ├── bbox_data.pkl
+   ├── bongard_ow.json
+   ├── bongard_ow_train.json
+   ├── bongard_ow_val.json
+   └── bongard_ow_test.json
+   ```
+
+### Important Notes
+
+- Images must be extracted to `assets/data/bongard-ow/images/` with numbered folders
+- Ensure you have the metadata files (`*.json` and `*.pkl`) in the root `bongard-ow/` directory
+- The dataset contains images sourced from Google Images for research purposes
+
 ## Installation
 
 This project uses [uv](https://docs.astral.sh/uv/) for dependency management.
